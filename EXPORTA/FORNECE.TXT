@@ -1,0 +1,636 @@
+1;000001;HOLCIM (BRASIL)S/A                      ;RUA TIRADENTES,S/N            ;BARROSO (MG)                            ;ROSARIO                       ;  ;60869336/0081-00  ;32 3359-3200        ;(24)2471-2422 OU 2471-3126              ;36212000  ;;GENECY
+2;000001;GENECY OU VALTER                        ;                                        ;                                        ;
+1;000002;COELHO E FILHOS DIST MAT.CONTRUÄAO      ;RUA ANTERO PINTO PEREIRA,564  ;SAO JOAO MERITI                         ;JARDIM MERITI                 ;  ;36 195 139/0001-85;21 2786-9900        ;(24) 99185340                           ;25555-490 ;;CARLA 
+2;000002;CARLA                                   ;                                        ;WWW.COELHODISTRIBUIDORA.COM.BR          ;
+1;000003;CARDAO COM.IMPORTAÄAO LTDA              ;RUA BENEDITO OTONI,37 41 45   ;RIO DE JANEIRO                          ;SAO CRISTOVAO                 ;  ;02 039 540/0001-04;21 2589-6005        ;24 99977-5288 24 2465-6496              ;20940-180 ;;CELSO 
+2;000003;CELSO BRUM                              ;                                        ;                                        ;
+1;000004;FERRAGENS RAMADA LTDA                   ;RUA PEDRO J‡RIO ,365          ;RIO DE JANEIRO                          ;FAZ.BOTAFOGO                  ;  ;30 290 688/0001-52;21 2471-4848        ;24 2471-9165 CEL:9226 6820              ;21530-000 ;;AURELI
+2;000004;AURELIO (VENDEDOR)                      ;                                        ;                                        ;
+1;000005;EMBRASIL-EMPRESA BRASILEIRA DISTR.LTDA  ;ROD.BR 040 S/N KM 517         ;RIBEIRAO DAS NEVES                      ;LIBERDADE                     ;  ;19 166 917/0001-99;36269600 08007272626;8139-1205                               ;33823-310 ;;FABIAN
+2;000005;FABIANO BARRETO                         ;                                        ;                                        ;
+1;000006;AMANCO BRASIL S/A                       ;RUA BARRA VELHA,100           ;JOINVILE (SC)                           ;FLORESTA                      ;  ;58 514 928/0001-74;0800 701 8770       ;(24) 8182-7685  24-3339-8435            ;89210-600 ;;LEONAR
+2;000006;LEONARDO                                ;                                        ;                                        ;
+1;000007;IMPERIAL INDUSTRIA DE CERAMICAS LTDA    ;ROD.WASHINGTON LUIZ,KM 169    ;SANTA GERTRUDES                         ;                              ;  ;56 762 388/0001-12;19 545-1546         ;24 3341-0517 CEL:9994-1990              ;13510-970 ;;CARLOS
+2;000007;CARLOS JOSE (VENDEDOR)                  ;                                        ;                                        ;
+1;000008;ARMARINHO BARTOLOMEU                    ;V.MUN.MANOEL JAC.COELHO JR S/N;CONTAGEM MG                             ;B.TAPERA                      ;  ;17 359 233/0001-88;                    ;981527559 (TIM) 992307738               ;32150-245 ;;DIOGEN
+2;000008;DIOGENES                                ;                                        ;                                        ;
+1;000009;ROMEU DISTRIB.DE ARMARINHO LTDA         ;RUA GOVERN.VALADARES,303      ;GUIDOVAL (MG)                           ;CENTRO                        ;  ;18 033 357/0001-31;(32)3578-1438       ;                                        ;36515-000 ;;TITO  
+2;000009;TITO                                    ;                                        ;                                        ;
+1;000010;CICLODUTRA COM.PEÄAS PARA BICICLETA LTDA;RUA ANTONIO CAST.MARCONDES,165;TAUBATE (SP)                            ;                              ;  ;00 348 001/0001-21;(12)36322390        ;CEL:(24)9814-1390  (12)3632-9179        ;12091-030 ;;JEFERS
+2;000010;JEFERSON                                ;JEFFGIGA31@GMAIL.COM                    ;                                        ;
+1;000011;ARCOM S/A                               ;ANEL VIARIO AYRTON SENNA,2001 ;UBERLANDIA(MG)                          ;DISTR.INDUSTRIA               ;  ;25 769 266/0001-24;(34)3218-4200       ;24-992468809                            ;38414-512 ;;MATEUS
+2;000011;MATEUS                                  ;                                        ;                                        ;
+1;000012;FAME-FABR.DE APAR.E MAT.ELETRICO LTDA   ;RUA CAJURU,746                ;SAO PAULO (SP)                          ;BELENZINHO                    ;  ;60 620 366/0001-95;(11)6090-5600       ;(24)8182-6996 0800-7043444 ELIANE/ROSANG;03057-900 ;;MAGNO 
+2;000012;MAGNO 99954-1875                        ;MAGNOVENDAS@FAME.COM.BR                 ;WWW.FAME.COM.BR                         ;
+1;000013;PALUMA 127 COM.DE FERRAGENS LTDA        ;RUA SIDONIO PAES,127          ;RIO DE JANEIRO                          ;CASCADURA                     ;  ;01 637 972/0001-54;(21)269-6299        ;(24)9955-7494    3343-1224              ;21350-030 ;;JUAREZ
+2;000013;JUAREZ                                  ;                                        ;                                        ;
+1;000014;CEMIBRA-IMBP IND.E COMêRCIO LTDA        ;ROD.LUCIO MEIRA, 1000 KM 15,5 ;BARRA DO PIRAI                          ;CALIFORNIA                    ;  ;04 847 613/0005-43;33448100            ;(24)2442-6461  CEL:998148131            ;27113-580 ;;JORGE 
+2;000014;JORGE EURICO BRONZATO                   ;                                        ;                                        ;
+1;000015;FERRAGENS NEGRAO COMERCIAL LTDA         ;RUA PROF.ALGACYR M.NADER,2800 ;CURITIBA - PARANA                       ;CENTRO                        ;  ;76 639 285/0003-39;0800-418228-316-8000;8803-1900 2471-5779                     ;81310-020 ;;MARCIO
+2;000015;MARCIO BRAGA                            ;                                        ;                                        ;
+1;000016;BURARAMA MATERIAIS CONST.LTDA           ;RUA AIMORES,435               ;BELFORD ROXO - RJ                       ;HELIOPOLIS                    ;  ;00 059 621/0001-40;(21)                ;(21)683-3571  CEL:9766-5744             ;26140-110 ;;VALMIR
+2;000016;VALMIR                                  ;                                        ;                                        ;
+1;000017;IMPERIAL DO CLORO-RR IMP.DIST.P.LIMPLTDA;RUA GIL DE QUEIROZ ,113       ;SAO JOAO MERITI-RJ                      ;PARQUE ANALANDIA              ;  ;00.076.617/0001-90;(21)3657-3989       ;2772-4614                               ;25585-630 ;;(21)27
+2;000017;(21)2772-4243   3657-3989               ;                                        ;                                        ;
+1;000018;COMPANHIA SIDERURGICA BELGO MINEIRA     ;ROD.PRESIDENTE DUTRA,10501    ;MESQUITA (RJ)                           ;ROCHA SOBRINHO                ;  ;24 315 012/0172-20;(21)2662-1710       ;CEL:(24)9831-9197                       ;26231-340 ;;AMARIL
+2;000018;AMARILIO                                ;                                        ;                                        ;
+1;000019;CASA CARDAO LTDA                        ;AV.AMARAL PEIXOTO,910         ;LEVY GASPARIAM (RJ)                     ;AFONSO ARINOS                 ;  ;32 287 542/0001-83;08000211033(PEREIRA);                                        ;25875-000 ;;FABIAN
+2;000019;FABIANO 98827-8067  99847-3030          ;                                        ;                                        ;
+1;000020;MPC INDUSTRIA E COMERCIO LTDA           ;RODOVIA BR 040,KM 602         ;CONGONHAS (MG)                          ;CAMPODAS FLORES               ;  ;00 967 184/0001-63;(31)3731 2360       ;2471-5168                               ;36415-000 ;;SOLANG
+2;000020;SOLANGE                                 ;                                        ;                                        ;
+1;000021;FORME TUBO IND.COM.DE PLASTCOS LTDA     ;RUA LUIZA MAGNUS,98           ;EDEM-SAO JOAO MERITI                    ;VILA ZUMIRA                   ;  ;40 409 682/0001-05;(21)2756-9478       ;(24)9906-4092                           ;27569-478 ;;SERGIO
+2;000021;SERGIO                                  ;                                        ;                                        ;
+1;000022;ITAM IND.DE ESQUADRIAS MET.E MOVEIS LTDA;ESTRADA EXIST.CALIFORNIA 120  ;BARRA DO PIRAI                          ;CALIFORNIA                    ;  ;28 879 898/0001-39;(24)3346-7526       ;(24)9991-0268                           ;27165-000 ;;JOSE L
+2;000022;JOSE LUIZ THULLER                       ;                                        ;                                        ;
+1;000023;HERVY -CERAMICA INDUST.DE TAUBATE LTDA  ;                              ;                                        ;                              ;  ;                  ;                    ;CEL:(24)9991 0268                       ;          ;;JOSE L
+2;000023;JOSE LUIZ THULLER                       ;                                        ;                                        ;
+1;000024;TREVI LIGHT ILUMINACOES                 ;RUA TAMANDARE ,165            ;N.IGUAÄU (RJ)                           ;VILA OPERARIA                 ;  ;                  ;(21)2667 0994       ;(21) 9137 4385                          ;          ;;CLAUDI
+2;000024;CLAUDIO                                 ;                                        ;                                        ;
+1;000025;BELGO BEKAERT ARAMES S/A                ;ROD.PRES.DUTRA,10501          ;MESQUITA (RJ)                           ;ROCHA SOBRINHO                ;  ;61 074 506/0016-16;(21) 2797-2999      ;(21)9831 9197                           ;29231-340 ;;AMARIL
+2;000025;AMARILIO MARQUES                        ;                                        ;                                        ;
+1;000026;SOCOL-EMPRESA BRASILEIRA DISTR.LTDA     ;ROD.BR 040 S/N KM 517         ;RIBEIRAO NEVES (MG)                     ;LIBERDADE                     ;  ;19 166 917/0001-99;(31)3626-9600 /9699 ;(24)2471-9659                           ;33823-310 ;;HEITOR
+2;000026;HEITOR (VENDEDOR)                       ;                                        ;                                        ;
+1;000027;AMBULANTE                               ;                              ;                                        ;                              ;  ;                  ;                    ;                                        ;          ;;      
+2;000027;                                        ;                                        ;                                        ;
+1;000028;JOSE DA SILVA PEREIRA REP.BOMBAS HIDR.ME;ESTR.SAO BERNARDO,53          ;RIO DE JANEIRO                          ;PARQUE SUECIA-BELFORD ROXO    ;  ;73 266 769/0001-20;21-27684395 26995220;991085583 (21)2768-4395                 ;26187-095 ;;VAVA  
+2;000028;VAVA                                    ;                                        ;                                        ;
+1;000029;METALXA METALURG.XAXA LTDA              ;RUA JOSE CARDOSO DA SILVA,275 ;RIO BONITO (RJ)                         ;CENTRO                        ;  ;31 521 354/0001-00;2734-1465           ;                                        ;28800-000 ;;GILBER
+2;000029;GILBERTO (24)92678203 78358674          ;                                        ;                                        ;
+1;000030;SUCATA FERRO MADEIRA ABREU LTDA         ;SITIO BOA VISTA,169 DIST.INDUS;VALENÄA                                 ;TRIAL BENFICA                 ;  ;04 075 274/0001-09;(24)2453-4043       ;9232-1393  2453-4490 9242-8239          ;27600-000 ;;LUCAS 
+2;000030;LUCAS                                   ;                                        ;                                        ;
+1;000031;VALGRES IND.E COM.E PARTICIPAÄÂES LTDA  ;ROD.WASHINGTON LUIZ ,KM 160,6 ;CORDEIROPOLIS (SP)                      ;BLOCO 1                       ;  ;02 015 960/0001-50;(19)3546-5005       ;(24)3341-0517  CEL:9994-1990            ;13490-000 ;;CARLOS
+2;000031;CARLOS JOSE                             ;                                        ;                                        ;
+1;000032;AÄO PLASTICO                            ;RUA LOREN FRANCISCO SILVA,65  ;PINHEIRAL(RJ)                           ;DIST.INDUSTRIAL               ;  ;01 424 111/0001-98;(24)3356-2791       ;(24)3356-2791                           ;27197-000 ;;EDINEU
+2;000032;EDINEUSA OU JOAO                        ;                                        ;                                        ;
+1;000033;CENTRO DE PLANTAS NOVO TRIBOBO          ;RUA VISCONDE DE SANTAREM,624  ;SAO GONCALO                             ;TRIBOBO                       ;  ;35 834 860/0001-05;(21)701-0998        ;                                        ;24750-070 ;;AMARAL
+2;000033;AMARAL                                  ;                                        ;                                        ;
+1;000034;MAESA MADEIREIRA ESPIRITO SANTO LTDA    ;ROD.PA 150,S/N KM 130,5       ;TAILANDIA (PARA)                        ;B.INDUSTRIAL                  ;  ;02 889 101/0001-90;(91)3752-1282       ;(24)3341-0517   CEL : 9994-1990         ;68695-000 ;;CARLOS
+2;000034;CARLOS JOSE                             ;                                        ;                                        ;
+1;000035;DISTRIBUIDORA DE FOGOS PEDRO PAULO      ;RUA RENATO AZEREDO, 176       ;SANTO ANTONIO DO MONTE                  ;CHACARA                       ;  ;                  ;37-32812374         ;(37)8829-5085                           ;          ;;PEDRO 
+2;000035;PEDRO PAULO                             ;FOGOSPEDROPAULO@OI.COM.BR               ;                                        ;
+1;000036;DOLOMITAMIX IND. E COMERCIO EIRELI-EPP  ;ESTRADA MUNICIPAL IRR 393     ;BOM SUCESSO DE ITARARE -SP              ;CRUZ DA PENHA                 ;  ;18.022.305/0001-60;15-991212106        ;24-3338-5977  CEL:99228-9161   3336-3660;18475000  ;;FERNAN
+2;000036;FERNANDO                                ;SRFERNANDOMACHADO@GMAIL.COM             ;                                        ;
+1;000037;FERRAGENS KING OURO LTDA                ;RUA DA REGENERACAO,40/56      ;RIO DE JANEIRO                          ;BONSUCESSO                    ;  ;00311984/0001-21  ;0800-9790007        ;(24)99831-2226   98164-0087  2453-1352  ;21040-170 ;;WAGNER
+2;000037;WAGNER                                  ;FKO@KINGOURO.COM.BR                     ;                                        ;
+1;000038;IMBRALIT LTDA                           ;RUA ANTONIO DARê ,325         ;CRICIUMA - SANTA CATARINA               ;PROSPERA                      ;  ;82 916 164/0001-28;(48)4619500-        ;(21)2437-4994  CELULAR:(21)9639-8192    ;88813-300 ;;OLIVEI
+2;000038;OLIVEIRA                                ;                                        ;                                        ;
+1;000039;HIDRAULICA NOVA UNIAO                   ;AV.PRESIDENTE KENNEDY,944/SALA;BARRA MANSA /RJ                         ;ANO BOM                       ;  ;02227417/0001-17  ;                    ;(24)9906-4092                           ;27325150  ;;SERGIO
+2;000039;SERGIO                                  ;HIDRA.NOVAUNIAO@UOL.COM.BR              ;                                        ;
+1;000040;OLARIA GRAÄA E FILHO LTDA               ;                              ;                                        ;                              ;  ;                  ;9813-2941           ;9813-2941                               ;          ;;EDER F
+2;000040;EDER FRANCISCO                          ;                                        ;                                        ;
+1;000041;BELGO -BMP SIDERURGIA SA                ;ROD.PRESIDENTE DUTRA,10501    ;RIO DE JANEIRO                          ;ROCHA SOBRINHO -MESQUITA      ;  ;17 469 701/0041-64;(21)2797-2999 GISELE;(21)9871-2238 2797-2999                 ;26231-340 ;;AMARIL
+2;000041;AMARILIO                                ;                                        ;                                        ;
+1;000042;COTRIL DISTRIBUIDORA                    ;R:JOAO ALVES DE OLIVEIRA,198  ;PONTE NOVA                              ;TRIANGULO                     ;  ;23797376/0021-18  ;(31)3819-2020       ;                                        ;35430-125 ;;      
+2;000042;                                        ;COTRIL@BARTOFIL.COM.BR                  ;                                        ;
+1;000043;ESQUADRIA SAO RAFAEL LTDA               ;AV.CONCEIÄ«O DA BARRA,420     ;LINHARES -ESP. SANTO                    ;B.SHELL                       ;  ;27 151 372/0001-75;(27)264-2711        ;(24)3341-0517  CELULAR: 9994-1990       ;29901-590 ;;CARLOS
+2;000043;CARLOS JOSE                             ;                                        ;                                        ;
+1;000044;LOUSANO-REALFIL IMP.E EXP.LTDA          ;RUA ABAIARA,100A              ;SAO PAULO                               ;CUMBICA  - GUARULHOS          ;  ;04 098 563/0001-15;(11)6521-1166 KELLY ;                                        ;07180-210 ;;(11)65
+2;000044;(11)6521-1166                           ;                                        ;                                        ;
+1;000045;SALGADO E FILGUEIRAS LTDA - ME          ;FAZENDA CAMPINA VERDE,0 SL 15 ;ANDRELANDIA -MINAS GERAIS               ;ZONA RURAL                    ;  ;01 130 770/0001-11;(35)3325-1915       ;(35)84130206                            ;37300-000 ;;LUIZ A
+2;000045;LUIZ ANTONIO                            ;                                        ;                                        ;
+1;000046;TINTAS MARFIM LTDA                      ;RUA NESTOR GOMES,10           ;ESPIRITO SANTO                          ;CENTRO/CASTELO                ;  ;01041611/0001-40  ;(27)542-1136        ;                                        ;29360-000 ;;      
+2;000046;                                        ;PINTE.COM@TINTASMARFIM.COM.BR           ;                                        ;
+1;000047;ASTRA S/A IND.E COM.LTDA                ;AV.MARGINAL V/ANHANGUERA S/N  ;JUNDIAI/SP                              ;TREVO DE ITU                  ;  ;50949528/0010-70  ;(11)45825811        ;JOSE SILVEIRA (24)981374293 988070433   ;13211-090 ;;MAICON
+2;000047;MAICON  21-992970418  981578216         ;ASTRASA@ASTRA-SA.COM.BR                 ;                                        ;
+1;000048;DISTRIBUIDORA DE METAIS UNIDOS LTDA     ;RUA VEREADOR ELI DE ARAUJO,241;SAO JOAO DEL REY _- MG                  ;BAIRRO DAS FABRICAS           ;  ;23 307 143/0001-46;(32)3371-6149       ;(32)99548986                            ;36300-000 ;;JOMAR 
+2;000048;JOMAR                                   ;                                        ;                                        ;
+1;000049;DRP- TRANSPORTADORA RIO PARAIBA LTDA    ;RUA BENITO MEANA,100 SUC 33   ;SAO PAULO                               ;VILA SABRINA                  ;  ;00 335 335/0004-03;(11)6983-3271       ;                                        ;02161-170 ;;      
+2;000049;                                        ;                                        ;                                        ;
+1;000050;JORIMPA PRE-MOLDADOS PADUA LTDA         ;ESTRADA PADUA-MIRACEMA-KM 4   ;SANTO ANTONIO DE PADUA - RJ             ;BAIRRO BRANCO - 1 DISTRITO    ;  ;00 747 447/0001-29;(22)3851-0834       ;                                        ;          ;;BAIANO
+2;000050;BAIANO                                  ;                                        ;                                        ;
+1;000051;CALIDRAX-NOBRECOLOR DISTRIBUIDORA LTDA  ;RUA ALEIXO NETO,195           ;VITORIA-ESPIRITO SANTO                  ;SANTA LUCIA                   ;  ;04 560 307/0001-06;(27)3315-4686       ;(24)9227-6529                           ;          ;;ALEXAN
+2;000051;ALEXANDRE LISBOA                        ;LIGAR A COBRAR:(27)9222-0516            ;                                        ;
+1;000052;ARARA - MAZETTO IND.E COM.DE ALUM.LTDA  ;RUA DAS ROSAS,350             ;ARARAS - SAO PAULO                      ;SOBRADINHO                    ;  ;44 219 772/0001-94;(19)541-8266        ;(19)3541-2689 97852084                  ;13600-000 ;;0800-1
+2;000052;0800-168266 OU FERNANDO                 ;MAZETTO@MAZETTO.COM.BR                  ;WWW.MAZETTO.COM.BR                      ;
+1;000053;REI DAS GAIOLAS-ARTESAO JORGE L.MARCOLON;PRAÄA JOSE INEZ,402           ;ITAPERUNA/RJ                            ;SERRARIA-COMENDADOR VENANCIO  ;  ;014 610 187-14    ;(22)3847-3944       ;                                        ;28348-000 ;;DITO (
+2;000053;DITO (EXPEDITO) 32-84488363             ;                                        ;                                        ;
+1;000054;DISTRIBUIDORA RIO MARCAS S.A.           ;ESTRADA DO GABINAL,1521-FUNDOS;RIO DE JANEIRO                          ;FREGUESIA JACAREPAGUA         ;  ;02 917 309/0002-57;(21)3803-8800-8880  ;                                        ;22763-152 ;;JOSE G
+2;000054;JOSE GERALDO                            ;                                        ;                                        ;
+1;000055;SATO- IND.E COM.DE TINTAS FERRAZ LTDA   ;EST.INDIO TIBIRIÄA,2520       ;SUZANO-SAO PAULO                        ;BAIRRO RAFFO                  ;  ;03 385 415/0001-19;(11)4752-9100       ;(24)3337-8468  CEL:9997-9823            ;08600-000 ;;JOAO L
+2;000055;JOAO LUCIO                              ;                                        ;                                        ;
+1;000056;LAIZA CONFECCOES LTDA                   ;AV.PASCHOAL ARDITO,713        ;AMERICANA / SAO PAULO/SP                ;SAO VITO                      ;  ;73197469/0002-17  ;(19)34686554        ;                                        ;13472-130 ;;      
+2;000056;                                        ;LAIZA@AOL.COM.BR                        ;                                        ;
+1;000057;CERAMICA STA ANGELA DE JABOTICABAL LTDA ;R.IMPERADOR D PEDRO II,300    ;JABOTICABAL-SP                          ;BARREIRO                      ;  ;00 169 347/0001-62;(16)32021462        ;(16)3202-0771  CEL:9722-2606            ;14882-172 ;;RICHAR
+2;000057;RICHARDSON CEZAR PAGOTO                 ;                                        ;                                        ;
+1;000058;DOBRUM-S.R.B COM.E REP.DE MAT.CONST.LTDA;LADEIRA SANTA CRUZ,299        ;MENDES-RIO DE JANEIRO                   ;CRUZEIRO -                    ;  ;05 656 484/0001-45;(24)2465-0099       ;(24)2465-0099  CEL:9814-5019            ;26700-000 ;;SIRIO 
+2;000058;SIRIO BRUM                              ;FABIO 92141605 99212313 78141594        ;ID55*90*109653 FABIOVCSOARES@HOTMAIL.COM;
+1;000059;PEIXOTO COM.IND.SERV.E TRANSP.LTDA      ;RUA CRISTIANO AYRES,1081      ;UBERLANDIA (MG)                         ;BAIRRO JK                     ;  ;25 757 840/0013-68;(34)3218-5555       ;ANDERSON 92476569                       ;75709-280 ;;0800-9
+2;000059;0800-9795621 FABIANA                    ;                                        ;                                        ;
+1;000060;MADEIREIRA KAMPMANN LTDA                ;RUA 8 DE DEZEMBRO,1084        ;PORTO VITORIA (PARANA)                  ;CENTRO                        ;  ;75 688 515/0001-25;(42)573-1105        ;(24)3337-2020                           ;84610-000 ;;LEANDR
+2;000060;LEANDRO                                 ;                                        ;                                        ;
+1;000061;FPA DISTRIBUIDORA                       ;RUA MARCIANO PINTO,930        ;JUIZ DE FORA (MG)                       ;SAGRADO CORAÄ«O DE JESUS      ;  ;                  ;3234-9111 9988-1531 ;                                        ;36032-010 ;;      
+2;000061;                                        ;                                        ;                                        ;
+1;000062;MARGRABEL-MARM.GRANITOS BENEFICIADO LTDA;RUA VANDERLEY BARBOSA,03      ;CACHOEIRO DE ITAPEMIRIM-ES              ;CENTRO-VARGEM GRANDE SOTURNO  ;  ;27 328 483/0001-04;(28)3524-1221 -1020 ;9901-6223                               ;          ;;NILL  
+2;000062;NILL                                    ;                                        ;                                        ;
+1;000063;FONTES E FARIAS FERRAGENS LTDA          ;RUA 24.137                    ;VOLTA REDONDA                           ;JARDIM AMALIA                 ;  ;04737399/0001     ;(24)33473063        ;                                        ;27200-000 ;;      
+2;000063;                                        ;                                        ;                                        ;
+1;000064;ARCO IRIS-IND.COM.MOVEIS DOIS CORREGO LT;AVENIDA DAS INDUSTRIAS,200    ;DOIS CORREGOS - SAO PAULO               ;SETOR INDUSTRIAL              ;  ;03 115 682/0001-76;                    ;(24)3341-0517   9994-1990               ;          ;;CARLOS
+2;000064;CARLOS JOSE                             ;                                        ;                                        ;
+1;000065;SAGA-IND.E COM.DE MAT.ESPORTIVOS LTDA   ;ROD.CACONDE/TATIRATIBA -KM4,9 ;CACCONDE - SAO PAULO                    ;ROSA BRANCA                   ;  ;03 280 065/0001-26;(19)3662-8276       ;2471-1442 2471-8573 CEL:9742-2554       ;13770-000 ;;NELSON
+2;000065;NELSON AGNELO (VASSOURAS)               ;                                        ;WWW.COUROFORTE.COM.BR/SAGA              ;
+1;000066;ALENICE IND.TEXTIL LTDA                 ;RUA RODOLFO TEPASSE,111       ;GUAPIMIRIM -SANTA CATARINA              ;IMIGRANTES                    ;  ;86 837 366/0001-35;(47)373-0768        ;(24)2465-0027 OU 3063 CEL:9917-0589     ;89270-000 ;;IRACY 
+2;000066;IRACY LUIZ                              ;ALENICEMALHAS@UOL.COM.BR                ;                                        ;
+1;000067;G.G.ATACADISTA DE CALÄADOS LTDA         ;AV.ALBERTO GEOVANINI,154      ;IPATINGA  -  MINAS GERAIS               ;BETHANIA                      ;  ;00 850 762/0001-87;(31)3826-0712       ;                                        ;35164-018 ;;JAIR L
+2;000067;JAIR LIMA (VENDEDOR)                    ;                                        ;                                        ;
+1;000068;PLASTUBOS-DVD IND.E COM.DE PLAST.LTDA   ;RUA BELA VISTA,213            ;RIBEIRAO DAS NEVES-MINAS GERAIS         ;BOTAFOGO-DIST.JUSTINOPOLIS    ;  ;01 230 897/0001-02;(31)3638-5566       ;(32)3531-6067  CEL:(32)9985-4934        ;33933-190 ;;JULIO 
+2;000068;JULIO LAGE                              ;                                        ;WWW.PLASTUBOS.COM.BR                    ;
+1;000069;FERRAGENS COELHO DE TRES RIOS LTDA-ME   ;RUA BARAO DE ENTRE RIOS,66    ;TRES RIOS - RJ                          ;CENTRO                        ;  ;04 259 579/0001-62;(24)2255-2139       ;(24)2255-2139 CEL:9969-8923 9955-4009   ;          ;;MARILS
+2;000069;MARILSON                                ;                                        ;                                        ;
+1;000070;ITANOX COM.DE PIAS E CUBAS DE INOX      ;RUA PADRE MARCOS,24           ;GUARULHOS - SAO PAULO                   ;CID.ARACILIA                  ;  ;04 026 136/0001-21;(11)6498-4132-4134  ;CEL:9979-3374  (24)3323-9705/3324-5727  ;          ;;ALBERT
+2;000070;ALBERTU                                 ;                                        ;                                        ;
+1;000071;CALBRAS IND.E COM.DE MAT.CONSTRUÄAO LTDA;RUA PROJETADA A,26            ;B.DO PIRAI  -  RIO DE JANEIRO           ;DORANDIA                      ;  ;03 047 449/0001-01;(24)348-5858        ;                                        ;27110-420 ;;PAULIS
+2;000071;PAULISTA                                ;                                        ;                                        ;
+1;000072;STAM METALURGICA LTDA                   ;AV.SEBASTIAO MARTINS,871      ;NOVA FRIBURGO -RIO DE JANEIRO           ;CONSELHEIRO PAULINO           ;  ;30 560 205/0001-92;(22)2525-1000       ;(24)2243-7363                           ;28635-430 ;;ALAN *
+2;000072;ALAN *DEDE REPRESENTAÄOES               ;INFO@STAM.COM.BR                        ;WWW.STAM.COM.BR                         ;
+1;000073;IND.E COM.DE MADEIRAS H.KRAMMER LTDA    ;RUA ANDREAS KUNAS,1785        ;DONA EMMA-SANTA CATARINA                ;CENTRO                        ;  ;03 025 109/0001-71;                    ;CEL:(24)9994-1990  3341-0517            ;89155-000 ;;CARLOS
+2;000073;CARLOS JOSE (VENDEDOR)                  ;                                        ;                                        ;
+1;000074;APOLO COM.E SERV.DE DISTRIBUIÄAO LTDA   ;AV.JOAO EVANGEL.ALMEIDA ,1400 ;PONTE NOVA-MG                           ;SAG.CORAÄAO DE JESUS          ;  ;16 873 788/0001-80;(31)3817-2225       ;                                        ;35430-095 ;;      
+2;000074;                                        ;                                        ;                                        ;
+1;000075;PINCEIS TIGRE S.A.                      ;VIA ANHANGUERA,KM15,5         ;SAO PAULO                               ;OSASCO                        ;  ;61182606/0001-80  ;(11)36220300        ;(21)2593-9213 2224-9284 93263007        ;06278900  ;;PAULO(
+2;000075;PAULO(VENDEDOR)                         ;SACPINCEIS@TIGRE.COM.BR                 ;WWW.PINCEISTIGRE.COM.BR                 ;
+1;000076;LEKE MEIAS-BENETI,LAMPA,GOMES E CIA LTDA;RUA PAULO TADASHI SATOMI,540  ;ASTORGA -PARANµ                         ;                              ;  ;00218755/0001-67  ;(44)234-3535        ;IRACI(VENDEDOR)(24)2465-0027 9917-0589  ;86730-000 ;;ZIMARO
+2;000076;ZIMARO REPRES.((21)2569-4488            ;LEKEMEIAS@LEKEMEIAS.COM.BR              ;WWW.LEKEMEIAS.COM.BR                    ;
+1;000077;ART AÄO-IND.METALURGICA ART-AÄO LTDA    ;RUA DANTE MAROSTICA,321       ;ARARAS -SAO PAULO                       ;DISTR.INDUSTRIAL II           ;  ;55923882/0001-59  ;(19)3541-8633       ;(19)541-2689                            ;13602-050 ;;FERNAN
+2;000077;FERNANDO (VENDEDOR)                     ;                                        ;                                        ;
+1;000078;PARANA CARD`S                           ;RUA PAMPHILO DE ASSUMPCAO,900 ;CURITIBA-PARANA                         ;PAROLIN                       ;  ;                  ;(41)3336522         ;(41)9953-1733                           ;80220-040 ;;HUGO (
+2;000078;HUGO (VENDEDOR)                         ;PARANACARD@AOL.COM                      ;WWW.PARANACARD.HPG.COM.BR               ;
+1;000079;ESCADAS MOURA-S.C.DE MOURA ART.MADEI/FER;AV.CONSTANCIA S/N LOTE 8E9    ;RIO DE JANEIRO                          ;TAQUARA-D.DE CAXIAS           ;  ;02550419/0001-42  ;(21)2778-1912       ;(21)2593-9213 2224-9284 CEL:9326-3007   ;25270-390 ;;PAULO 
+2;000079;PAULO                                   ;                                        ;                                        ;
+1;000080;TARZA- INDUSTRIAL SAO SEBASTIAO S.A.    ;R:FRANCISCO MARTINS CHAVES,133;RAUL SOARES / MG                        ;TARZA                         ;  ;24087405/0001-77  ;0800-339000         ;(24)3354-8528 CEL:9221-0206             ;35.350-OOO;;VANDRE
+2;000080;VANDRE                                  ;TARZ@NET.EM.COM.BR                      ;                                        ;
+1;000081;JAPI S/A INDUSTRIA E COMERCIO           ;AV.MARGINAL ANHANGUERA,1000   ;JUNDIAI-S.PAULO                         ;KM 61,5 TREVO DE ITU          ;  ;71 522 460/0001-28;(11)4582-0333       ;(24)2484-6294 9227-6529 9213-0094       ;13209-500 ;;ALEXAN
+2;000081;ALEXANDRE OU FERNANDA                   ;JAPI.SA@JAPI.COM.BR                     ;                                        ;
+1;000082;CARSALE IND.E COM.MAT.PLASTICO LTDA     ;AV.MANOEL GARANI,91           ;VOLTA REDONDA -RJ                       ;RETIRO                        ;  ;72 061 989/0001-54;(24)33462053        ;                                        ;27277-150 ;;MARCEL
+2;000082;MARCELO                                 ;                                        ;                                        ;
+1;000083;BARTOFIL COM.E IND.LTDA                 ;R.ANTONIO FREDERICO OZANAN,255;PONTE NOVA -MINAS GERAIS                ;CENTRO-                       ;  ;23 797 376/0001-74;08007019100 38192000;                                        ;35430-029 ;;      
+2;000083;                                        ;WWW.BARTOFIL.COM.BR                     ;BARTOFIL@BARTOFIL.COM.BR                ;
+1;000084;CASALIT-CASALITE IND.COM.MAT.CONSTR.LTDA;AV.MASCARENHAS DE MORAES,521  ;DUQUE DE CAXIAS -RIO DE JANEIRO         ;CAMPOS ELISIOS                ;  ;27 895 762/0001-50;(21)2677-5000       ;(24)321204964 999302587 988626294       ;25230-030 ;;MICHEL
+2;000084;MICHEL                                  ;MICHELREIS3010@BOL.COM.BR               ;                                        ;
+1;000085;TECIPAM TECIDOS PARAMINENSE LTDA-EPP    ;AV.PROF.MELO CANÄADO,2112     ;PARA DE MINAS -MINAS GERAIS             ;CENTRO                        ;  ;01 042 643/0001-60;(37)3236-2000       ;                                        ;35661-300 ;;VENDED
+2;000085;VENDEDOR DANIEL                         ;                                        ;                                        ;
+1;000086;MASCOTE -DISTRIBUIDORA MASCOTE LTDA     ;AV.JOAQUIM MACHADO FARIA,58   ;GUAÄUI- ESPIRITO SANTO                  ;CENTRO                        ;  ;01 454 119/0001-05;(28)3553-1889       ;                                        ;          ;;      
+2;000086;                                        ;MASCOTE@GUACUI.COM.BR                   ;                                        ;
+1;000087;METALURGICA ROCHA LTDA                  ;RUA ROCHA,173                 ;SUZANO - SP                             ;MEU CANTINHO                  ;  ;00 028 664/0001-69;(11)4746-7900       ;(24)92724285 24-99561922                ;08664-650 ;;MARCOS
+2;000087;MARCOS ANTONIO                          ;VENDAS@METALURGICAROCHA.COM.BR          ;WWW.METALURGICAROCHA.COM.BR             ;
+1;000088;METALOSA IND.METALURGICA S.A            ;RODOVIA DO CAFE,KM 2  ,1625   ;COLATINA -ESPIRITO SANTO                ;SAO SILVANO                   ;  ;27 485 374/0001-09;(27)3723-1300       ;(21)2437-4994 96398192 (24)2485-9366    ;29705-200 ;;OLIVEI
+2;000088;OLIVEIRA                                ;MATELOSA@METALOSA.COM.BR                ;WWW.METALOSA.COM.BR                     ;
+1;000089;EGYDIO MADEIRAS                         ;RUA DR.LUIS ALVES PEREIRA,145 ;BARRA DO PIRAI                          ;QUIMICA                       ;  ;                  ;(24)2442-4611       ;                                        ;          ;;EGYDIO
+2;000089;EGYDIO (24) 9947-1495                   ;                                        ;                                        ;
+1;000090;BRASCOLA LTDA                           ;RUA BRASCOLA,222              ;SAO BERNARDO DO CAMPO -SP               ;VILA S.LEOPOLDO               ;  ;61 105 060/0001-63;08007702660         ;(22)38641202 (24)9832-4850              ;09892-110 ;;CARLOS
+2;000090;CARLOS RAMOS                            ;                                        ;WWW.BRASCOLA.COM.BR                     ;
+1;000091;DISTRIBUIDORA GAMA DE VOLTA REDONDA     ;RUA BELEM,133                 ;VOLTA REDONDA                           ;SANTO AGOSTINHO               ;  ;01 541 063/0001-18;                    ;(24)9994-9942                           ;27290-350 ;;ALOISI
+2;000091;ALOISIO                                 ;DIGAGAMA@UOL.COM.BR                     ;                                        ;
+1;000092;VERSALES IMPORTAÄOES E COMERCIO LTDA    ;RUA AVELINO OTONI,132         ;UBA - MG                                ;TRIANGULO                     ;  ;02 237 086/0001-04;(32)3531-2001       ;                                        ;36500-000 ;;PATRIC
+2;000092;PATRICIO                                ;VERSALES@UAI.COM.BR                     ;                                        ;
+1;000093;EMBALAR-GEUCH PAPELARIA E EMBALAGEM LTDA;AV.SAVIO COTA A.GAMA,2020     ;VOLTA REDONDA                           ;RETIRO                        ;  ;32 521 189/0001-54;(24)3346-1266       ;                                        ;27281-180 ;;      
+2;000093;                                        ;                                        ;                                        ;
+1;000094;INAWA COMERCIAL LTDA                    ;RUA THIERS ,550               ;SAO PAULO                               ;PARI                          ;  ;03 137 677/0001-64;(11)229-0175 2292577;(24)3345-6112  9814-9962                ;03031-000 ;;ROGERI
+2;000094;ROGERIO (VENDEDOR) (                    ;                                        ;                                        ;
+1;000095;TRANSPORTE GENEROSO-V.M.RAMOS E CIA LTDA;RUA PAULO ANDRIGHETTI,1476    ;SAO PAULO                               ;PARI                          ;  ;00 972 696/0001-18;(11)6618-1685       ;                                        ;03022-000 ;;      
+2;000095;                                        ;TGENEROSO@VISUALBYTE.COM.BR             ;                                        ;
+1;000096;ELOFORT ATACADISTA                      ;RUA DA USINA,51               ;LORENA -SAO PAULO                       ;CENTRO                        ;  ;03 045 919/0001-90;(12) 553-5081       ;                                        ;12606-070 ;;WANDER
+2;000096;WANDERSON                               ;                                        ;                                        ;
+1;000097;BOLSAS RIO                              ;                              ;                                        ;                              ;  ;                  ;(21)2768-1661       ;(24)9211-0103 3361 3076                 ;          ;;NELSON
+2;000097;NELSON                                  ;                                        ;                                        ;
+1;000098;RDA - ANDERSON MAZZETO                  ;RUA DAS ROSAS ,350 B          ;ARARAS -SAO PAULO                       ;JARDIM SOBRADINHO             ;  ;02 064 923/0001-32;(19)541-8266        ;                                        ;13602-009 ;;FERNAN
+2;000098;FERNANDO OU 0800-168266                 ;MAZETTO@MAZETTO.COM.BR                  ;WWW.MAZETTO.COM.BR                      ;
+1;000099;CONSTRUCOLA-IND.E COM.DE ARGAMASSA LTDA ;ESTRADA DO MAPUA,791          ;RIO DE JANEIRO                          ;TAQUARA - JACAREPAGUA         ;  ;40 436 461/0001-26;(21)2445-0062       ;(24)2431-0407                           ;22713-320 ;;PRISCI
+2;000099;PRISCILA                                ;                                        ;                                        ;
+1;000100;CERAMICA SANTA GERTRUDES LTDA           ;ROD.WASHINGTON LUIZ,KM 167,5  ;SANTA GERTRUDES-SAO PAULO               ;ITAQUI                        ;  ;56 883 259/0001-82;(19)3545-9300       ;(21)2214-2049  9611-5959                ;13510-000 ;;CARLOS
+2;000100;CARLOS CALVI•O                          ;SG@GRUPOSANTAGERTRUDES.COM.BR           ;WWW.GRUPOSANTAGERTRUDES.COM.BR          ;
+1;000101;LUKSCOLOR-DOVAC IND. E COMERCIO LTDA    ;ESTRADA DOS CASA,651          ;SAO BERNARDO DO CAMPO-SAO PAULO         ;BAIRRO DOS CASA               ;  ;46 928 552/0001-65;(11)4344-3800       ;(24)9266-5671                           ;09840-000 ;;LEONAR
+2;000101;LEONARDO CARVALHO SILVEIRA              ;                                        ;                                        ;
+1;000102;FABRICAIXA-V.DA SILVA IND.E COM.CX.DAGUA;RUA VIVIAN DIAS DA COSTA,81   ;TRES RIOS -RJ                           ;VILA ISABEL                   ;  ;02 899 314/0001-01;(24)2255-7004       ;(24-92686173 (32)88214592               ;25804-970 ;;HAROLD
+2;000102;HAROLDO                                 ;                                        ;                                        ;
+1;000103;COZIAÄO                                 ;                              ;                                        ;                              ;  ;                  ;                    ;(24)9901-6223                           ;          ;;NILL  
+2;000103;NILL                                    ;                                        ;                                        ;
+1;000104;GEUCH PAPELARIA E EMBALAGEM LTDA        ;AV.SAVIO COTA DE A.GAMA,2020A ;VOLTA REDONDA                           ;RETIRO                        ;  ;32521189/0001-54  ;33461266            ;                                        ;27281-180 ;;      
+2;000104;                                        ;                                        ;                                        ;
+1;000105;W.R.DE MIGUEL PEREIRA LTDA              ;AV.EMBAIX.PASCOAL C.MAGNO,601 ;PATY DE ALFERES-RJ                      ;ARAÄA                         ;  ;73 791 626/0002-18;                    ;(24)2471-9165  9226-6820                ;29950-000 ;;AURELI
+2;000105;AURELIO                                 ;                                        ;                                        ;
+1;000106;ETERNIT S/A                             ;RUA FRANCISCO PORTELA,122     ;RIO DE JANEIRO                          ;GUADALUPE                     ;  ;61 092 037/0055-74;(21)33699600        ;(24)8125-4876 (24)9266-8141  3342-2821  ;21660-010 ;;CARLOS
+2;000106;CARLOS ANDRE MONTEIRO                   ;ANA PAULA                               ;81254876                                ;
+1;000107;PLASTNOVA                               ;                              ;                                        ;                              ;  ;                  ;                    ;                                        ;          ;;      
+2;000107;                                        ;                                        ;                                        ;
+1;000108;INDUSTRIA DE MADEIRAS GUARANI LTDA      ;RODOVIA SC 468-KM94           ;SAO LOURENÄO DO OESTE -SC               ;AREA INDUSTRIAL               ;  ;83 022 970/0001-15;(49)344 1069        ;(24)3349-5314  (24)9954-0772            ;89990-000 ;;MARCO 
+2;000108;MARCO                                   ;                                        ;                                        ;
+1;000109;BIG LU COM.E IND.METAIS SANITARIOS      ;R.PEDRO RABELO,351            ;SAO PAULO-SP                            ;VILA NOVA YORK                ;  ;01 803 282/0001-28;(11)6721 3090       ;(24)3347-9981 92153758 988136461        ;03908-000 ;;LUIZ N
+2;000109;LUIZ NOVELLI JUNIOR                     ;BIGLU@BIGLU.COM.BR                      ;WWW.BIGLU.COM.BR                        ;
+1;000110;MANNES LTDA                             ;RODOVIA BR 280,KM 58          ;GUARAMIRIM -SANTA CATARINA              ;CENTRO                        ;  ;84 431 881 0001-95;(47)373-0288        ;(24)2465-5286 9917-0589                 ;89270-000 ;;IRACY 
+2;000110;IRACY                                   ;MANNES@MANNES.COM.BR                    ;WWW.MANNES.COM.BR                       ;
+1;000111;BORDAMAT CONFECCOES LTDA                ;RUA SINHARINHA FROTA,2205     ;MATAO - SAO PAULO                       ;JARDIM BUSCARDI               ;  ;00 509 023 0001-00;(16)2823393         ;                                        ;15990-495 ;;ANIBAL
+2;000111;ANIBAL                                  ;BORDAMAT@PROCESS.COM.BR                 ;                                        ;
+1;000112;COMERCIAL SATO LTDA                     ;RUA SATOPOLIS,120             ;SUZANO -SAO PAULO                       ;JARDIM STA INES               ;  ;05 393 752 0001-83;(11)4749-1566       ;(24)3322-0146  9997-9823                ;08695-020 ;;JOAO L
+2;000112;JOAO LUCIO                              ;                                        ;                                        ;
+1;000113;PORTAL MADEIRAS DE CLOVIS SEG.E CIA LTDA;ESTR.CATANDUVAS-AGUA DOCE,KM 1;CATANDUVAS-SANTA CATARINA               ;DISTR.INDUSTRIAL              ;  ;02 565 599 0001-36;(49)525-1117 5251501;(98339129)  (24)3347-2144               ;89670-000 ;;MARCOS
+2;000113;MARCOS                                  ;                                        ;                                        ;
+1;000114;TAYAMAN- J & M JEANS LTDA               ;R.JOVITA BONATO AFONSO,107    ;ASTOLFO DUTRA -MINAS GERAIS             ;SANTANA DE CAMPESTRE          ;  ;25 331 505 0001 60;(32)34517124 7163   ;                                        ;36783-000 ;;      
+2;000114;                                        ;TAYAMAN@ARTNET.COM.BR                   ;                                        ;
+1;000115;DOMITH ATACADISTA                       ;                              ;                                        ;                              ;  ;                  ;                    ;                                        ;          ;;      
+2;000115;                                        ;                                        ;                                        ;
+1;000116;DISTRIBUIDORA CEREAIS FERNAO DIAS LTDA  ;RUA DO ROSARIO,4              ;DUQUE DE CAXIAS-RIO DE JANEIRO          ;CAMPO ELISIOS                 ;  ;30 232 904 0001-03;(21)2776-1745       ;                                        ;25215-360 ;;JOSE G
+2;000116;JOSE GERALDO                            ;                                        ;                                        ;
+1;000117;CACULA -PARCO PAPELARIA LTDA            ;CAMPO SAO CRISTOVAO,87        ;RIO DE JANEIRO                          ;SAO CRISTOVAO                 ;  ;05 214 053 0001-29;(21)2585-2706       ;                                        ;20921-440 ;;      
+2;000117;                                        ;                                        ;WWW.CACULA.COM.BR                       ;
+1;000118;SERRARIA P & N -P.J.A. FILHO            ;RODOVIA RJ 148,S N            ;DUAS BARRAS -RJ                         ;VARGEM GRANDE-GALPAO          ;  ;68 843 622 0001-15;(32)99843748        ;(24)2252-5481 9943-9671 99145715        ;28650-000 ;;BAIAO 
+2;000118;BAIAO                                   ;                                        ;                                        ;
+1;000119;PLASTICOM IND.E COM.DE PLASTICOS LTDA   ;                              ;                                        ;                              ;  ;                  ;                    ;(24)3341-7894 3350-4372 9991-0268       ;          ;;JOSE L
+2;000119;JOSE LUIZ THULLER                       ;THULER.REPRESENTACOES@BOL.COM.BR        ;                                        ;
+1;000120;CERAMICA VAZ LTDA                       ;SITIO DO CASTELO,S N          ;PARAIBA DO SUL-RJ                       ;1 DISTRITO                    ;  ;31 075 104 0001-99;(24)2263-1060       ;                                        ;25850-000 ;;ROGERI
+2;000120;ROGERIO POTENGY                         ;WWW.CERAMICAVAZ.COM.BR                  ;CERAMICAVAZLTDA@UOL.COM.BR              ;
+1;000121;PONTAL TRANSPORTES RAPIDOS              ;RUA DR.LUIZ GIL M.AMBROZI,105 ;TAUBATE-SAO PAULO                       ;PQ.PIRATININGA                ;  ;04 343 988 0001-42;(12)222-3722        ;                                        ;12051-740 ;;      
+2;000121;                                        ;                                        ;                                        ;
+1;000122;OMEGA IND.E COM.DE MAT.DE CONSTRUCAO    ;AV.PADRE ORLANDO G.DA SILVEIRA;SAO PAULO / SP                          ;253/ VILA PENTEADO            ;  ;06021121/000104   ;                    ;(21)3331-1128 3291-6889                 ;02866-170 ;;PAULA 
+2;000122;PAULA (TELEMARKTING)                    ;                                        ;                                        ;
+1;000123;SEAL TAPE DO BRASIL LTDA                ;AVENIDA DAS SAUDADES,1549     ;FRANCO DA ROCHA -SAO PAULO              ;JARDIM PROGRESSO              ;  ;05 847 395 0001-86;(11)6783 7111       ;                                        ;07853-030 ;;      
+2;000123;                                        ;SEALTAPE@UOL.COM.BR                     ;                                        ;
+1;000124;PINHEIRO ARTEFATOS DE MADEIRA           ;RUA PROF.JOSE ESPINELLI,371   ;JUIZ DE FORA                            ;PROGRESSO                     ;  ;                  ;(32)3226-1440       ;(32)8808 1635                           ;          ;;OSCAR 
+2;000124;OSCAR (VENDEDOR) OU ISABEL              ;CASTROM2003@IG.COM.BR                   ;                                        ;
+1;000125;ARGALIT IND.DE REVESTIMENTOS LTDA       ;AV.ESPIRITO SANTO,99          ;CARIACICA - ESPIRITO SANTO              ;JARDIM AMERICA                ;  ;27 449 800/0001-40;(27)2122-0344 0304  ;(24)2465-0099   9814=5019               ;29140-080 ;;SIRIO 
+2;000125;SIRIO BRUM                              ;ARGALIT@ARGALIT.COM.BR                  ;WWW.ARGALIT.COM.BR                      ;
+1;000126;SO FITAS IND.E COM.DE PLAST.LTDA        ;RUA DAS VIOLETAS ,140         ;FRANCO DA ROCHA -SP                     ;JARDIM SANTA DELFA            ;  ;74 660 234 0001-00;(11)4449-5642       ;                                        ;07809-190 ;;      
+2;000126;                                        ;                                        ;                                        ;
+1;000127;FABRICA DE TELAS SAO JORGE LTDA         ;ESTRADA UNIAO E IND,9090      ;PETROPOLIS                              ;ITAIPAVA                      ;  ;28 807 253 0001-90;(24)2222-2031 -3054 ;                                        ;25730-730 ;;      
+2;000127;                                        ;                                        ;WWW.TELASSAOJORGE.COM.BR                ;
+1;000128;COFERPON COM.IND.FERRO PONTENOVENSE LTDA;RUA ASSAD ZALDAN,257          ;PONTE NOVA -MG                          ;PALMEIRAS                     ;  ;25 259 656 0001-54;(31)3817-2344       ;                                        ;35430-234 ;;      
+2;000128;                                        ;                                        ;                                        ;
+1;000129;GAMES MALHAS E MODAS LTDA               ;RUA CARLOS ROCHA,238          ;JUIZ DE FORA- MG                        ;PROGRESSO                     ;  ;22 151 427 0001 23;(32)3226-1995       ;(32) 3288-1206                          ;36050-340 ;;ROBERT
+2;000129;ROBERTO                                 ;                                        ;                                        ;
+1;000130;UEME- UNIAO MECANICA LTDA               ;RUA GUAIAUNA,583              ;SAO PAULO                               ;                              ;  ;61 081 113/0001-53;(11)295 3522        ;                                        ;03631-000 ;;VANDRE
+2;000130;VANDRE                                  ;LOCK@UEME.COM.BR                        ;WWW.UEME.COM.BR                         ;
+1;000131;SULTREF                                 ;                              ;                                        ;                              ;  ;                  ;                    ;(24)9991-0268                           ;          ;;JOSE L
+2;000131;JOSE LUIZ THULER                        ;THULER.REPRESENTACOES@BOL.COM.BR        ;                                        ;
+1;000132;COELHO DE TRES RIOS                     ;RUA BARAO DE ENTRE RIOS,252   ;TRES RIOS                               ;CENTRO                        ;  ;                  ;(24)22552139        ;                                        ;          ;;BAIAO 
+2;000132;BAIAO                                   ;                                        ;                                        ;
+1;000133;REPROGRAFICA BARRENSE IND.E COM.LTDA    ;AV.ALM.ADALBERTO B.NUNES 4020 ;VOLTA REDONDA                           ;BELMONTE                      ;  ;28568269/0001-98  ;                    ;                                        ;27600 000 ;;      
+2;000133;                                        ;                                        ;                                        ;
+1;000134;ARDOSIA SAO JUDAS TADEU                 ;RUA N.SENHORA DA CONCEICµO,117;SETE LAGOAS -MINAS GERAIS               ;LT - D  BARREIRO DE BAIXO     ;  ;26 180 075 0001-95;                    ;(24)2465-0099                           ;35701-970 ;;SIRIO 
+2;000134;SIRIO BRUM                              ;                                        ;                                        ;
+1;000135;PROFAX METAIS LTDA                      ;AV.JOAO ANTONIO MECATTI,1001  ;JUNDIAI - SAO PAULO                     ;JD.JUNDIAI                    ;  ;58 029 661 0001 20;(11)4585-2400       ;(24)2484-6294 9227-6529                 ;13201-970 ;;ALEXAN
+2;000135;ALEXANDRE LISBOA                        ;PROFAX@PROFAX.COM.BR                    ;                                        ;
+1;000136;PIERINE REVESTIMENTOS CERAMICOS         ;ROD.SEBAST.T.SANTOS,1200 KM 2 ;CRICIUMA - SANTA CATARINA               ;BLOCO B ,LOTEAMENTO PIERINE   ;  ;81 766 156 0001-80;(48)4332787         ;(21)3393-8319  99132068   0800 7022787  ;88810-300 ;;ARLIND
+2;000136;ARLINDO (VENDEDOR)                      ;REVESTIMENTO@PIERINE.COM.BR             ;WWW.PIERINE.COM.BR                      ;
+1;000137;DIGITRANS TRANSP E COM.LTDA             ;ROD. BR 101 -KM 342           ;TUBARAO - SANTA CATARINA                ;SAO CRISTOVAO                 ;  ;00 543 409 0001-54;                    ;                                        ;          ;;      
+2;000137;                                        ;DIGITRAN@TRO.MATRIX.COM.BR              ;                                        ;
+1;000138;LUKSNOVA S.A INDUSTRIA E COMERCIO       ;ESTRADA DOS CASA , 1231       ;SAO BERNANRDO DO CAMPO -SP              ;BAIRRO DOS CASA               ;  ;44 381 747 0001-02;(11)4344 3800       ;(24) 9266 5671                          ;09840-000 ;;LEONAR
+2;000138;LEONARDO                                ;LUKSNOVA@LKSNOVA.COM.BR                 ;                                        ;
+1;000139;LORENZETH S.A IND.BRAS.ELETROMETALURGICA;AV.PRESIDENTE WILSON , 1230   ;SAO PAULO                               ;MOOCA                         ;  ;61 413 282 0001-43;0800-150211         ;(24) 9907-2813                          ;03107-901 ;;MAGNO 
+2;000139;MAGNO                                   ;                                        ;                                        ;
+1;000140;ARGAMIL-PEDREIRA SAO SEBASTIAO LTDA     ;R.SEBASTIAO F.DE ALMEIDA, 458 ;TRES RIOS -RJ                           ;VILA ISABEL                   ;  ;32 289 829 0001-42;(24)2255-6707 GISELE;981163333  988181319                    ;25815-220 ;;VALDIR
+2;000140;VALDIR                                  ;2251-7900  22516179 JOSELITO            ;                                        ;
+1;000141;BRASFIBRAS                              ;RUA B, 120                    ;VOLTA REDONDA                           ;BELMONTE                      ;  ;04 373 813 0001-88;(24)3350 6733       ;(24) 99549250                           ;27200-000 ;;ROGERI
+2;000141;ROGERIO                                 ;                                        ;                                        ;
+1;000142;DISTRIBUIDORA MAF LTDA                  ;RUA MARIO FONTOURA, 55        ;PONTE NOVA-MG                           ;CENTRO                        ;  ;02 244 319 0001 13;(31) 3817 2936      ;                                        ;35430-032 ;;      
+2;000142;                                        ;                                        ;                                        ;
+1;000143;FUJIOKA SINE FOTO SOM LTDA              ;RUA PORTO NACIONAL,265        ;GOIANIA - GO                            ;JARDIM GUANAC                 ;  ;01006713 0049 -09 ;0800-7273000        ;                                        ;74675-690 ;;      
+2;000143;                                        ;                                        ;WWW.FUJIOKA.COM.BR                      ;
+1;000144;DALLAS IND.E COM.DE CALCADOS LTDA       ;RUA SERGIPE,10-POLO INDUSTRIAL;GUAXUPE - MG                            ;                              ;  ;03.262.002/0001-47;(35)35516157        ;                                        ;37800000  ;;      
+2;000144;                                        ;DALLAS@UAINET.COM.BR                    ;                                        ;
+1;000145;EMQUARE REP.E COM. LTDA                 ;AV GETULIO DE MOURA , 1100    ;MESQUITA - RIO DE JANEIRO               ;JUSCELINO                     ;  ;00 104 579 0001-32;(21) 2796-4064 5537 ;(24)992141605                           ;26221-040 ;;FABINH
+2;000145;FABINHO                                 ;                                        ;                                        ;
+1;000146;G.E.MADEIRAS INDUSTRIA E COMERCIO LTDA  ;ESTRADA JUSSARA ,SN           ;VERA - MATO GROSSO                      ;                              ;  ;02 872 477 0001-92;(66)583-1227        ;9814-8324                               ;78880-000 ;;MARCEL
+2;000146;MARCELO                                 ;                                        ;                                        ;
+1;000147;PROLUX IND.E COM.LTDA                   ;RODOVIA AMARAL PEIXOTO,SN KM6 ;SAO GONCALO-RIO DE JANEIRO              ;PARTE-TRIBOBO                 ;  ;05 031 023 0001-87;(21)3711-4056       ;9814-8131  2442-2143                    ;24753-560 ;;BROSSA
+2;000147;BROSSATO                                ;                                        ;                                        ;
+1;000148;DURALEVI IND. E COM. LTDA-ME            ;RUA SAO LUIZ, 01              ;CARIACICA- ESP.SANTO                    ;JARDIM CAMPO GRANDE           ;  ;00 814 578 0001-81;(27)3343-9329       ;9257-9714 (24)2251-0755                 ;29145-330 ;;JAMIL 
+2;000148;JAMIL (                                 ;                                        ;WWW.JAMIL@.COM.BR                       ;
+1;000149;MARCELO MADEIRAS-J.L.BELA VISTA MAD.LTDA;R. ADOLFO CARDOSO, 27         ;SEROPEDICA-RJ                           ;CAMPO LIMPO -                 ;  ;04 184 505 0001-04;(21)2681-3474       ;TELEFAX (24)2252-5181  9914-5715        ;23890-000 ;;BAIAO 
+2;000149;BAIAO                                   ;                                        ;                                        ;
+1;000150;H.F.TECIDOS LTDA                        ;RUA CENTRALINA , 180          ;DIVINOPOLIS-MG                          ;BOM PASTOR                    ;  ;03 997 409 0001-12;(37)3213-1800       ;                                        ;35500-147 ;;      
+2;000150;                                        ;                                        ;                                        ;
+1;000151;POLYFIT INDUSTRIA E COMERCIO LTDA       ;AVENIDA RUI BARBOSA,3329      ;SAO JOSE DOS PINHAIS-PARANA             ;GUATUPE                       ;  ;81 067 860 0001-44;(41)382-4488        ;(24)9267-8203 2442-9080                 ;83055-320 ;;GILBER
+2;000151;GILBERTO DINELLI                        ;                                        ;                                        ;
+1;000152;DINAMO DISTIBUIDORA DE PETROLEO S.A     ;AV.PRES.ANTONIO CARLOS,600    ;DUQUE DE CAXIAS-RJ                      ;CAMPOS ELISIOS                ;  ;02 029 748 0003-04;(21)2676-3344       ;                                        ;25210-000 ;;PEDRO 
+2;000152;PEDRO AUGUSTO                           ;                                        ;                                        ;
+1;000153;TECNOCAL- INDUSTRIA E COMERCIO LTDA     ;ROD. BR 393, 45646            ;BARRA DO PIRAI                          ;                              ;  ;31 226 301 0001-00;(24)2443-2896 2889  ;                                        ;27101-970 ;;      
+2;000153;                                        ;                                        ;                                        ;
+1;000154;NUTRIPLAN IND.E COMERCIO LTDA           ;AV MISSISSIPI, 93-A           ;NOVA LIMA - MG                          ;JARDIM CANADA                 ;  ;78 575 511 0004-71;(31)3541-8889       ;(32) 9982-5908                          ;34000-000 ;;MATEUS
+2;000154;MATEUS (FABIANO)                        ;                                        ;                                        ;
+1;000155;KALUA IND.DE ROUPAS JEANS LTDA          ;PRACA DOUTOR CASTELLOES,75    ;MERC”S-MINAS GERAIS                     ;CENTRO                        ;  ;06 227 782 0001-82;(32)3337-1409       ;2471-2857                               ;36190-000 ;;VANEI 
+2;000155;VANEI                                   ;KALUAJEANS@LIGBR.COM.BR                 ;                                        ;
+1;000156;RONALDO PIPAS                           ;RUA 1044, 32                  ;VOLTA REDONDA-RJ                        ;VOLTA GRANDE -                ;  ;                  ;3345-9313 9812-3442 ;                                        ;          ;;      
+2;000156;                                        ;                                        ;                                        ;
+1;000157;CBL- COMERCIAL BARTOLOMEU LTDA-EPP      ;AV SANTA CRUZ,53              ;PONTE NOVA -MINAS GERAIS                ;CENTRO                        ;  ;66 479 783 0001-46;(31)3817-2080       ;                                        ;35430-031 ;;TITO  
+2;000157;TITO                                    ;CBLATACADO@IG.COM.BR                    ;                                        ;
+1;000158;MATSAN DISTRIBUIDORA-                   ;AV.INDEPENDENCIA, 2449        ;JUIZ DE FORA-MINAS GERAIS               ;SAO MATEUS                    ;  ;05 563 022 0001-83;(32)3215-4507       ;(32)3218-4392                           ;36025-290 ;;FABIAN
+2;000158;FABIANO                                 ;MATSAN@IBEST.COM.BR                     ;                                        ;
+1;000159;HM MASTER- IND.COM.DE PLAST.MENDES LTDA ;RUA CARMEM LOPES COSTA, 352   ;MENDES - RJ                             ;INDEPENDENCIA                 ;  ;04 708 994 0001-56;(24)2465 5792       ;                                        ;26700-000 ;;BROSSA
+2;000159;BROSSATO                                ;HM.CONDUITES@UOL.COM.BR                 ;                                        ;
+1;000160;RAVEL-COMERCIAL E DISTRIBUIDORA LTDA    ;AV. NOSSA SENH.DAS GRACAS,1218;SAO JOAO DE MERITI-RIO DE JANEIRO       ;CENTRO                        ;  ;02 037 933 0001-89;2757-1021 - 1022    ;99064092                                ;25510-240 ;;SERGIO
+2;000160;SERGIO BRUM                             ;                                        ;                                        ;
+1;000161;BAIAO MADEIRAS                          ;                              ;                                        ;                              ;  ;                  ;                    ;(24)2252-5481  9914-5715                ;          ;;BAIAO 
+2;000161;BAIAO                                   ;                                        ;                                        ;
+1;000162;ELETRO G DISTR.DE MAT.ELETR.E CONST.LTDA;R.ENG.WALCREUSES MEIRELES,288 ;TRES RIOS                               ;PURYS                         ;  ;03.210.017/0001-61;2252-2351 9969-9685 ;8139-1205                               ;25808-100 ;;FABIAN
+2;000162;FABIANO                                 ;ELETROG@UOL.COM.BR                      ;                                        ;
+1;000163;CERAMICA RE LTDA                        ;RUA GOVERN.PEDRO TOLEDO,1989  ;LARANJAL PAULISTA-SP                    ;BAIRRO DA PONTE               ;  ;57 958 175 0001-23;(15)32831898        ;24650099                                ;185500-000;;SIRIO 
+2;000163;SIRIO BRUM                              ;                                        ;                                        ;
+1;000164;ARDOSIA CASTRO-JOAO LUIZ DE CASTRO      ;RUA RIO PARDO,308             ;MARAVILHAS- MINAS GERAIS                ;BAIRRO DA ESTIVA              ;  ;42 806 411 0001-05;(37)3272-1600       ;(24)9225-2779                           ;35660-000 ;;AGNALD
+2;000164;AGNALDO(BAIANO)                         ;                                        ;                                        ;
+1;000165;FORNECEDORA AGNUS FERRAGENS LTDA        ;ESTRADA AMARAL PEIXOTO,3670   ;NITEROI -RJ                             ;SANTA BARBARA                 ;  ;73 549 313 0001-77;2627 7888           ;9906-4092                               ;24141-330 ;;SERGIO
+2;000165;SERGIO BRUM                             ;                                        ;                                        ;
+1;000166;CEPISA-PISOS REVEST.CERAMICOS LTDA      ;ESTR.MUNIC.ACESSO IGUATEMI,SN ;BARRA BONITA -SAO PAULO                 ;CAMPOS SALES                  ;  ;03 093 516 0001-16;(14)3641-4475       ;(24)2485-9366    2437-4994 (21)96398192 ;17340-000 ;;OLIVEI
+2;000166;OLIVEIRA                                ;                                        ;                                        ;
+1;000167;DEDETIZADORA BAT E LIMPE DE M.PEREIRA   ;RUA CONDE PEREIRA CARNEIRO,574;MIGUEL PEREIRA-RJ                       ;SµO JUDAS TADEU               ;  ;                  ;9944 6662 92240629  ;92922198 98140852                       ;          ;;SERGIO
+2;000167;SERGIO                                  ;                                        ;                                        ;
+1;000168;COMERCIO DE UTIL.DOMEST.VALE DO AÄO LTDA;ROD.BR 381,3472               ;TIMOTEO -MG                             ;CACHOEIRA DO VALE             ;  ;07 457 459/0001-68;                    ;                                        ;35184-0000;;PATRIC
+2;000168;PATRICIO                                ;                                        ;                                        ;
+1;000169;LUA DE PAPEL ARTIGOS FESTAS LTDA        ;R.JOSE LAVAGUIAL BIOSCA,80    ;SAO FIDELES -RJ                         ;MONTESE                       ;  ;39 230 594 0001-62;(22)2758-4900       ;                                        ;          ;;LUIS C
+2;000169;LUIS CARLOS                             ;                                        ;                                        ;
+1;000170;CERAMICA ALFA LTDA                      ;SITIO CASTELO ,S/N            ;PARAIBA DO SUL                          ;                              ;  ;06 233 591 0001-23;24 22638066 22631394;                                        ;25850-000 ;;ALEXAN
+2;000170;ALEXANDRE                               ;                                        ;                                        ;
+1;000171;TOPMART LOGISTICA E DISTRIBUIDORA LTDA  ;ROD.PRESIDENTE DUTRA S/N KM268;BARRA MANSA-RJ                          ;SAO LUIZ                      ;  ;04 858 234/0001-25;24-33238404         ;9292- 3529                              ;27332-000 ;;JOSE C
+2;000171;JOSE CARLOS                             ;VENDAS@TOPMART.COM.BR                   ;WWW.TOPMART.COM.BR                      ;
+1;000172;POLIFIBRAS IND.COM.PROD.POLIETILENO LTDA;AV. NARAIN SINGH, 1020        ;GUARULHOS-SAO PAULO                     ;JD ARAC÷LIA                   ;  ;07 721 158 0001-08;(11)6484-3411       ;(24)8116-6232  22510755                 ;07225-000 ;;JAMIL 
+2;000172;JAMIL                                   ;                                        ;WWW.POLIFIBRAS.COM.BR                   ;
+1;000173;GRANITEKS TEXTURAS E ARGAMASSAS         ;ROD.BR 267, KM 65             ;BICAS- MINAS GERAIS                     ;                              ;  ;                  ;(32)3271-1143  1333 ;24 92614097  32-99699352 32-3271-2131   ;36600-000 ;;CARLOS
+2;000173;CARLOS HENRIQUE                         ;                                        ;                                        ;
+1;000174;FUZIL-SBARDELLINI E CIA LTDA            ;RUA SANTA CATARINA,94         ;VARGEM GRANDE DO SUL-SAO PAULO          ;CENTRO -                      ;  ;72 861 222 0001-00;(19)3641-5900       ;                                        ;13880-000 ;;      
+2;000174;                                        ;FUZIL@FUZIL.COM.BR                      ;WWW.FUZIL.COM.BR                        ;
+1;000175;FORTLINE ARTEFATOS DO BRASIL LTDA       ;RUA DOM PEDRO II, S/N QUADRA D;CARIACICA- E.SANTO                      ;NOVA VALVERDE                 ;  ;39 620 208/0001-49;(27)3386-2828       ;(24)8116-6332                           ;29151-000 ;;JAMIL(
+2;000175;JAMIL(                                  ;                                        ;                                        ;
+1;000176;ESCADAS RIO MINAS                       ;AV.ANT.PIRES CORDEIRO,LOTE3 Q1;ITABORAI-RJ                             ;JARDIM DAS ACµCIAS            ;  ;05 890 773/0001-04;(21)2623-6527       ;(24) 2251-0755 81166232                 ;24800-000 ;;JAMIL 
+2;000176;JAMIL                                   ;                                        ;                                        ;
+1;000177;IMPORT TOTAL- CELIA REGINA COELHO       ;R.FRANC.ABRANTES FORTUNA,430  ;PONTE NOVA-MINAS GERAIS                 ;SANTO ANTONIO I               ;  ;03 089 659/0001-54;                    ;(31)8772-7968                           ;35430-323 ;;JOSE M
+2;000177;JOSE MARIO                              ;                                        ;                                        ;
+1;000178;NORTE SUL CALCADOS LTDA                 ;RUA PROF. JOSE BARATA,414     ;JUIZ DE FORA -MG                        ;SANTOS DUMONT                 ;  ;07 372 908 0001-75;(32)3215 9943       ;                                        ;36038-100 ;;      
+2;000178;                                        ;                                        ;                                        ;
+1;000179;PEDRAS MAIA                             ;                              ;                                        ;                              ;  ;                  ;                    ;(24)24716734  CEL 9212-1661             ;          ;;MIGUEL
+2;000179;MIGUEL                                  ;                                        ;                                        ;
+1;000180;POSTOS MEGA                             ;RUA SOUZA BARROS, 636         ;RIO DE JANEIRO                          ;ENGENHO NOVO                  ;  ;07 340 605 0003-32;                    ;                                        ;20961-150 ;;PEDRO 
+2;000180;PEDRO AUGUSTO                           ;                                        ;                                        ;
+1;000181;RAVEL COM. E DISTRIBUIDORA LTDA         ;AV. N.SENHORA DAS GRACAS, 1218;RIO DE JANEIRO                          ;SAO JOAO MERITI               ;  ;02 037 933 0001-89;2757-1021  1022     ;                                        ;25510-240 ;;SERGIO
+2;000181;SERGIO BRUM                             ;                                        ;                                        ;
+1;000182;CADIMETAL FERRAGENS LTDA                ;RUA DOS COROADOS, 466         ;VOLTA REDONDA                           ;ATERRADO                      ;  ;07 643 916 0001-09;3338-5965           ;                                        ;27213-050 ;;SERGIO
+2;000182;SERGIO BRUM                             ;                                        ;                                        ;
+1;000183;CAMAR DISTRIBUIDORA LTDA                ;                              ;                                        ;                              ;  ;                  ;                    ;                                        ;          ;;MARCIO
+2;000183;MARCIO AMORIM                           ;                                        ;                                        ;
+1;000184;CENSI IND.E COM.DE REPAROS LTDA         ;RUA BAHIA,4253                ;BLUMENAU                                ;SALTO WEISSBACH               ;  ;02308456-0001-49  ;0800-7030060        ;(24)33239705                            ;89032-000 ;;ALBERT
+2;000184;ALBERTO                                 ;CENSI@CENSI.COM.BR                      ;                                        ;
+1;000185;ORGANIZACAO REDE ELETRICA ITAUNA LTDA]  ;ESTRADA DO TRINDADE, 755      ;SAO GONCALO-RJ                          ;ITAUNA                        ;  ;                  ;(21)2602-8000       ;2465-6904  9823-0557                    ;24474-000 ;;ORLAND
+2;000185;ORLANDO                                 ;SAC 21-2702-4575                        ;                                        ;
+1;000186;SERRANA COUNTRY                         ;                              ;                                        ;                              ;  ;                  ;                    ;                                        ;          ;;RAILSO
+2;000186;RAILSON                                 ;                                        ;                                        ;
+1;000187;INCASA-IND.DE PISOS E REVESTIMENTOS LTDA;ROD.D.GABRIEL PAUL.BUENO S/N  ;JUNDIAI-SAO PAULO                       ;DISTRITO INDUSTRIAL           ;  ;06196325/0001-78  ;(11) 4582-2245      ;(21)9623-6582                           ;13212-240 ;;MIGUEL
+2;000187;MIGUEL                                  ;                                        ;                                        ;
+1;000188;ICATUBOS IND.E COM.DE PLASTICOS LTDA    ;RUA JOAO MEDEIROS DA COSTA,155;LONDRINA-PR                             ;PARQUE INDUSTRIAL CACIQUE     ;  ;81481657/0001-10  ;(43) 3338-1995      ;9915-0170                               ;86072-420 ;;CELSO 
+2;000188;CELSO BRUM                              ;ICATUBOS@ICATUBOS.COM.BR                ;                                        ;
+1;000189;INTEGRAL S.A INDUSTRIA E COMERCIO       ;RUA DR. CANDIDO MOJOLA, 707   ;JUNDIAI-SP                              ;JARDIM BUFALO-                ;  ;02 908 115/0001-04;(11)4527-3088       ;(21) 2683-3446 81578216                 ;13214-220 ;;MAICON
+2;000189;MAICON REZENDE                          ;                                        ;                                        ;
+1;000190;DIME DISTRIBUIDORA COM.E IMPORTACAO LTDA;RUA FRANCISCO REAL, 1085 LOJAD;RIO DE JANEIRO                          ;PADRE MIGUEL                  ;  ;04 286 673/0001-00;(21)35412400        ;                                        ;21810-040 ;;LUCIAN
+2;000190;LUCIANO 998664412                       ;VENDAS02@DIMEDISTRIBUIDORA.COM.BR       ;WWW.DIMEDISTRIBUIDORA.COM.BR            ;
+1;000191;CONFECÄOES ESTEVES LTDA                 ;R.JOAQUIM TEIXEIRA BARROS,699 ;S«O PEDRO-SP                            ;CENTRO                        ;  ;44 819 845/0001-89;(19) 3481-1220      ;(32)99676391 32355528                   ;13520-000 ;;JOSE D
+2;000191;JOSE DO CARMO                           ;CONFECCOESESTEVES@UOL.COM.BR            ;CONFECCOESESTEVES.COM.BR                ;
+1;000192;FORTLEV NORDESTE IND. E COM.LTDA        ;RUA H, SN QUADRA H, LOTES05A16;CAMAÄARI-BA                             ;POLOPLAST-PONTO CERTO         ;  ;03 970 326/0001-30;(71)2201-3990 BAHIA ;                                        ;42801-170 ;;AROLDO
+2;000192;AROLDO (24)9268-6173                    ;FOTLEV@FORTLEV.COM.BR                   ;WWW.FORTLEV.COM.BR                      ;
+1;000193;TECIDOS JANON LTDA                      ;RUA SETE DE SETEMBRO, 135     ;IGARATINGA-MG                           ;CENTRO                        ;  ;41.854.274/0001-25;(37) 3246-1005      ;(37) 99915280 84101584                  ;35695-000 ;;GERALD
+2;000193;GERALDINHO                              ;                                        ;                                        ;
+1;000194;TINABRAS INDUSTRIA E COMERCIO LTDA      ;AV.PEDRO CELEST.PENTEADO,501  ;CAJAMAR -S«O PAULO                      ;JORDANêZIA-                   ;  ;03.594.511/0001-77;(11)4447-4411       ;                                        ;07750-000 ;;CLAUDI
+2;000194;CLAUDIO                                 ;                                        ;                                        ;
+1;000195;BERTON IND.DE M‡VEIS LTDA               ;ROD.BR 280 S/N KM 53          ;GUARAMIRIM-SANTA CATARINA               ;AVA÷                          ;  ;04.134.860/0001-79;(47)3373-0350       ;(24) 8117-9718 3347-8255                ;89270-000 ;;JUSSAR
+2;000195;JUSSARA REZENDE                         ;BERTONMOVEIS@TERRA.COM.BR               ;WWW.BERTON.COM.BR                       ;
+1;000196;TALITA IND E COM DE METAIS LTDA         ;RUA APAR.SALVIANO SILVA,2474  ;LOANDA-PR                               ;PARQUE INDUSTRIAL             ;  ;03 400 406/0001-50;(44) 3425-2623      ;                                        ;87900-000 ;;WAGNER
+2;000196;WAGNER                                  ;TALITA@TALITAMETAIS.COM.BR              ;WWW.TALITAMETAIS.COM.BR                 ;
+1;000197;ACTUAL IMPROMEL                         ;ROD.BR 101, S/N KM 264        ;RIO BONITO-RJ                           ;PRAÄA CRUZEIRO                ;  ;07.487.677/0002-36;                    ;                                        ;28800-000 ;;MARLON
+2;000197;MARLON (JOSE LUIZ THULER)               ;MARLON                                  ;                                        ;
+1;000198;DECORALITA IND.E COMERCIO LTDA          ;AV.PERIMETRAL,1800 LT.A       ;BELO HORIZONTE-MG                       ;CONJ.HABIT.VALE DO JATOBA     ;  ;17 222 720/0001-02;(31)3329-1333       ;(31)9216-9173 0800-7031333              ;30664-250 ;;LEANDR
+2;000198;LEANDRO                                 ;DECORALITA@DECORALITA.COM.BR            ;WWW.DECORALITA.COM.BR                   ;
+1;000199;HIPERFLEX IND.DE TINTAS E REVEST.LTDA   ;RUA DINAH SILVA, 184/208 QD11 ;CAMPOS DOS GOYTACAZES0-RJ               ;LT 3 PARQUE CODIM             ;  ;07 073 881/0001-10;                    ;                                        ;28000-000 ;;NIL   
+2;000199;NIL                                     ;ARGALIT@ARGALIT.COM.BR                  ;WWW.ARGALIT.COM.BR                      ;
+1;000200;CRB MALHAS LTDA                         ;RUA JOSE CALIL AHOUGI, 720    ;JUIZ DE FORA-MG                         ;CENTRO                        ;  ;26 103 077/0001-80;(32)3212-1163       ;                                        ;36060-080 ;;      
+2;000200;                                        ;                                        ;                                        ;
+1;000201;CLASSINOX-SILVIA MACHADO SANTOS         ;EMILIO ANDRIELLI N¯115        ;SAO PAULO                               ;BARRA FUNDA-LEME              ;  ;11.339.689/0001-08;(19)35737754        ;(21)9628-9947                           ;13617-100 ;;WANUSA
+2;000201;WANUSA                                  ;VENDAS@CLASSINOX.COM.BR                 ;                                        ;
+1;000202;ASES GUIAN DISTRIBUIDORA                ;                              ;                                        ;                              ;  ;                  ;24-33814282 33595285;HAROLDO                                 ;          ;;991134
+2;000202;99113423                                ;                                        ;                                        ;
+1;000203;HENAMAR IND.E COM.DE TINTAS LTDA        ;ROD.PRES.DUTRA SN KM197 Q3    ;QUEIMADOS - RIO DE JANEIRO              ;DISTR.INDUSTRIAL              ;  ;03 696 074/0003-64;21-26665150         ;(21)93263007 25939213 22249284          ;26300-000 ;;PAULO 
+2;000203;PAULO FERREIRA                          ;PFSILVA44@IG.COM.BR                     ;WWW.TINTASAGUIA.COM                     ;
+1;000204;DISTRIBUIDORA CLAVERY                   ;ESTRADA UNIAO INDUSTRIA, 9096 ;PETROPOLIS-RJ                           ;ITAIPAVA                      ;  ;09 296 436/0001-44;24-22321500         ;                                        ;25730-735 ;;DANIEL
+2;000204;DANIEL - 92345969 81079111              ;                                        ;                                        ;
+1;000205;OLARIA SALDANHA LTDA                    ;                              ;TRES RIOS                               ;                              ;  ;                  ;                    ;8132-9710 2263-1237 81270977            ;          ;;LUIZ  
+2;000205;LUIZ                                    ;                                        ;                                        ;
+1;000206;CERAMICA FORMIGRES LTDA                 ;RODOVIA WASHINGTON LUIZ 164,SN;SANTA GERTRUDES-SP                      ;ZONA RURAL                    ;  ;01 325 023/0001-39;(19)3545-8880 1130  ;(24)81345691  0800-8913623 ESCRITORIO   ;13510-000 ;;GERSON
+2;000206;GERSON (21)7876-6667                    ;FORMIGRES@FORMIGRES.COM.BR              ;                                        ;
+1;000207;TREFILMINAS FIOS E CABOS ELETRICOS LTDA ;AV.OURO,385                   ;UBERABA-MG                              ;GRANDE HORIZONTE              ;  ;02 995 261/0001-14;(34)3315-4484       ;                                        ;38057-130 ;;WAGNER
+2;000207;WAGNER (KING OURO)                      ;TREFILMINAS@NETSITE.COM.BR              ;                                        ;
+1;000208;ESCADAS INTERCLASSES                    ;                              ;                                        ;                              ;  ;                  ;                    ;                                        ;          ;;PAULO 
+2;000208;PAULO                                   ;                                        ;                                        ;
+1;000209;EQUIPE STAR 2000-DIST.PROD.AUTOMOT.LTDA ;R.EUCLIDES DA CUNHA,123C.13/14;DUQUE DE CAXIAS                         ;CENTENµRIO                    ;  ;03 592 595/0001-00;(21)3653-2393       ;(24) 9999-0944                          ;25030-180 ;;ROBERT
+2;000209;ROBERTO                                 ;SILVANARSILVA@GLOBO.COM                 ;                                        ;
+1;000210;ANEX MINERAÄ«O LTDA                     ;ROD.DOS INCOFIDENTES, KM45    ;ITABIRITO-MG                            ;CAIXA POSTAL 98               ;  ;17.617.010/0001-75;(31)3589-8989       ;2471-5291                               ;35450-000 ;;WAGUIN
+2;000210;WAGUINHO                                ;ANEX@ANEX.IND.BR                        ;                                        ;
+1;000211;CSN CIMENTOS S/A                        ;ROD.BR393,LUCIO MEIRA KM5001  ;VOLTA REDONDA                           ;VILA SANTA CECILIA            ;  ;42 564 807 0001-05;0800-2828200        ;0800-2828200  AROLDO :981251754         ;27260-390 ;;RENATA
+2;000211;RENATA (COD=23188) CASA NACIBE 38556    ;                                        ;                                        ;
+1;000212;SATO-INDUSTRIAL E COMERCIAL SATO LTDA   ;RUA SATOPOLIS, 120            ;SUZANO - SAO PAULO                      ;JARDIM SANTA INES             ;  ;05.393.752/0001-83;(11)4749-1566       ;                                        ;08695-20  ;;      
+2;000212;                                        ;                                        ;                                        ;
+1;000213;ELDORADO ARTEFATOS DE ARAME LTDA        ;RUA MARCOS GIARDINI, 292      ;PONTE NOVA - MG                         ;COPACABANA                    ;  ;41.829.029/0001-68;(31)3817-3192       ;(24) 9296-5898                          ;35430-053 ;;EDIMAR
+2;000213;EDIMAR RIBEIRO                          ;ELDORADO@GAIOLASELDORADO.COM.BR         ;WWW.GAIOLASELDORADO.COM.BR              ;
+1;000214;G.DIAS INDUSTRIA DE ALUM.GALLEGO LTDA   ;AV. GILSO SAVATIM, 184        ;TANABI-SAO PAULO                        ;JARDIM BOA VISTA              ;  ;07 439 703/0001-60;(17)3272-3077 4730  ;                                        ;15170-000 ;;      
+2;000214;                                        ;                                        ;                                        ;
+1;000215;HOUSTON- ELETRO DO NORDESTE S/A         ;RUA ONZE DE JUNHO, 1500       ;TERESINA- PIAUI                         ;PROMORAR                      ;  ;04.082.204/0001-70;(86)3131-7600       ;                                        ;64027-395 ;;      
+2;000215;                                        ;                                        ;                                        ;
+1;000216;IMEQUIL-IND.METALURG.QUINTANILHA LTDA   ;ROD.101 KM 269                ;RIO BONITO-RJ                           ;RIO DOS INDIOS                ;  ;29.722.913/0001-00;(21)2734-8668       ;                                        ;28800-000 ;;ALAN P
+2;000216;ALAN PEREIRA                            ;                                        ;                                        ;
+1;000217;INSDUSTRIA E COM.CHURRASQUEIRAS GAUCHA  ;AV.FRANCISCO JOSE FERREIRA,304;LONDRINA-PARANA                         ;VILA YARA                     ;  ;84.899.145/0001-66;(43)3356-3258       ;                                        ;86087-540 ;;VANDO 
+2;000217;VANDO                                   ;                                        ;                                        ;
+1;000218;ESCADAS ITAIPAVA LTDA                   ;RUA DR.BINA CALEMBRE, 421     ;PETROPOLIS                              ;NOGUEIRA                      ;  ;04 532 561 0001-92;(24) 2221-2797      ;                                        ;25730-430 ;;PAULO 
+2;000218;PAULO                                   ;                                        ;                                        ;
+1;000219;FORJARIA LM COM.AGROPECUARIO LTDA       ;PÄA LUIZ GONZAGA, 47          ;SAPUCAIA - RJ                           ;JAMAPARA                      ;  ;10 908 881/0001-05;(32)3461-2030       ;                                        ;25887-000 ;;      
+2;000219;                                        ;                                        ;                                        ;
+1;000220;PEVESUL IND.DE TUB.E CON.LTDA           ;RUA OSWALDO ARANHA, 194       ;LONDRINA - PARANA                       ;CILO 2                        ;  ;79.754.750/0001-09;(43) 33485601       ;                                        ;86067-090 ;;      
+2;000220;                                        ;                                        ;                                        ;
+1;000221;RECOFER IND.E COM.DE FERREGENS LTDA     ;AV. PEDRO I, 4601             ;TAUBATE - SP                            ;JARDIM PAULISTA               ;  ;56 917 891/0001-08;(12)3622-3133       ;                                        ;12091-000 ;;      
+2;000221;                                        ;                                        ;                                        ;
+1;000222;ROTH KISLT IMPORT. DO BRASIL            ;                              ;                                        ;                              ;  ;                  ;(21) 2720-5461      ;                                        ;          ;;ALUISI
+2;000222;ALUISIO RANGEL                          ;                                        ;                                        ;
+1;000223;ALUMINIO ARARENSE LTDA                  ;AVENIDA BRASIL,685            ;ARARAS- S∆O PAULO                       ;MUNICIPIO DE ARARAS           ;  ;44.212.108/0001-13;(19) 3541-1822      ;                                        ;13.601.270;;FERNAN
+2;000223;FERNANDO                                ;                                        ;                                        ;
+1;000224;PONTO DE OURO BAZAR LTDA                ;AV.PRESIDENTE KENNEDY, 956    ;BARRA MANSA                             ;ANO BOM                       ;  ;68.766.054/0001-04;(24)3322-9899       ;                                        ;27.325-150;;      
+2;000224;                                        ;                                        ;                                        ;
+1;000225;CEREAIS BRAMIL LTDA                     ;RUA SANTO ANTONIO,59 FUNDOS   ;TRES RIOS                               ;TRIANGULO                     ;  ;32296378/0039-43  ;24 22516462         ;(24)2251-6462 2251-6457 (FAX)           ;25820080  ;;BARRIO
+2;000225;BARRIOLI (24)992478249 998367258        ;                                        ;                                        ;
+1;000226;DISPROL COLOR DISTRIBUIDORA LTDA        ;CARMEM LOPES COSTA, 535       ;MENDES                                  ;INDEPENDENCIA                 ;  ;11.309.894/0001-12;2465-2342           ;(21)8217-4291 (24)99217-8697 999657352  ;26700-000 ;;FRANCI
+2;000226;FRANCISCO                               ;                                        ;                                        ;
+1;000227;P.S.F.DE OLIVEIRA E CIA LTDA ME         ;ESTRADA VIEIRA CORTEZ, 409    ;PARAIBA DO SUL                          ;LIBERDADE                     ;  ;10.850.679/0001-61;(24)2263-1394       ;8127-0977 2263-1237                     ;25850-000 ;;LUIZ  
+2;000227;LUIZ                                    ;                                        ;                                        ;
+1;000228;SUDESTE ATACADO MAT.CONSTRUÄ«O LTDA     ;RUA ELIAZ TOMAZ, 310          ;SERRA- ES                               ;CARAPINA                      ;  ;03.315.283.0001-59;(27)21240500        ;                                        ;029161-52 ;;SILVAN
+2;000228;SILVANA                                 ;                                        ;                                        ;
+1;000229;JODART PLAST.IND.COM.LTDA EPP           ;RUA 6E, GALPAO II , 06        ;SERRA - ESP. SANTO                      ;CIVIT II                      ;  ;09497854/0001-08  ;(27)3205-6700       ;                                        ;29168-065 ;;      
+2;000229;                                        ;                                        ;                                        ;
+1;000230;CELINA MARIA RIBEIRO IBRAHIM -ME        ;R.ANTONIO FREDERICO OZANAN,459;PONTE NOVA-MG                           ;CENTRO                        ;  ;08836492/0001-61  ;(31)8302-5234       ;                                        ;35430-029 ;;      
+2;000230;                                        ;                                        ;                                        ;
+1;000231;CHURRASQUEIRAS VALENÄA E TRANSP.LTDA    ;ZILMA SOARES DE SOUZA, 815    ;VALENÄA                                 ;VARGINHA                      ;  ;10949424000150    ;24534490            ;                                        ;27600-000 ;;CLAUDI
+2;000231;CLAUDIA 9249-4814 (2453-4490 ESCRIT)    ;                                        ;                                        ;
+1;000232;SCHNEIDER FRANKLIN ELET.IND.MOTOBOMBA SA;R.ALMIRANTE BARROSO, 716      ;JOINVILE-SC                             ;AMERICA                       ;  ;84.685.106/0001-66;(47)3461-2966       ;SUP.TECNICO 0800-6480200                ;89204-200 ;;EDUARD
+2;000232;EDUARDO (21)7881-0897 9941-5145         ;                                        ;WWW.SCHNEIDER.IND.BR                    ;
+1;000233;CORR PLASTIK INDUSTRIAL LTDA            ;ESTR.FAZENDA CACHOERIA. 571   ;CABREUVA - SAO PAULO                    ;JACARê                        ;  ;67 731 091/0001-06;(11) 45291500       ;                                        ;13318-000 ;;VAGNER
+2;000233;VAGNER                                  ;                                        ;                                        ;
+1;000234;CIA B FABR E COM DE CONFECCIONADOS LTDA ;AV DR OTAVIO SOARES,379,2ANDAR;PONTE NOVA/MG                           ;PALMEIRAS                     ;  ;07542514/0001-18  ;(32)38174640        ;(31)38174640  88454640                  ;35.430-229;;RONALD
+2;000234;RONALDO                                 ;RSCIAB@OI.COM.BR                        ;                                        ;
+1;000235;FIBROMAR-FIBROMARMORE IND.COM.LTDA      ;RUA JOAO PINTO DA FONSECA,45  ;PINHEIRAL                               ;PINHEIRAL                     ;  ;86837846/0001-04  ;(24)33562436        ;24-24719165 99226-6820                  ;          ;;AURELI
+2;000235;AURELIO                                 ;                                        ;                                        ;
+1;000236;VALE NORTE INDUSTRIAL MERCANTIL         ;RUA TRAUGOT MULLER, 785       ;PRESIDENTE GETULIO                      ;PINHEIRO                      ;  ;02682551/0001-08  ;(47)33522618        ;                                        ;89150000  ;;      
+2;000236;                                        ;WWW.VALENORTE.COM.BR                    ;                                        ;
+1;000237;SALETE DE PAULA LEITE                   ;PRAÄA BELFORT DE CARVALHO,25  ;MINAS GERAIS                            ;ANDRELANDIA CENTRO            ;  ;09.351.187/0001-42;(35)84130206        ;                                        ;37.300-000;;LUIS A
+2;000237;LUIS ANTONIO                            ;                                        ;                                        ;
+1;000238;SOCIEDADE INDUSTRIAL FLUMINENSE LTDA    ;AV.IRM«OS SPINO, 134          ;PARAIBA DO SUL                          ;CENTRO                        ;  ;31.076.441/0001-09;(24)22631100        ;                                        ;22631-100 ;;LUIZ  
+2;000238;LUIZ                                    ;                                        ;                                        ;
+1;000239;VIQUA INDUSTRIA DE PLASTICO             ;RUA PARATI,16                 ;JOINVILLE-SC                            ;NOVA BRASILIA                 ;  ;00.477.761/0001-39;4730259999          ;JUNIOR (24)999977431                    ;89213-200 ;;      
+2;000239;                                        ;DHROGERIO@UOL.COM.BR                    ;                                        ;
+1;000240;AMANCO-MEXICHEM BRASIL IND.TRANS.PLA LTD;AVENIDA DA AMIZADE 1700       ;SUMARê-SAO PAULO                        ;VILA CARLOTA                  ;  ;58.514.928/0033-51;4734617000          ;                                        ;13175-490 ;;      
+2;000240;                                        ;                                        ;                                        ;
+1;000241;CERAMICA SAN MARINO LTDA                ;RUA B,250                     ;SAO PAULO                               ;PORTO FERREIRA                ;  ;61.012.746/0002-90;(19)36739100        ;                                        ;13660-000 ;;      
+2;000241;                                        ;                                        ;                                        ;
+1;000242;PETROMAXX-IX COM DIST DE T LUB LTDA     ;AVEN.ALMIRANTE ADALB.NUNES,422;VOLTA REDONDA/RJ                        ;BELMONTE                      ;  ;11.317.347/0001-89;(24)3336 4336       ;                                        ;27274-200 ;;      
+2;000242;                                        ;                                        ;                                        ;
+1;000243;MPB MARMORARIA PEDRA BONITA LTDA        ;RUA PROJETADA ZONA RURAL N¯00 ;MARATAIZES - ES                         ;JACARANDA                     ;  ;00.647.649/0001-07;(28)35192012        ;                                        ;29345-000 ;;      
+2;000243;                                        ;MARMORARIA@MPBPEDRABONITA.COM           ;                                        ;
+1;000244;MASSA FORTE COMERCIO E SERVIÄO          ;RUA ARLINDA MONJARDIM,099     ;ESPIRITO SANTO                          ;CHACARA PARREIRAL-SERRA       ;  ;04.884.349/0001-94;3042 9677           ;                                        ;29164-004 ;;      
+2;000244;                                        ;                                        ;                                        ;
+1;000245;ESQUADRIAS PRINCESA LTDA                ;RUA ERNESTINO BRAATZ,50       ;BELA VISTA,SC                           ;IBIRAMA                       ;  ;03.656.335/0001-50;47-33572016         ;                                        ;89140000  ;;      
+2;000245;                                        ;                                        ;                                        ;
+1;000246;BOTAFOGO-OURENSE BRASIL IND.ART.MET LTDA;ESTR.RJ 127 SN LT08           ;PARACAMBI                               ;LT INDUSTRIAL -LAGES          ;  ;10.277.146-0001-32;21 40638191         ;                                        ;26600-000 ;;      
+2;000246;                                        ;                                        ;                                        ;
+1;000247;CANA« INDUSTRIA DE TUBOS LTDA           ;AVENIDA MANOEL DE CUSTODIA,682;ITAUNA,MG                               ;BELA VISTA                    ;  ;04.983.081/0001-48;37-32429992         ;                                        ;35680403  ;;      
+2;000247;                                        ;                                        ;                                        ;
+1;000248;ATACADO NOVA AMIZADE ARTIGOS            ;RUA LUIZ DE CAMOES N¯104      ;RIP DE JANEIRO                          ;CENTEO                        ;  ;10.347.138/0001-15;(24)81467360        ;                                        ;20051-020 ;;      
+2;000248;                                        ;                                        ;                                        ;
+1;000249;JUAREZ CORREA                           ;PÄA CAP.LUIZ DOS SANTOS, 279  ;PARAIBA DO SUL                          ;WERNECK                       ;  ;11.713.729/0001-21;24 22661419 81451367;24-22661419  81451367                   ;25860-000 ;;JUAREZ
+2;000249;JUAREZ                                  ;                                        ;                                        ;
+1;000250;PORTAL DISTRIBUIDORA                    ;AV.PRESIDENTE KENNEDY,        ;BARRA MANSA                             ;                              ;  ;12.153.529/0001-24;24-33229894         ;                                        ;          ;;      
+2;000250;                                        ;                                        ;                                        ;
+1;000251;QUARTZOLIT-WEBER SAINT GOBAIN           ;RUA E,SN DISTRITO IND.QUEIMADO;RIO DE JANEIRO                          ;QUEIMADOS                     ;  ;61064838003663    ;21-21236800         ;(21)38818683 38818684 ESCRITORIO CINTIA ;26373-280 ;;ARNALD
+2;000251;ARNALDO -21 98276-2880                  ;AMOURAREP@UOL.COM.BR                    ;                                        ;
+1;000252;COMERCIAL CLAUFER LTDA ME               ;RUA TIRADENTES, 55            ;CLAUDIO - MG                            ;PQ IND.MARCELINO CORRADI      ;  ;10.481.491/0001-57;(37) 3381-1348      ;(24) 33461284 78114145                  ;35530-000 ;;LêO   
+2;000252;LêO                                     ;                                        ;                                        ;
+1;000253;CRV METALURGICA LTDA                    ;AV. JOAO PAZZOTO,1360         ;NEVES PAULISTA/SP                       ;DIST.INDUSTRIAL               ;  ;01216959000121    ;1732719030          ;                                        ;15120-000 ;;      
+2;000253;                                        ;WWW.CRVMETALURGICA.COM.BR               ;                                        ;
+1;000254;NATRIELLI QUIMICA                       ;RUA GUANABARA,216             ;SANTANA DE PARNAIBA-SP                  ;FAZENDINHA                    ;  ;58812108/0001-69  ;1141568888          ;                                        ;06529220  ;;      
+2;000254;                                        ;                                        ;                                        ;
+1;000255;USITRAME-USINA.TRAT.MAD.EUCALIPTO LTDA  ;ESTRADA BARRA DO PIRAI,KM4,5  ;BARRA DO PIRAI,RJ                       ;BARRA DO PIRAI                ;  ;10.652.942/0001-08;24 92181922         ;                                        ;27115140  ;;ROMERO
+2;000255;ROMERO (9218-1922)                      ;                                        ;                                        ;
+1;000256;LARIFER COM.DE FERRO E AÄO LTDA ME      ;AV.BAHIA, 150                 ;VOLTA REDONDA-RJ                        ;BELMONTE                      ;  ;02.459.748/0001-82;24-33506932         ;MANOEL = 24-992298518 999574412         ;27274-010 ;;RICARD
+2;000256;RICARDO GENT.24-33265019 81025159       ;RICARDO.VIANNA.VIANNA@GMAIL.COM         ;                                        ;
+1;000257;DAG DISTRIBUIDORA LTDA                  ;RUA AGENOR ALVES DE ARAUJO,574;GUAXUPE/MG                              ;CENTRO                        ;  ;71.394.654/000195 ;3535512501          ;24 88549797 99573731                    ;37800-000 ;;IVAN  
+2;000257;IVAN                                    ;                                        ;                                        ;
+1;000258;ALUMASA.IND.DE PLASTICO E ALUMINIO LTDA ;ROD.SC445KM2,5ROD GENESIO MAZO;                                        ;SAO PEDRO                     ;  ;80718984/0001-80  ;483441-2200         ;                                        ;88840-000 ;;      
+2;000258;                                        ;                                        ;                                        ;
+1;000259;DUDA DAMEWER IND ART.P/CONST CIVIL LTDA ;ANTONIO MARIO DE AZEVEDO,6103A;NOVA FRIBURGO-RJ                        ;CORREGO DANTAS                ;  ;07.049.980/0001-66;22 2522-9919 JULIANA;7834-8337 7814-5651                     ;28630-310 ;;JOSE L
+2;000259;JOSE LUIZ THULER                        ;TOMAZ 22 25229919 TELEVENDAS            ;                                        ;
+1;000260;MAVI TRANSCERAMICA C.M CERAMICO LTDA    ;RODOVIA BR 493 RJ             ;RIO DE JANEIRO                          ;GEBARA/ITAMBI,ITABORAI        ;  ;30870778/0001-12  ;2124384115          ;                                        ;24868240  ;;      
+2;000260;                                        ;                                        ;                                        ;
+1;000261;ECOPLAX IND.E COM.ARTEF.DER.PLAST.LTDA  ;ROD BR 153 KM 1284 QD 75A LT01;APARECIDA DE GOIANA                     ;VILA BRASILIA                 ;  ;06271056/0001-67  ;(62)30939333        ; 21 99174-5020 31817920 982908121(TIM)  ;74911-410 ;;ADRIAN
+2;000261;ADRIANA PACHECO                         ;ATPVENDAS@GMAIL.COM                     ;                                        ;
+1;000262;JJH INDUSTRIA CALCADOS LTDA             ;RUA PROF.SEBASTIAO REZENDE,137;GUAXUPE - MG                            ;PARQUE DA FIGUEIRA            ;  ;11.471.271/0001-54;(35)35510505        ;                                        ;37800-000 ;;REGIS 
+2;000262;REGIS (35)3551-2942                     ;                                        ;                                        ;
+1;000263;PREMOL-PRE MOLDADOS VASS.IND E COM.LTDA ;RODOVIA BR 393 LUCIO MEIRA, SN;VASSOURAS                               ;SANTA AMALIA                  ;  ;11.464.928/0001-07;24712342            ;                                        ;27700-000 ;;MARISA
+2;000263;MARISA - CINTIA                         ;                                        ;                                        ;
+1;000264;METAIS PEROLA                           ;LOANDA                        ;PARANA                                  ;                              ;  ;08.437.038/0001-38;44 3425-1658        ;                                        ;          ;;      
+2;000264;                                        ;                                        ;                                        ;
+1;000265;FIORI CERAMICA LTDA-FILIAL              ;AVENIDA PREFEITO ANTONIO      ;ANDRADAS /MG                            ;ROCHELA                       ;  ;20373585/0004-45  ;35 3739-2100        ;                                        ;37795-000 ;;NELSON
+2;000265;NELSON 24-33814282 78358667 999659258   ;FIORI@FIORI.IND.BR                      ;                                        ;
+1;000266;WAGNER LINHARES IND.CER.LTDA            ;EST.DO ESPINHO,S/N            ;CAMPOS DOS GOYTACAZES RJ                ;POÄO GORDO                    ;  ;39.220.751/0001-59;                    ;                                        ;28110000  ;;      
+2;000266;                                        ;                                        ;                                        ;
+1;000267;AGROFERRAGEM DISTRIBUIDORA              ;AV CORONEL BERTOLDO, 1095     ;SANTA ISABEL '- SP                      ;CENTRO-                       ;  ;10.435,526/0001-58;(11)4556-8597       ;24-99430425                             ;07500-000 ;;JOCEMA
+2;000267;JOCEMAR                                 ;                                        ;                                        ;
+1;000268;RIO COLOR DIST.MAT.CONST.LTDA-EPP FL01  ;RUA S«O FELIPE,19 LOTE        ;VOLTA REDONDA,RJ                        ;NITEROI                       ;  ;09.093.084/0002-00;24 3346 4457        ;988384820                               ;27283-480 ;;JORGE 
+2;000268;JORGE                                   ;RIOCOLORTINTAS@RIOCOLORTINTAS.COM.BR    ;                                        ;
+1;000269;TINTATEM DISTRIBUIDORA LTDA ME          ;IGLESIAS LOPES,828            ;TRES RIOS RJ                            ;CANTAGALO                     ;  ;14.885.923/0001-82;24 2255-5815        ;                                        ;25806-040 ;;      
+2;000269;                                        ;CONTATO@TINTATEM.COM.BR                 ;                                        ;
+1;000270;MODECOL-CLAUDIR ANTONIO REBONATO ME     ;RODOVIA DO CAFE,KM 07,01      ;COLATINA (ES)                           ;CARLOS GERMANO                ;  ;07587979000131    ;2737212752          ;                                        ;29705200  ;;      
+2;000270;                                        ;                                        ;                                        ;
+1;000271;VALEPLAST IND.E.COM.DE PLATICOS V.P     ;ESTRADA GOVERNADOR CHAGAS     ;BARRA MANSA                             ;COLONIA STO.ANTONIO           ;  ;05914226/0001-11  ;2433255100          ;                                        ;27353000  ;;      
+2;000271;                                        ;                                        ;                                        ;
+1;000272;ALUMINIO SAO JORGE LTDA                 ;EST.MUN FABIO DA SILVA PRADO  ;SAO PAULO                               ;ELIHU ROOT-ARARA              ;  ;44.207.496/0001-44;19 35412588         ;                                        ;13604-042 ;;      
+2;000272;                                        ;                                        ;                                        ;
+1;000273;ALUMINIO RAMOS IND.E COM.LTDA           ;AV.ENGENH.CAMILO DINUCCO,4941 ;ARARAQUARA SP                           ;II DIST.INDUSTRIAL            ;  ;45273406000186    ;1633347333          ;                                        ;14808100  ;;      
+2;000273;                                        ;                                        ;                                        ;
+1;000274;ECO DIFERENCIAL INOV.EM MAD.TRATADA LTDA;ESTRADA SAO JOAQUIMKM3,S/N    ;TRES RIOS                               ;BEMPOSTA                      ;  ;15658283/0001-30  ;24 22582171         ;24 92816246   81145406                  ;25840000  ;;JULIO 
+2;000274;JULIO RIBEIRO                           ;JULIO@ECODIFERENCIAL.COM.BR             ;                                        ;
+1;000275;METALURGICA VALENÄA IND.COM.LTDA        ;EST.MANOEL COUTINHO CARVALHO  ;BARRA DO PIRAI RJ                       ;CAMPO BOM                     ;  ;10560694/0001-75  ;2424479797          ;                                        ;27110-010 ;;      
+2;000275;                                        ;                                        ;                                        ;
+1;000276;IRMAOS QUINTAO LTDA-ME                  ;AVENIDA JAYME SICILIANO N985  ;MENDES-RJ                               ;CENTRO                        ;  ;10.287.086/0001-39;24 24652213         ;999835067                               ;26700000  ;;MAURO 
+2;000276;MAURO                                   ;                                        ;                                        ;
+1;000277;A.W.ROSSI E CIA LTDA                    ;ESTRADA UNIAO INDUSTRIA,9190  ;PETROPOLIS                              ;ITAIPAVA RJ                   ;  ;31.118.409/0001-30;(24)22222016        ;                                        ;25730-735 ;;      
+2;000277;                                        ;                                        ;                                        ;
+1;000278;CITROMAX INDUSTRIA E COMERCIO LTDA EPP  ;RUA MARIO PAGLIOSA, 708       ;SAO LOURENÄO DO OESTE SC                ;AREA INDUSTRIAL SUL           ;  ;00.187.467/0001-92;(49)33443087        ;                                        ;89990000  ;;      
+2;000278;                                        ;                                        ;                                        ;
+1;000279;CAMILOTTI- ANGELO CAMILOTTI & CIA LTDA  ;MARANH«O, 133                 ;FRANCISCO BELTR«O-PARANA                ;CENTRO                        ;  ;77.801.686/0001-44;46-3520-7005        ;(24) 9915-2873  8135-4451               ;85601-310 ;;ANA PA
+2;000279;ANA PAULA-ETERNIT CARLOS ALBERTO        ;CAMILOTTI@CAMIDOOR.COM.BR               ;                                        ;
+1;000280;CERAMICAS DE TAMBAU                     ;RUA SANTO ANTONIO, 363        ;TAMBAU SP                               ;CENTRO                        ;  ;                  ;19 36731805         ;                                        ;13710-000 ;;      
+2;000280;                                        ;CEMAMICASDETAMBAU@YAHOO.COM.BR          ;WWW.CERAMICASDETAMBAU.XPG.COM,BR        ;
+1;000281;UNIAO COM.IMP.EXP.LTDA                  ;RUA ADEMAR VIEIRA DA CUNHA,767;IUNA ES                                 ;VILA NOVA                     ;  ;25.630.575/0001-04;28-35453423         ;                                        ;29390-000 ;;      
+2;000281;                                        ;                                        ;                                        ;
+1;000282;ART-RIO COMERCIO DE MADEIRAS LTDA       ;AV.MIMOSAS , 1753 LOTE 01     ;MENDES - RJ                             ;CINCO LAGOS                   ;  ;05134612/0001-90  ;24-2465-2213        ;999835067 992717512                     ;26700-000 ;;MAURO 
+2;000282;MAURO                                   ;                                        ;                                        ;
+1;000283;ELIZA CHURRASQUEIRAS                    ;RUA GUARUPEMBE, 300           ;PIRAUBA, MG                             ;CENTRO                        ;  ;                  ;32-35731367         ;(24) 9957-0062 8855-6034                ;36170-000 ;;LUIZ C
+2;000283;LUIZ CARLOS                             ;ELIZA@ELIZACHURRASQUEIRAS.COM.BR        ;WWW.ELIZACHURRASQUEIRAS.COM.BR          ;
+1;000284;MAGID BREVES MUNIZ                      ;ESTR.BARRA PIRAI/IPIABAS      ;BARRA DO PIRAI - RJ                     ;                              ;  ;859.391.617-15    ;2442-3194           ;2442-3194                               ;27170-000 ;;AUGUST
+2;000284;AUGUSTO                                 ;                                        ;                                        ;
+1;000285;COQUEIRO IND.E COMERCIO DE TINTAS LTDA  ;ESTRADA DE CASCATINHA, 46     ;PETROPOLIS - RJ                         ;CASCATINHA                    ;  ;10.530.697/0001-46;24-22437249         ;(24)988079996 999238751                 ;25716-220 ;;PLINIO
+2;000285;PLINIO                                  ;                                        ;                                        ;
+1;000286;MULTILIT FIBROCIMENTO LTDA              ;AV.RUI BARBOSA, 2929          ;GUATUPE-PR                              ;SAO JOSE DOS PINHAIS          ;  ;72.071.541/0002-00;41-21692600         ;99910268   78348337  33504372           ;83055-320 ;;JOSE L
+2;000286;JOSE LUIZ THULLHER                      ;41-2169-2814  21692816 COMERCIAL        ;                                        ;
+1;000287;ROFER BRASIL CALCADOS LTDA              ;AV.CEL.CLEMENTINO GONCALVES820;SANTA CRUZ RIO PARDO - SP               ;CENTRO                        ;  ;06047972/0001-18  ;(14)3332-2880       ;                                        ;18900-000 ;;      
+2;000287;                                        ;                                        ;                                        ;
+1;000288;MADEIREIRA SALTO VELOSO                 ;RUA BOM PASTOR N 204          ;SALTO VELOSO -SC                        ;INDUSTRIAL                    ;  ;86548682/0001-97  ;(49)35360142        ;                                        ;89595000  ;;      
+2;000288;                                        ;                                        ;                                        ;
+1;000289;FAET- NOVENTA S/A                       ;R.BARAO DE PETROPOLIS 347-381 ;RIO DE JANEIRO                          ;RIO COMPRIDO                  ;  ;33.053.315/0001-56;21=32329100         ;32-3441-1514   88026737                 ;20251-061 ;;ALOISI
+2;000289;ALOISIO PAULO                           ;                                        ;                                        ;
+1;000290;YHS EXPRESS COM.IMP.EXP.LTDA            ;RUA DA BATATA, 100            ;RIO DE JANEIRO                          ;PENHA CIRCULAR                ;  ;09.103.403/0001-30;                    ;                                        ;21011-020 ;;      
+2;000290;                                        ;                                        ;                                        ;
+1;000291;SILVEIRA E CIA LTDA                     ;ESTRADA GERAL S/N             ;JAGUARUNA - SC                          ;OLHO DAGUA                    ;  ;82.579.152/0001-55;(48)34341734        ;(21)88479347    (24) 98574157           ;88715-000 ;;LTORQU
+2;000291;LTORQUATOREPRESENTAÄOES                 ;CONTATO@TORQUATO.COM.BR                 ;                                        ;
+1;000292;MEBUKI-BETTERPLAS COM.INDUSTRIAL LTDA   ;RUA ENDRES, 1295              ;GUARULHOS - SAO PAULO                   ;VL.BANDEIRAS                  ;  ;05.143.414/0001-93;(11)2421-5755       ;                                        ;07043-000 ;;      
+2;000292;                                        ;                                        ;                                        ;
+1;000297;CONDUMIG - IND. DE CONDUTORES ELET. MG  ;RUA ANTONIO DELLARETT F. N2000;DIVINOPOLIS-MG                          ;C INDUSTRIAL                  ;  ;65.207.177/0004-51;                    ;                                        ;35502-288 ;;      
+2;000297;                                        ;                                        ;                                        ;
+1;000298;THARDELY TECIDOS LTDA                   ;RUA PRIMEIRO DE MARCO, 475    ;IGARATINGA                              ;CENTRO                        ;  ;10.797.709/0001-13;37-32461182         ;WESKLEY (37)91580199 38-98011137        ;35695000  ;;GERALD
+2;000298;GERALDINHO 37-9991-5280 9158-0199       ;                                        ;                                        ;
+1;000299;CONFIBRA MATERIAS DE CONTRUÄAO          ;AV CONSTANCIA N S/N LT 09 QD23;DURQUE DE CAXIAS-RJ                     ;TAQUARA                       ;  ;10.436.304/0001-50;(21)2778-1912       ;                                        ;25270-392 ;;      
+2;000299;                                        ;                                        ;                                        ;
+1;000300;LORENFER IND.E.COM.PRODUTOS METALURGICOS;                              ;                                        ;                              ;  ;                  ;                    ;974021502  999617901                    ;          ;;MARLON
+2;000300;MARLON                                  ;                                        ;                                        ;
+1;000301;IND E COM ARTEF.CER.GRASIELE 2006 LTDAME;ESTRADA DAS MARRECAS,1080     ;PARAIBA DO SUL                          ;MARRECAS                      ;  ;08.517.944/0001-42;24-22668013         ;                                        ;25850-000 ;;      
+2;000301;                                        ;                                        ;                                        ;
+1;000302;SPASUL IND.E COM.MADEIRAS               ;RUA PEDRO LOCATELI N63        ;SANTA CATARINA                          ;CENTRO                        ;  ;                  ;(24)33229590        ;24-998183483 30755830                   ;89518-000 ;;RAILSO
+2;000302;RAILSON                                 ;                                        ;                                        ;
+1;000303;IND E COM DE ESQUAD GUZLINSKI LTDA      ;RUA CRESCENCIO P.CASTILHO, 316;GENERAL CARNEIRO -PARANA                ;SAO MIGUEL                    ;  ;08.763.862/0001-88;42-3552-2819        ;                                        ;84660-000 ;;WALDIR
+2;000303;WALDIR -981163333 988181319             ;ESQUADRIASGUZLINSLI@GMAIL.COM           ;                                        ;
+1;000304;GUDIM INDUSTRIA GALV. LTDA              ;AV.RENATO DEMOLINARI          ;PIRAUBA                                 ;DISTR.INDUSTRIAL              ;  ;03.104.785/0001-30;(32)35731155        ;                                        ;3617000000;;      
+2;000304;                                        ;GUDIMMETALURGICA@GMAIL.COM              ;                                        ;
+1;000305;CIPLA IND.DE MAT. DE CONSTRUCAO S.A     ;AV GETULIO VARGAS 1619        ;JOINVILE                                ;BUCAREIN                      ;  ;                  ;(47)3026-9000       ;                                        ;89202-003 ;;      
+2;000305;                                        ;                                        ;                                        ;
+1;000306;PLASTEMAX IND E COM.PLASTICO            ;RODOVIA 040 KM 25             ;TRES RIOS                               ;MOURA BRASIL                  ;  ;                  ;(24)22558014        ;                                        ;          ;;      
+2;000306;                                        ;                                        ;                                        ;
+1;000307;ARAMES BRAVO IND.COM.FERRO E ACO LTDA   ;PRESIDENTE VARGAS, 1744       ;BARRA MANSA                             ;SANTA CLARA                   ;  ;05.264.184/0001-10;24-3323-3325        ;WWW.ARAMESBRAVO.COM.BR                  ;37340-002 ;;ADM@AR
+2;000307;ADM@ARAMESBRAVO.COM.BR                  ;                                        ;                                        ;
+1;000308;PERFITEC IND.E COM.LTDA                 ;AV.LUIZ CARDOSO PINTO, 210    ;BORDA DA MATA - MG                      ;BLOCO AB - SAO BENEDITO       ;  ;86.524.220/0001-30;35-3445-2785        ;(31) 88454640                           ;37564-000 ;;RONALD
+2;000308;RONALDO                                 ;                                        ;                                        ;
+1;000310;CERAMICA BR WERNECK LTDA ME             ;SRV SEBASTIAO BONFORTE, 07    ;PARAIBA DO SUL                          ;WERNECK                       ;  ;21.887.972/0001-10;                    ;(24)22631172  998375315                 ;25850-000 ;;JOSE P
+2;000310;JOSE PAULO                              ;                                        ;                                        ;
+1;000311;DISMATAL- O.V.D IMPOR E DIST LTDA       ;AV.PREF LUIZ LATORRE,010300   ;JUNDIAI/SAO PAULO                       ;                              ;  ;14.421.928/0001-54;41-33141400         ;                                        ;13209-430 ;;      
+2;000311;                                        ;NFE@OVD.COM.BR                          ;                                        ;
+1;000312;METAL BONITO METALURGICA EIRELI ME      ;AV.JOAO CAETANO,368           ;BONITO- RJ                              ;PRACA CRUZEIRO                ;  ;18.352.263\0001-25;                    ;                                        ;28800-000 ;;WALDIR
+2;000312;WALDIR                                  ;                                        ;                                        ;
+1;000313;VELTRA-VOLLER DO BRASIL LTDA            ;ROD NAKAO KM 53.5             ;COTIA - SP                              ;AGUASSAI                      ;  ;03.326.656/0001-97;                    ;                                        ;06726300  ;;RICARD
+2;000313;RICARDO AZEVEDO                         ;                                        ;                                        ;
+1;000314;MINERAÄAO OMEGA LTDA                    ;SITIO ALTO DA SERRA, SN       ;SANTA CRUZ DE MINAS -MG                 ;ZONA RURAL                    ;  ;25.201.138 0001-80;32-3371-5388        ;                                        ;36280-000 ;;WAGNER
+2;000314;WAGNER                                  ;                                        ;                                        ;
+1;000315;SCHULZ S/A                              ;RUA DONA FRANCISCA,6901       ;JOINVILE - SC                           ;DISTR.INDUSTRIAL              ;  ;84.693.183 0001-68;47-34516000         ;                                        ;89219-600 ;;      
+2;000315;                                        ;                                        ;                                        ;
+1;000316;SANDY IND.COM.ARTEFATOS DE CONCRETO LTDA;RUA PEDRO OTTIERI, 180        ;SAO PAULO                               ;JARDIM ALTO DA GLORIA/ LEME   ;  ;08.686.449/0001-67;1935547190          ;                                        ;13616682  ;;      
+2;000316;                                        ;                                        ;                                        ;
+1;000317;PAROLAR                                 ;R.JOAQUIM M.PEREIRA,1591 FUNDO;SALTINHO- SP                            ;NOSSA SENH.APARECIDA          ;  ;                  ;                    ;                                        ;13440-000 ;;IVAN  
+2;000317;IVAN                                    ;                                        ;                                        ;
+1;000318;CERAMICA BOTEGA LTDA EPP                ;ROD.BR 101 KM 365, 6555       ;SANGAO - SC                             ;GARGANTA                      ;  ;81.873.598 0001-25;48-3655-0176        ;21-8847-9347 24-22225395 99857-4157     ;88717-000 ;;LEONAR
+2;000318;LEONARDO (LTORQUATO REPRESENTACOES)     ;CONTATO@LTORQUATO.COM.BR                ;                                        ;
+1;000319;JMR FRIBURGO MATER.CONSTRUCAO LTDA      ;RUA MENEZES VERTULLI, N.35    ;NOVA FRIBURGO                           ;CHACARA DO PARAISO            ;  ;02.692933/0001-12 ;(22)25286180        ;                                        ;28605-700 ;;      
+2;000319;                                        ;                                        ;                                        ;
+1;000320;PLASFLEX IND.E COM.LTDA                 ;R.SALOMAO MIGUEL NASSER,685   ;GUATUPE- PR                             ;SAO JOSE DOS PINHAIS          ;  ;09.041.943 0001-37;41-2169-2600        ;                                        ;83060-230 ;;MULTIL
+2;000320;MULTILIT                                ;                                        ;                                        ;
+1;000321;RGA METAL E ALUMINIO LTDA -ME           ;R.SETE SETEMBRO QR 41 LT25, SN;RIO BONITO - RJ                         ;RIO DO OURO                   ;  ;14.904.104 0001 35;                    ;                                        ;28800000  ;;MARLON
+2;000321;MARLON                                  ;                                        ;                                        ;
+1;000322;PLASTILANDO IND.COM.ART.PLASTICOS LTDA  ;RUA CADETE POLONIA, 701       ;RIO DE JANEIRO                          ;SAMPAIO                       ;  ;09.263.772 0001-90;21-3880-2713        ;                                        ;20961-050 ;;RICARD
+2;000322;RICARDO                                 ;                                        ;                                        ;
+1;000323;FAMART DISTR.DE FERRAGENS LTDA          ;AV.LEOPOLDINA, 1220           ;PETROPOLIS                              ;NOGUEIRA                      ;  ;16.691.059 0001-03;24-2221-1108        ;                                        ;25730-203 ;;MARCIO
+2;000323;MARCIO BRAGA                            ;                                        ;                                        ;
