@@ -1,0 +1,642 @@
+object DmModuleIII: TDmModuleIII
+  OldCreateOrder = False
+  Left = 107
+  Top = 111
+  Height = 601
+  Width = 867
+  object sqldsfornecedor: TSQLDataSet
+    GetMetadata = False
+    CommandText = 'select f.* from FORNECEDOR f where f.codforn = :codigo'
+    MaxBlobSize = -1
+    Params = <
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptInput
+      end>
+    SQLConnection = FrmMenuPrincipal.SQLConnection1
+    Left = 40
+    Top = 8
+    object sqldsfornecedorCODFORN: TIntegerField
+      FieldName = 'CODFORN'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object sqldsfornecedorNOME: TStringField
+      FieldName = 'NOME'
+      ProviderFlags = [pfInUpdate]
+      Size = 50
+    end
+    object sqldsfornecedorCNPJCPF: TStringField
+      FieldName = 'CNPJCPF'
+      ProviderFlags = [pfInUpdate]
+      Size = 18
+    end
+    object sqldsfornecedorINSCESTADUAL: TStringField
+      FieldName = 'INSCESTADUAL'
+      ProviderFlags = [pfInUpdate]
+      Size = 14
+    end
+    object sqldsfornecedorENDERECO: TStringField
+      FieldName = 'ENDERECO'
+      ProviderFlags = [pfInUpdate]
+      Size = 50
+    end
+    object sqldsfornecedorCIDADE: TStringField
+      FieldName = 'CIDADE'
+      ProviderFlags = [pfInUpdate]
+      Size = 40
+    end
+    object sqldsfornecedorBAIRRO: TStringField
+      FieldName = 'BAIRRO'
+      ProviderFlags = [pfInUpdate]
+      Size = 40
+    end
+    object sqldsfornecedorUF: TStringField
+      FieldName = 'UF'
+      ProviderFlags = [pfInUpdate]
+      FixedChar = True
+      Size = 2
+    end
+    object sqldsfornecedorCEP: TStringField
+      FieldName = 'CEP'
+      ProviderFlags = [pfInUpdate]
+      Size = 10
+    end
+    object sqldsfornecedorTELEFONE01: TStringField
+      FieldName = 'TELEFONE01'
+      ProviderFlags = [pfInUpdate]
+    end
+    object sqldsfornecedorTELEFONE02: TStringField
+      FieldName = 'TELEFONE02'
+      ProviderFlags = [pfInUpdate]
+      Size = 40
+    end
+    object sqldsfornecedorFAX: TStringField
+      FieldName = 'FAX'
+      ProviderFlags = [pfInUpdate]
+      Size = 14
+    end
+    object sqldsfornecedorCONTATO: TStringField
+      FieldName = 'CONTATO'
+      ProviderFlags = [pfInUpdate]
+      Size = 40
+    end
+    object sqldsfornecedorEMAIL: TStringField
+      FieldName = 'EMAIL'
+      ProviderFlags = [pfInUpdate]
+      Size = 50
+    end
+    object sqldsfornecedorHOMEPAGE: TStringField
+      FieldName = 'HOMEPAGE'
+      ProviderFlags = [pfInUpdate]
+      Size = 50
+    end
+  end
+  object dspfornecedor: TDataSetProvider
+    DataSet = sqldsfornecedor
+    Options = [poAutoRefresh, poAllowCommandText]
+    UpdateMode = upWhereKeyOnly
+    Left = 136
+    Top = 8
+  end
+  object cdsfornecedor: TClientDataSet
+    Aggregates = <>
+    Params = <
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptInput
+      end>
+    ProviderName = 'dspfornecedor'
+    Left = 240
+    Top = 8
+    object cdsfornecedorCODFORN: TIntegerField
+      DisplayLabel = 'C'#243'digo'
+      FieldName = 'CODFORN'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object cdsfornecedorNOME: TStringField
+      DisplayLabel = 'Nome '
+      FieldName = 'NOME'
+      ProviderFlags = [pfInUpdate]
+      Size = 50
+    end
+    object cdsfornecedorCNPJCPF: TStringField
+      DisplayLabel = 'Cnpj/Cpf'
+      FieldName = 'CNPJCPF'
+      ProviderFlags = [pfInUpdate]
+      Size = 18
+    end
+    object cdsfornecedorINSCESTADUAL: TStringField
+      DisplayLabel = 'Insc. Est.'
+      FieldName = 'INSCESTADUAL'
+      ProviderFlags = [pfInUpdate]
+      Size = 14
+    end
+    object cdsfornecedorENDERECO: TStringField
+      DisplayLabel = 'Endere'#231'o'
+      FieldName = 'ENDERECO'
+      ProviderFlags = [pfInUpdate]
+      Size = 50
+    end
+    object cdsfornecedorCIDADE: TStringField
+      DisplayLabel = 'Cidade '
+      FieldName = 'CIDADE'
+      ProviderFlags = [pfInUpdate]
+      Size = 40
+    end
+    object cdsfornecedorBAIRRO: TStringField
+      DisplayLabel = 'Bairro'
+      FieldName = 'BAIRRO'
+      ProviderFlags = [pfInUpdate]
+      Size = 40
+    end
+    object cdsfornecedorUF: TStringField
+      FieldName = 'UF'
+      ProviderFlags = [pfInUpdate]
+      FixedChar = True
+      Size = 2
+    end
+    object cdsfornecedorCEP: TStringField
+      FieldName = 'CEP'
+      ProviderFlags = [pfInUpdate]
+      Size = 10
+    end
+    object cdsfornecedorTELEFONE01: TStringField
+      DisplayLabel = 'Telefone 1'
+      FieldName = 'TELEFONE01'
+      ProviderFlags = [pfInUpdate]
+    end
+    object cdsfornecedorTELEFONE02: TStringField
+      DisplayLabel = 'Telefone 2'
+      FieldName = 'TELEFONE02'
+      ProviderFlags = [pfInUpdate]
+      Size = 40
+    end
+    object cdsfornecedorFAX: TStringField
+      DisplayLabel = 'Fax'
+      FieldName = 'FAX'
+      ProviderFlags = [pfInUpdate]
+      Size = 14
+    end
+    object cdsfornecedorCONTATO: TStringField
+      DisplayLabel = 'Contato '
+      FieldName = 'CONTATO'
+      ProviderFlags = [pfInUpdate]
+      Size = 40
+    end
+    object cdsfornecedorEMAIL: TStringField
+      DisplayLabel = 'Email'
+      FieldName = 'EMAIL'
+      ProviderFlags = [pfInUpdate]
+      Size = 50
+    end
+    object cdsfornecedorHOMEPAGE: TStringField
+      DisplayLabel = 'Home Page '
+      FieldName = 'HOMEPAGE'
+      ProviderFlags = [pfInUpdate]
+      Size = 50
+    end
+    object cdsfornecedorSqldsduppagar: TDataSetField
+      FieldName = 'Sqldsduppagar'
+    end
+  end
+  object sqldsPesqFornecedor: TSQLDataSet
+    GetMetadata = False
+    CommandText = 'select f.codforn, f.nome'#13#10'from FORNECEDOR f'#13#10'order by f.nome'#13#10
+    MaxBlobSize = -1
+    Params = <>
+    SQLConnection = FrmMenuPrincipal.SQLConnection1
+    Left = 376
+    Top = 8
+  end
+  object dspPesqFornecedor: TDataSetProvider
+    DataSet = sqldsPesqFornecedor
+    Options = [poAutoRefresh, poAllowCommandText]
+    Left = 480
+    Top = 8
+  end
+  object CdsPesqFornecedor: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'dspPesqFornecedor'
+    Left = 584
+    Top = 8
+    object CdsPesqFornecedorCODFORN: TIntegerField
+      DisplayLabel = 'C'#243'digo'
+      FieldName = 'CODFORN'
+      Required = True
+    end
+    object CdsPesqFornecedorNOME: TStringField
+      DisplayLabel = 
+        'Nome                                                            ' +
+        '     '
+      FieldName = 'NOME'
+      Size = 50
+    end
+  end
+  object Sqldsduppagar: TSQLDataSet
+    GetMetadata = False
+    CommandText = 
+      'select * from DUPLICATASPAGAR dp where dp.CODFORN = :codforn and' +
+      ' dp.DATAPAGTO is null '#13#10'order by dp.datapagto,dp.codforn,dp.codd' +
+      'upapagar,dp.numprestacao'#13#10
+    DataSource = Relsqldsfornecedor
+    MaxBlobSize = -1
+    Params = <
+      item
+        DataType = ftInteger
+        Name = 'CODFORN'
+        ParamType = ptInput
+        Size = 4
+      end>
+    SQLConnection = FrmMenuPrincipal.SQLConnection1
+    Left = 40
+    Top = 56
+    object SqldsduppagarCODFORN: TIntegerField
+      FieldName = 'CODFORN'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object SqldsduppagarCODDUPAPAGAR: TIntegerField
+      FieldName = 'CODDUPAPAGAR'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object SqldsduppagarNUMPRESTACAO: TIntegerField
+      FieldName = 'NUMPRESTACAO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object SqldsduppagarVALORPRESTACAO: TFMTBCDField
+      FieldName = 'VALORPRESTACAO'
+      ProviderFlags = [pfInUpdate]
+      Precision = 15
+      Size = 2
+    end
+    object SqldsduppagarDATAVENCTO: TDateField
+      FieldName = 'DATAVENCTO'
+      ProviderFlags = [pfInUpdate]
+    end
+    object SqldsduppagarDATAPAGTO: TDateField
+      FieldName = 'DATAPAGTO'
+      ProviderFlags = [pfInUpdate]
+    end
+    object SqldsduppagarJUROS: TFMTBCDField
+      FieldName = 'JUROS'
+      ProviderFlags = [pfInUpdate]
+      Precision = 15
+      Size = 2
+    end
+    object SqldsduppagarDESCONTO: TFMTBCDField
+      FieldName = 'DESCONTO'
+      ProviderFlags = [pfInUpdate]
+      Precision = 15
+      Size = 2
+    end
+    object SqldsduppagarNUMEROCHEQUE: TStringField
+      FieldName = 'NUMEROCHEQUE'
+      ProviderFlags = [pfInUpdate]
+      Size = 10
+    end
+    object SqldsduppagarOBS: TStringField
+      FieldName = 'OBS'
+      ProviderFlags = [pfInUpdate]
+      Size = 40
+    end
+    object SqldsduppagarDATAEMISSAO: TDateField
+      FieldName = 'DATAEMISSAO'
+      ProviderFlags = [pfInUpdate]
+    end
+  end
+  object Cdsduppagar: TClientDataSet
+    Aggregates = <>
+    DataSetField = cdsfornecedorSqldsduppagar
+    Params = <>
+    Left = 136
+    Top = 56
+    object CdsduppagarCODFORN: TIntegerField
+      FieldName = 'CODFORN'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object CdsduppagarCODDUPAPAGAR: TIntegerField
+      Alignment = taCenter
+      DisplayLabel = 'N'#176' da Duplicata'
+      FieldName = 'CODDUPAPAGAR'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object CdsduppagarNUMPRESTACAO: TIntegerField
+      Alignment = taCenter
+      DisplayLabel = 'N'#176' Prest.'
+      FieldName = 'NUMPRESTACAO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object CdsduppagarVALORPRESTACAO: TFMTBCDField
+      Alignment = taCenter
+      DisplayLabel = 'Valor Prest.'
+      FieldName = 'VALORPRESTACAO'
+      ProviderFlags = [pfInUpdate]
+      DisplayFormat = '0.00'
+      Precision = 15
+      Size = 2
+    end
+    object CdsduppagarDATAVENCTO: TDateField
+      Alignment = taCenter
+      DisplayLabel = 'Dt Vencto'
+      FieldName = 'DATAVENCTO'
+      ProviderFlags = [pfInUpdate]
+    end
+    object CdsduppagarDATAPAGTO: TDateField
+      Alignment = taCenter
+      DisplayLabel = 'Dt Pagto'
+      FieldName = 'DATAPAGTO'
+      ProviderFlags = [pfInUpdate]
+    end
+    object CdsduppagarJUROS: TFMTBCDField
+      FieldName = 'JUROS'
+      ProviderFlags = [pfInUpdate]
+      Precision = 15
+      Size = 2
+    end
+    object CdsduppagarDESCONTO: TFMTBCDField
+      FieldName = 'DESCONTO'
+      ProviderFlags = [pfInUpdate]
+      Precision = 15
+      Size = 2
+    end
+    object CdsduppagarNUMEROCHEQUE: TStringField
+      FieldName = 'NUMEROCHEQUE'
+      ProviderFlags = [pfInUpdate]
+      Size = 10
+    end
+    object CdsduppagarOBS: TStringField
+      Alignment = taCenter
+      DisplayLabel = 'Observa'#231#227'o'
+      FieldName = 'OBS'
+      ProviderFlags = [pfInUpdate]
+      Size = 40
+    end
+    object CdsduppagarDATAEMISSAO: TDateField
+      Alignment = taCenter
+      DisplayLabel = 'Dt Emiss'#227'o'
+      FieldName = 'DATAEMISSAO'
+      ProviderFlags = [pfInUpdate]
+    end
+  end
+  object Relsqldsfornecedor: TDataSource
+    DataSet = sqldsfornecedor
+    Left = 240
+    Top = 56
+  end
+  object sqldsNFiscalEntmes: TSQLDataSet
+    GetMetadata = False
+    CommandText = 'select * from NOTAFISCALENTMES nem where nem.CODIGO = :codigo '
+    MaxBlobSize = -1
+    Params = <
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptInput
+      end>
+    SQLConnection = FrmMenuPrincipal.SQLConnection1
+    Left = 40
+    Top = 104
+    object sqldsNFiscalEntmesCODIGO: TIntegerField
+      FieldName = 'CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object sqldsNFiscalEntmesNUMNFISCAL: TIntegerField
+      FieldName = 'NUMNFISCAL'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object sqldsNFiscalEntmesCODFORN: TIntegerField
+      FieldName = 'CODFORN'
+      ProviderFlags = [pfInUpdate]
+    end
+    object sqldsNFiscalEntmesDATAEMISSAO: TDateField
+      FieldName = 'DATAEMISSAO'
+      ProviderFlags = [pfInUpdate]
+    end
+    object sqldsNFiscalEntmesDATAENTRADA: TDateField
+      FieldName = 'DATAENTRADA'
+      ProviderFlags = [pfInUpdate]
+    end
+    object sqldsNFiscalEntmesTOTALNFISCAL: TFMTBCDField
+      FieldName = 'TOTALNFISCAL'
+      ProviderFlags = [pfInUpdate]
+      Precision = 15
+      Size = 2
+    end
+  end
+  object dspNFiscalEntmes: TDataSetProvider
+    DataSet = sqldsNFiscalEntmes
+    Options = [poCascadeDeletes, poAutoRefresh, poAllowCommandText]
+    Left = 136
+    Top = 104
+  end
+  object cdsNFiscalEntmes: TClientDataSet
+    Aggregates = <>
+    AggregatesActive = True
+    Params = <
+      item
+        DataType = ftInteger
+        Name = 'codigo'
+        ParamType = ptInput
+      end>
+    ProviderName = 'dspNFiscalEntmes'
+    Left = 240
+    Top = 104
+    object cdsNFiscalEntmesCODIGO: TIntegerField
+      DisplayLabel = 'N'#176' ENTRADA'
+      FieldName = 'CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object cdsNFiscalEntmesNUMNFISCAL: TIntegerField
+      DisplayLabel = 'N'#176' NOTA FISCAL '
+      FieldName = 'NUMNFISCAL'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object cdsNFiscalEntmesCODFORN: TIntegerField
+      DisplayLabel = 'FORNECEDOR'
+      FieldName = 'CODFORN'
+      ProviderFlags = [pfInUpdate]
+    end
+    object cdsNFiscalEntmesDATAEMISSAO: TDateField
+      DisplayLabel = 'DATA DE EMISS'#195'O'
+      FieldName = 'DATAEMISSAO'
+      ProviderFlags = [pfInUpdate]
+      EditMask = '!99/99/0000;1;_'
+    end
+    object cdsNFiscalEntmesDATAENTRADA: TDateField
+      DisplayLabel = 'DATA DE ENTRADA '
+      FieldName = 'DATAENTRADA'
+      ProviderFlags = [pfInUpdate]
+      EditMask = '!99/99/0000;1;_'
+    end
+    object cdsNFiscalEntmesTOTALNFISCAL: TFMTBCDField
+      DisplayLabel = 'TOTAL DA NOTA FISCAL '
+      FieldName = 'TOTALNFISCAL'
+      ProviderFlags = [pfInUpdate]
+      DisplayFormat = '0.00'
+      Precision = 15
+      Size = 2
+    end
+    object cdsNFiscalEntmesdesc_fornecedor: TStringField
+      DisplayLabel = 'FORNECEDOR'
+      FieldKind = fkLookup
+      FieldName = 'desc_fornecedor'
+      LookupDataSet = CdsPesqFornecedor
+      LookupKeyFields = 'CODFORN'
+      LookupResultField = 'NOME'
+      KeyFields = 'CODFORN'
+      Size = 50
+      Lookup = True
+    end
+    object cdsNFiscalEntmessqldsNFiscalEntDet: TDataSetField
+      FieldName = 'sqldsNFiscalEntDet'
+    end
+  end
+  object sqldsNFiscalEntDet: TSQLDataSet
+    GetMetadata = False
+    CommandText = 'select * from NOTAFISCALENTDET nfd where nfd.CODIGO = :codigo'
+    DataSource = RelsqldsNFiscalEntmes
+    MaxBlobSize = -1
+    Params = <
+      item
+        DataType = ftInteger
+        Name = 'CODIGO'
+        ParamType = ptInput
+        Size = 4
+      end>
+    SQLConnection = FrmMenuPrincipal.SQLConnection1
+    Left = 40
+    Top = 152
+    object sqldsNFiscalEntDetCODIGO: TIntegerField
+      FieldName = 'CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object sqldsNFiscalEntDetCDITEM: TIntegerField
+      FieldName = 'CDITEM'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object sqldsNFiscalEntDetQTDE: TFMTBCDField
+      FieldName = 'QTDE'
+      ProviderFlags = [pfInUpdate]
+      Precision = 15
+      Size = 2
+    end
+    object sqldsNFiscalEntDetVLUNITARIO: TFMTBCDField
+      FieldName = 'VLUNITARIO'
+      ProviderFlags = [pfInUpdate]
+      Precision = 15
+      Size = 2
+    end
+    object sqldsNFiscalEntDetVLTOTAPRODUTO: TFMTBCDField
+      FieldName = 'VLTOTAPRODUTO'
+      ProviderFlags = [pfInUpdate]
+      Precision = 15
+      Size = 2
+    end
+  end
+  object cdsNFiscalEntDet: TClientDataSet
+    Aggregates = <>
+    AggregatesActive = True
+    DataSetField = cdsNFiscalEntmessqldsNFiscalEntDet
+    Params = <>
+    Left = 136
+    Top = 152
+    object cdsNFiscalEntDetCODIGO: TIntegerField
+      FieldName = 'CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object cdsNFiscalEntDetCDITEM: TIntegerField
+      FieldName = 'CDITEM'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+    end
+    object cdsNFiscalEntDetQTDE: TFMTBCDField
+      FieldName = 'QTDE'
+      ProviderFlags = [pfInUpdate]
+      DisplayFormat = '0.00'
+      Precision = 15
+      Size = 2
+    end
+    object cdsNFiscalEntDetVLUNITARIO: TFMTBCDField
+      FieldName = 'VLUNITARIO'
+      ProviderFlags = [pfInUpdate]
+      DisplayFormat = '0.00'
+      Precision = 15
+      Size = 2
+    end
+    object cdsNFiscalEntDetVLTOTAPRODUTO: TFMTBCDField
+      FieldName = 'VLTOTAPRODUTO'
+      ProviderFlags = [pfInUpdate]
+      DisplayFormat = '0.00'
+      Precision = 15
+      Size = 2
+    end
+    object cdsNFiscalEntDetdesc_item: TStringField
+      FieldKind = fkLookup
+      FieldName = 'desc_item'
+      LookupDataSet = DmModuleI.Cdspesqitem
+      LookupKeyFields = 'CDITEM'
+      LookupResultField = 'DESCITEM'
+      KeyFields = 'CDITEM'
+      Size = 50
+      Lookup = True
+    end
+    object cdsNFiscalEntDetvltotal_nfentrada: TAggregateField
+      FieldName = 'vltotal_nfentrada'
+      Active = True
+      Expression = 'sum(VLTOTAPRODUTO)'
+    end
+  end
+  object RelsqldsNFiscalEntmes: TDataSource
+    DataSet = sqldsNFiscalEntmes
+    Left = 240
+    Top = 152
+  end
+  object SqldsSP_GEN_CODnotafiscalentmes: TSQLDataSet
+    GetMetadata = False
+    CommandText = 'SP_GEN_NOTAFISCALENT'
+    CommandType = ctStoredProc
+    MaxBlobSize = -1
+    Params = <
+      item
+        DataType = ftInteger
+        Name = 'INCREMENTO'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftInteger
+        Name = 'NEWID'
+        ParamType = ptOutput
+        Size = 4
+      end>
+    SQLConnection = FrmMenuPrincipal.SQLConnection1
+    Left = 80
+    Top = 200
+  end
+  object Sqldssp_deletadupapagar: TSQLDataSet
+    CommandText = 'SP_DELETADUPPAGAR'
+    CommandType = ctStoredProc
+    MaxBlobSize = -1
+    Params = <
+      item
+        DataType = ftInteger
+        Name = 'CODFORNINP'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftInteger
+        Name = 'CODDUPAPAGARINP'
+        ParamType = ptInput
+      end
+      item
+        DataType = ftInteger
+        Name = 'NUMPRESTACAOINP'
+        ParamType = ptInput
+      end>
+    SQLConnection = FrmMenuPrincipal.SQLConnection1
+    Left = 248
+    Top = 200
+  end
+end

@@ -1,0 +1,488 @@
+unit UntDbgridPadrao;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, UntPadrao, StdCtrls, ExtCtrls, Buttons, Grids, DBGrids,
+  ComCtrls, DB, Mask, DBCtrls, dateutils;
+
+
+type
+  TFrmDbgridPadrao = class(TFrmPadrao)
+    SpeedButton1: TSpeedButton;
+    Button2: TButton;
+    DBGrid1: TDBGrid;
+    GroupBox1: TGroupBox;
+    Edit1: TEdit;
+    Dsrodaperecvenda: TDataSource;
+    GroupBox2: TGroupBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label4: TLabel;
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
+    DBEdit3: TDBEdit;
+    procedure DBGrid1KeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
+    procedure DBGrid1KeyPress(Sender: TObject; var Key: Char);
+    procedure btnIncluirClick(Sender: TObject);
+    procedure executar_pesquisa;
+    procedure Edit1KeyPress(Sender: TObject; var Key: Char);
+    procedure FormShow(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure btnPesquisarClick(Sender: TObject);
+    procedure DBGrid1ColEnter(Sender: TObject);
+    procedure btnRelatorioClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    diasematraso : integer;
+    totalpercjuros_ematraso,valortotaljuros,totalpago : real;
+  end;
+
+var
+  FrmDbgridPadrao: TFrmDbgridPadrao;
+
+implementation
+
+uses DmModuloI, UntMenuPrincipal, DmModuloII, UntPesquisa,
+  UntEmiReciborecvsimples, DmModuloRelatorioI, UntEmiReciborecvdup;
+
+{$R *.dfm}
+
+procedure TFrmDbgridPadrao.DBGrid1KeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+  inherited;
+  case key of
+  13 : Key := 9 ;
+  end;
+end;
+
+procedure TFrmDbgridPadrao.DBGrid1KeyPress(Sender: TObject; var Key: Char);
+begin
+  inherited;
+  key := UpCase(Key);
+end;
+
+procedure TFrmDbgridPadrao.btnIncluirClick(Sender: TObject);
+begin
+  inherited;
+
+  DBGrid1.Fields[0].FocusControl;
+end;
+
+procedure TFrmDbgridPadrao.executar_pesquisa;
+begin
+  if FrmMenuPrincipal.idprocessamento = 'GI' then
+  begin
+    DmModuleI.Cdsgrupo.First;
+    descricaopadrao := Edit1.Text;
+    DmModuleI.Cdsgrupo.Locate('descricao',descricaopadrao,[loPartialkey,loCaseInsensitive]);
+    DmModuleI.Cdsgrupo.Open;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'FormaPagamento' then
+  begin
+    DmModuleI.CdsFormapagto.First;
+    descricaopadrao := Edit1.Text;
+    DmModuleI.CdsFormapagto.Locate('nome',descricaopadrao,[loPartialkey,loCaseInsensitive]);
+    DmModuleI.CdsFormapagto.Open;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'CondicaoPagto' then
+  begin
+    DmModuleI.CdsCondPagto.First;
+    descricaopadrao := Edit1.Text;
+    DmModuleI.CdsCondPagto.Locate('nome',descricaopadrao,[loPartialkey,loCaseInsensitive]);
+    DmModuleI.CdsCondPagto.Open;
+  end;
+
+  DBGrid1.SetFocus;
+  Edit1.Text := '';
+end;
+
+procedure TFrmDbgridPadrao.Edit1KeyPress(Sender: TObject; var Key: Char);
+begin
+  inherited;
+  if key = #13 then
+  begin
+    executar_pesquisa;
+  end;
+end;
+
+procedure TFrmDbgridPadrao.FormShow(Sender: TObject);
+begin
+  inherited;
+  DmModuleI.CdsEmpresa.Close;
+  DmModuleI.CdsEmpresa.open;
+  if FrmMenuPrincipal.idprocessamento = 'GrupoItem' then
+  begin
+    FrmDbgridPadrao.GroupBox2.Visible := false;
+    FrmDbgridPadrao.Caption := 'Grupo Item';
+//    FrmDbgridPadrao.dbgrid1.Fields[0].Visible := false;
+    DtSrc.DataSet := DmModuleI.Cdsgrupo;
+    DmModuleI.Cdsgrupo.Close;
+    DmModuleI.Cdsgrupo.Open;
+    Edit1.SetFocus;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'FormaPagamento' then
+  begin
+    FrmDbgridPadrao.Caption := 'Forma de Pagamento';
+    DtSrc.DataSet := DmModuleI.CdsFormapagto;
+    DmModuleI.CdsFormapagto.Close;
+    DmModuleI.CdsFormapagto.Open;
+    DmModuleI.CdsFormapagtoCDFORMAPAGTO.Visible := false;
+    Edit1.SetFocus;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'CondicaoPagto' then
+  begin
+    FrmDbgridPadrao.Caption := 'Condição de Pagamento';
+    DtSrc.DataSet := DmModuleI.CdsCondPagto;
+    DmModuleI.CdsCondPagto.Close;
+    DmModuleI.CdsCondPagto.Open;
+    Edit1.SetFocus;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Vendedor' then
+  begin
+    FrmDbgridPadrao.Caption := 'Vendedor';
+    DtSrc.DataSet := DmModuleI.CdsCondPagto;
+    DmModuleI.CdsCondPagto.Close;
+    DmModuleI.CdsCondPagto.Open;
+    Edit1.SetFocus;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Recebimento Venda Simples' then
+  begin
+    FrmPesquisa := TFrmPesquisa.Create(Application);
+    try
+      FrmPesquisa.ShowModal;//exibir
+    finally
+      FrmPesquisa.Free;
+    end;
+    FrmDbgridPadrao.label1.visible  := True;
+    FrmDbgridPadrao.DBEdit1.visible := True;
+    FrmDbgridPadrao.Caption := 'Recebimento Venda Simples';
+    FrmDbgridPadrao.GroupBox1.Caption := 'Nome do Cliente: ';
+    FrmDbgridPadrao.btnPesquisar.Visible := true;
+    if (FrmMenuPrincipal.idprocgeral = 'Nao') then
+    begin
+      FrmDbgridPadrao.btnRelatorio.Visible := true;
+      DtSrc.DataSet := DmModuleII.Cdsrecebvendasimples;
+      Dsrodaperecvenda.DataSet := DmModuleII.Cdsrecebvendasimples;
+      DmModuleII.Cdsrecebvendasimples.Close;
+      DmModuleII.Cdsrecebvendasimples.Params.ParamByName('codcliente').Value :=
+        DmModuleI.CdsPesqclivsimplesemabertoCODIGO.value;
+      DmModuleI.CdsPesqclivsimplesemaberto.Params.ParamByName('geroudup').value := 'S';
+      DmModuleII.Cdsrecebvendasimples.Open;
+      FrmDbgridPadrao.Edit1.Text := DmModuleI.CdsPesqclivsimplesemabertoNOME.Text;
+    end
+    else begin
+      FrmDbgridPadrao.btnRelatorio.Visible := false;
+      DtSrc.DataSet := DmModuleII.Cdsrecebvendasimplesgeral;
+      Dsrodaperecvenda.DataSet := DmModuleII.Cdsrecebvendasimplesgeral;
+      DmModuleII.Cdsrecebvendasimplesgeral.Close;
+      DmModuleII.Cdsrecebvendasimplesgeral.Params.ParamByName('codcliente').Value :=
+        DmModuleI.CdspesqclienteCODIGO.value;
+      DmModuleII.Cdsrecebvendasimplesgeral.Open;
+      FrmDbgridPadrao.Edit1.Text := DmModuleI.CdspesqclienteNOME.Text;
+    end;
+    Edit1.SetFocus;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Recebimento Duplicata' then
+  begin
+    FrmPesquisa := TFrmPesquisa.Create(Application);
+    try
+      FrmPesquisa.ShowModal;//exibir
+    finally
+      FrmPesquisa.Free;
+    end;
+    FrmDbgridPadrao.label1.visible  := True;
+    FrmDbgridPadrao.DBEdit1.visible := False;
+    FrmDbgridPadrao.GroupBox1.Caption := 'Nome do Cliente: ';
+    FrmDbgridPadrao.Caption := 'Recebimento Venda Duplicata em Aberto ';
+    FrmDbgridPadrao.btnPesquisar.Visible := true;
+    if (FrmMenuPrincipal.idprocgeral = 'Nao') then
+    begin
+      FrmDbgridPadrao.btnRelatorio.Visible := true;
+      DtSrc.DataSet := DmModuleII.Cdsrecebvendadupl;
+      Dsrodaperecvenda.DataSet := DmModuleII.Cdsrecebvendadupl;
+      DmModuleII.Cdsrecebvendadupl.Close;
+      DmModuleII.Cdsrecebvendadupl.Params.ParamByName('codcliente').Value :=
+           DmModuleI.CdsPesqclivdupemabertoCODIGO.value;
+      DmModuleII.Cdsrecebvendadupl.Open;
+      FrmDbgridPadrao.Edit1.Text := DmModuleI.CdsPesqclivdupemabertoNOME.Text;
+    end
+    else begin
+      FrmDbgridPadrao.btnRelatorio.Visible := false;
+      DtSrc.DataSet := DmModuleII.Cdsrecebvendaduplgeral;
+      Dsrodaperecvenda.DataSet := DmModuleII.Cdsrecebvendaduplgeral;
+      DmModuleII.Cdsrecebvendaduplgeral.Close;
+      DmModuleII.Cdsrecebvendaduplgeral.Params.ParamByName('codcliente').Value :=
+          DmModuleI.CdsPesqclivdupgeralCODIGO.value;
+      DmModuleII.Cdsrecebvendaduplgeral.Open;
+      FrmDbgridPadrao.Edit1.Text := DmModuleI.CdsPesqclivdupgeralNOME.Text;
+    end;
+    Edit1.SetFocus;
+  end;
+end;
+
+procedure TFrmDbgridPadrao.Button2Click(Sender: TObject);
+begin
+  inherited;
+  Edit1.Text := '';
+  Edit1.SetFocus;
+end;
+
+procedure TFrmDbgridPadrao.SpeedButton1Click(Sender: TObject);
+begin
+  inherited;
+  executar_pesquisa;
+end;
+
+procedure TFrmDbgridPadrao.btnPesquisarClick(Sender: TObject);
+begin
+//  FrmMenuPrincipal.idprocessamento := 'Recebimento Venda Simples';
+  inherited; //aqui
+//  FrmDbgridPadrao.Edit1.Text := DmModuleI.CdspesqclienteNOME.Text;
+
+end;
+
+procedure TFrmDbgridPadrao.DBGrid1ColEnter(Sender: TObject);
+begin
+  inherited;
+  if FrmMenuPrincipal.idprocessamento = 'Recebimento Venda Simples' then
+  begin
+    if (DBGrid1.SelectedField.FieldName = 'DATAPAGTO') then
+    begin
+      if (DBGrid1.Columns.Items[4].Field.AsString = '') then
+      begin
+        if (FrmMenuPrincipal.idprocgeral = 'Nao') then
+        begin
+          DmModuleII.Cdsrecebvendasimples.Edit;
+        end;
+        if (FrmMenuPrincipal.idprocgeral = 'Sim') then
+        begin
+          DmModuleII.Cdsrecebvendasimplesgeral.Edit;
+        end;
+        (DBGrid1.Columns.Items[4].Field.AsString := datetostr(Now));
+      end;
+    end;
+    if (DBGrid1.SelectedField.FieldName = 'JUROSOUDESC') then
+    begin
+     if (dbgrid1.Columns.Items[4].Field.AsString <> '') then
+     begin
+       diasematraso := (DaysBetween(DmModuleII.CdsrecebvendasimplesDATAPAGTO.Value,
+                      DmModuleII.CdsrecebvendasimplesDATAVENCTO.Value));
+       if (diasematraso > DmModuleI.CdsEmpresaDIASISENCAO.Value) then
+       begin
+         DmModuleII.Cdsrecebvendasimples.Edit;
+
+         totalpercjuros_ematraso := (diasematraso *
+            DmModuleI.CdsEmpresaJUROSMORAAODIA.AsFloat);
+
+         valortotaljuros :=
+           ((strtofloat(DBGrid1.Columns.Items[2].Field.AsString) *
+             totalpercjuros_ematraso) / 100);
+         DBGrid1.Columns.Items[5].Field.AsString := floattostr(valortotaljuros);
+       end;
+     end;
+    end;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Recebimento Duplicata' then
+  begin
+    if (DBGrid1.SelectedField.FieldName = 'DATABAIXA') then
+    begin
+      if (DBGrid1.Columns.Items[4].Field.AsString = '') then
+      begin
+        if (FrmMenuPrincipal.idprocgeral = 'Nao') then
+        begin
+          DmModuleII.Cdsrecebvendadupl.Edit;
+        end;
+        if (FrmMenuPrincipal.idprocgeral = 'Sim') then
+        begin
+          DmModuleII.Cdsrecebvendaduplgeral.Edit;
+        end;
+        (DBGrid1.Columns.Items[4].Field.AsString := datetostr(Now));
+      end;
+    end;
+    if (DBGrid1.SelectedField.FieldName = 'VLJUROSOUDESCONTOS') then
+    begin
+     if (dbgrid1.Columns.Items[4].Field.AsString <> '') then
+     begin
+        if (FrmMenuPrincipal.idprocgeral = 'Nao') then
+        begin
+          diasematraso :=
+             (DaysBetween(DmModuleII.CdsrecebvendaduplDATABAIXA.Value,
+                     DmModuleII.CdsrecebvendaduplDATAVENCTO.Value));
+        end;
+        if (FrmMenuPrincipal.idprocgeral = 'Sim') then
+        begin
+          diasematraso :=
+             (DaysBetween(DmModuleII.CdsrecebvendaduplgeralDATABAIXA.Value,
+                     DmModuleII.CdsrecebvendaduplDATAVENCTO.Value));
+        end;
+       if (diasematraso > DmModuleI.CdsEmpresaDIASISENCAO.Value) then
+       begin
+         DmModuleII.Cdsrecebvendadupl.Edit;
+         totalpercjuros_ematraso := (diasematraso *
+            DmModuleI.CdsEmpresaJUROSMORAAODIA.AsFloat);
+
+         valortotaljuros :=
+           ((strtofloat(DBGrid1.Columns.Items[3].Field.AsString) *
+             totalpercjuros_ematraso) / 100);
+         DBGrid1.Columns.Items[5].Field.AsString := floattostr(valortotaljuros);
+       end;
+       totalpago :=
+         ((strtofloat(DBGrid1.Columns.Items[3].Field.AsString) +
+             valortotaljuros));
+       DBGrid1.Columns.Items[6].Field.AsString := floattostr(totalpago);
+     end;
+    end;
+ {   if (DBGrid1.SelectedField.FieldName = 'VALORTOTALPAGO') then
+    begin
+    end; }
+  end;
+end;
+
+procedure TFrmDbgridPadrao.btnRelatorioClick(Sender: TObject);
+var
+  proxnumrecibo : integer;
+  testeaa :integer;
+  datateste :string;
+begin
+  inherited;
+  if FrmMenuPrincipal.idprocessamento = 'Recebimento Venda Simples' then
+  begin
+    //gravar proximo numero recibo
+    DmModuleII.CdsPROXINUMREC.Close;
+    DmModuleII.CdsPROXINUMREC.Open;
+    DmModuleII.CdsPROXINUMREC.Edit;
+    if DmModuleII.CdsPROXINUMRECFLAG.Text = '1' then
+    begin
+      DmModuleII.CdsPROXINUMRECFLAG.Value := '2'
+    end
+    else begin
+      DmModuleII.CdsPROXINUMRECFLAG.Value := '1'
+    end;
+    DmModuleII.CdsPROXINUMREC.Post;
+    DmModuleII.CdsPROXINUMREC.ApplyUpdates(0);
+
+    DmModuleII.CdsPROXINUMREC.Close;
+    DmModuleII.CdsPROXINUMREC.Open;
+    DmModuleII.CdsPROXINUMREC.Edit;
+
+    datateste := datetostr(DmModuleII.CdsrecebvendasimplesDATAPAGTO.Value);
+    DmModuleII.SqldsSP_ATUALIZANUMRECVSIMPLES.Close;
+    DmModuleII.SqldsSP_ATUALIZANUMRECVSIMPLES.Params[0].AsDate :=
+        DmModuleII.CdsrecebvendasimplesDATAPAGTO.Value;
+    DmModuleII.SqldsSP_ATUALIZANUMRECVSIMPLES.Params[1].Value :=
+        DmModuleII.CdsPROXINUMRECPROXNUMRECIBO.Value;
+    DmModuleII.SqldsSP_ATUALIZANUMRECVSIMPLES.ExecSQL;
+
+    //emite recibo recebimento venda simples
+    DmModuleRelatorioI.CdsEmiReciborecvsimples.Close;
+    DmModuleRelatorioI.CdsEmiReciborecvsimples.Params.ParamByName('datapagto').value :=
+          DmModuleII.CdsrecebvendasimplesDATAPAGTO.Value;
+    DmModuleRelatorioI.CdsEmiReciborecvsimples.Params.ParamByName('numrecibo').value :=
+          DmModuleII.CdsPROXINUMRECPROXNUMRECIBO.Value;
+    DmModuleRelatorioI.CdsEmiReciborecvsimples.open;
+
+    //apos imprimir zera o total recebido gravado no cliente.
+    testeaa := DmModuleRelatorioI.CdsEmiReciborecvsimplesCODIGOCLIENTEOUT.Value;
+    DmModuleI.CdsCliente.Close;
+    DmModuleI.CdsCliente.Params.ParamByName('codigo').value :=
+       DmModuleRelatorioI.CdsEmiReciborecvsimplesCODIGOCLIENTEOUT.Value;
+    DmModuleI.CdsCliente.Open;
+    if DmModuleI.CdsCliente.RecordCount > 0 then
+    begin
+      DmModuleI.CdsCliente.Edit;
+      DmModuleI.CdsClienteTOTALPAGO.Value := 0;
+      DmModuleI.CdsCliente.Post;
+      DmModuleI.CdsCliente.ApplyUpdates(0);
+    end;
+
+    FrmEmiReciborecvsimples := TFrmEmiReciborecvsimples.Create(Application);
+    try
+      FrmEmiReciborecvsimples.RLReport1.Preview();
+    finally
+      FrmEmiReciborecvsimples.Free;
+    end;
+
+    DtSrc.DataSet := DmModuleII.Cdsrecebvendasimples;
+    DmModuleII.Cdsrecebvendasimples.Close;
+    DmModuleII.Cdsrecebvendasimples.Params.ParamByName('codcliente').Value :=
+        DmModuleI.CdspesqclienteCODIGO.value;
+    DmModuleII.Cdsrecebvendasimples.Open;
+  end;
+
+  if FrmMenuPrincipal.idprocessamento = 'Recebimento Duplicata' then
+  begin
+    //gravar proximo numero recibo
+    DmModuleII.CdsPROXINUMREC.Close;
+    DmModuleII.CdsPROXINUMREC.Open;
+    DmModuleII.CdsPROXINUMREC.Edit;
+    if DmModuleII.CdsPROXINUMRECFLAG.Text = '1' then
+    begin
+      DmModuleII.CdsPROXINUMRECFLAG.Value := '2'
+    end
+    else begin
+      DmModuleII.CdsPROXINUMRECFLAG.Value := '1'
+    end;
+    DmModuleII.CdsPROXINUMREC.Post;
+    DmModuleII.CdsPROXINUMREC.ApplyUpdates(0);
+
+    DmModuleII.CdsPROXINUMREC.Close;
+    DmModuleII.CdsPROXINUMREC.Open;
+    DmModuleII.CdsPROXINUMREC.Edit;
+
+    datateste := datetostr(DmModuleII.CdsrecebvendaduplDATABAIXA.Value);
+    DmModuleII.SqldsSP_ATUALIZANUMRECVDUP.Close;
+    DmModuleII.SqldsSP_ATUALIZANUMRECVDUP.Params[0].AsDate :=
+        DmModuleII.CdsrecebvendaduplDATABAIXA.Value;
+    DmModuleII.SqldsSP_ATUALIZANUMRECVDUP.Params[1].Value :=
+        DmModuleII.CdsPROXINUMRECPROXNUMRECIBO.Value;
+    DmModuleII.SqldsSP_ATUALIZANUMRECVDUP.ExecSQL;
+
+    //emite recibo recebimento venda duplicata
+    DmModuleRelatorioI.CdsEmiReciborecvdup.Close;
+    DmModuleRelatorioI.CdsEmiReciborecvdup.Params.ParamByName('datapagto').value :=
+          DmModuleII.CdsrecebvendaduplDATABAIXA.Value;
+    DmModuleRelatorioI.CdsEmiReciborecvdup.Params.ParamByName('codcliente').value :=
+          FrmMenuPrincipal.codclientesalvo;
+    DmModuleRelatorioI.CdsEmiReciborecvdup.Params.ParamByName('numrecibo').value :=
+          DmModuleII.CdsPROXINUMRECPROXNUMRECIBO.Value;
+    DmModuleRelatorioI.CdsEmiReciborecvdup.open;
+    DmModuleRelatorioI.CdsEmiReciborecvdup.RecordCount;
+
+    FrmEmiReciborecvdup := TFrmEmiReciborecvdup.Create(Application);
+    try
+      FrmEmiReciborecvdup.RLReport1.Preview();
+    finally
+      FrmEmiReciborecvdup.Free;
+    end;
+
+    //apos imprimir zera o total recebido gravado no cliente.
+    testeaa := DmModuleRelatorioI.CdsEmiReciborecvdupCODCLIENTE.Value;
+    DmModuleI.CdsCliente.Close;
+    DmModuleI.CdsCliente.Params.ParamByName('codigo').value :=
+       DmModuleRelatorioI.CdsEmiReciborecvdupCODCLIENTE.Value;
+    DmModuleI.CdsCliente.Open;
+    if DmModuleI.CdsCliente.RecordCount > 0 then
+    begin
+      DmModuleI.CdsCliente.Edit;
+      DmModuleI.CdsClienteTOTALPAGO.Value := 0;
+      DmModuleI.CdsCliente.Post;
+      DmModuleI.CdsCliente.ApplyUpdates(0);
+    end;
+
+    DtSrc.DataSet := DmModuleII.Cdsrecebvendadupl;
+    DmModuleII.Cdsrecebvendadupl.Close;
+    DmModuleII.Cdsrecebvendadupl.Params.ParamByName('codcliente').Value :=
+        DmModuleI.CdspesqclienteCODIGO.value;
+    DmModuleII.Cdsrecebvendadupl.Open;
+
+  end;
+
+end;
+
+end.

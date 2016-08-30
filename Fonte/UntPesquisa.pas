@@ -1,0 +1,995 @@
+unit UntPesquisa;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, DB, Buttons, Grids, DBGrids, StdCtrls;
+
+type
+  TFrmPesquisa = class(TForm)
+    GroupBox1: TGroupBox;
+    SpeedButton1: TSpeedButton;
+    Button2: TButton;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    DtSrc: TDataSource;
+    GroupBoxClassificacao: TGroupBox;
+    RadioButton1: TRadioButton;
+    RadioButton2: TRadioButton;
+    RadioButton3: TRadioButton;
+    GroupBox2: TGroupBox;
+    DBGrid1: TDBGrid;
+    Edit1: TEdit;
+    procedure FormShow(Sender: TObject);
+    procedure Edit2KeyPress(Sender: TObject; var Key: Char);
+    procedure localizarregnogrid;
+    procedure carregarregformulario;
+    procedure DBGrid1DblClick(Sender: TObject);
+    procedure BitBtn1Click(Sender: TObject);
+    procedure BitBtn2Click(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure GroupBoxClassificacaoClick(Sender: TObject);
+    procedure classificacaogrid;
+    procedure geradupemaberto;
+    procedure geradupgeral;
+    procedure RadioButton1Click(Sender: TObject);
+    procedure RadioButton2Click(Sender: TObject);
+    procedure RadioButton3Click(Sender: TObject);
+    procedure DBGrid1KeyPress(Sender: TObject; var Key: Char);
+    procedure DBGrid1DrawColumnCell(Sender: TObject; const Rect: TRect;
+      DataCol: Integer; Column: TColumn; State: TGridDrawState);
+    procedure Edit1KeyPress(Sender: TObject; var Key: Char);
+
+  private
+    { Private declarations }
+  public
+//    codmaxini,codmaxfin :integer;
+    datamaxima,dataminima :string;
+    testesql :string;
+  end;
+
+var
+  FrmPesquisa: TFrmPesquisa;
+
+implementation
+
+uses DmModuloI, UntMenuPrincipal, UntItem, UntMovtoItem, UntCliente,
+  UntVendedor, UntNfVendaSimples, DmModuloII, DmModuloIII, UntFornecedor,
+  untEntradaNotaFiscal {, UntDuplicatasaPagar }, UntOrcamento, SqlExpr,
+  UntDbgridPadrao, UntDuplicatasaPagar;
+
+{$R *.dfm}
+
+procedure TFrmPesquisa.FormShow(Sender: TObject);
+begin
+  GroupBoxClassificacao.Visible := false;
+  if ((FrmMenuPrincipal.idprocessamento = 'Item') or
+      (FrmMenuPrincipal.idprocessamento = 'Precoteclado')) then
+  begin
+    GroupBoxClassificacao.Visible := true;
+    RadioButton3.Visible := true;
+    FrmPesquisa.Caption := 'Pesquisa Item';
+    DtSrc.DataSet := DmModuleI.Cdspesqitem;
+    DmModuleI.Cdspesqitem.Close;
+    DmModuleI.Cdspesqitem.Open;
+    GroupBoxClassificacao.Visible := true;
+    Edit1.SetFocus;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'MovtoItem' then
+  begin
+    FrmPesquisa.Caption := 'Pesquisa Movimento do Item';
+    DtSrc.DataSet := DmModuleI.Cdspesqmovtoitem;
+    DmModuleI.Cdspesqmovtoitem.Close;
+    DmModuleI.Cdspesqmovtoitem.Open;
+    Edit1.SetFocus;
+  end;
+  if (FrmMenuPrincipal.idprocessamento = 'Cliente') then
+  begin
+    GroupBoxClassificacao.Visible := true;
+    RadioButton3.Visible := false;
+    FrmPesquisa.Caption := 'Pesquisa Cliente';
+    DtSrc.DataSet := DmModuleI.Cdspesqcliente;
+    DmModuleI.Cdspesqcliente.Close;
+    DmModuleI.Cdspesqcliente.Open;
+    Edit1.SetFocus;
+  end;
+
+  if (FrmMenuPrincipal.idprocessamento = 'Recebimento Venda Simples') then
+  begin
+    GroupBoxClassificacao.Visible := true;
+    RadioButton3.Visible := false;
+    FrmPesquisa.Caption := 'Pesquisa Cliente';
+    if (FrmMenuPrincipal.idprocgeral = 'Nao') then
+    begin
+      DtSrc.DataSet := DmModuleI.CdsPesqclivsimplesemaberto;
+      DmModuleI.CdsPesqclivsimplesemaberto.Close;
+      DmModuleI.CdsPesqclivsimplesemaberto.Params.ParamByName('geroudup').value := 'S';
+      DmModuleI.CdsPesqclivsimplesemaberto.Open;
+    end;
+    if (FrmMenuPrincipal.idprocgeral = 'Sim') then
+    begin
+      DtSrc.DataSet := DmModuleI.Cdspesqcliente;
+      DmModuleI.Cdspesqcliente.Close;
+      DmModuleI.Cdspesqcliente.Open;
+    end;
+    Edit1.SetFocus;
+  end;
+
+  if (FrmMenuPrincipal.idprocessamento = 'Recebimento Duplicata') then
+  begin
+    GroupBoxClassificacao.Visible := true;
+    RadioButton3.Visible := false;
+    FrmPesquisa.Caption := 'Pesquisa Cliente';
+    if (FrmMenuPrincipal.idprocgeral = 'Nao') then
+    begin
+      DtSrc.DataSet := DmModuleI.CdsPesqclivdupemaberto;
+      DmModuleI.CdsPesqclivdupemaberto.Close;
+      DmModuleI.CdsPesqclivdupemaberto.Params.ParamByName('geroudup').value := 'S';
+      DmModuleI.CdsPesqclivdupemaberto.Open;
+    end;
+    if (FrmMenuPrincipal.idprocgeral = 'Sim') then
+    begin
+      DtSrc.DataSet := DmModuleI.CdsPesqclivdupgeral;
+      DmModuleI.CdsPesqclivdupgeral.Close;
+      DmModuleI.CdsPesqclivdupgeral.Params.ParamByName('geroudup').value := 'S';      
+      DmModuleI.CdsPesqclivdupgeral.Open;
+      DmModuleI.CdsPesqclivdupgeral.RecordCount;
+    end;
+    Edit1.SetFocus;
+  end;
+
+  if ((FrmMenuPrincipal.idprocessamento = 'Fornecedor') or
+      (FrmMenuPrincipal.idprocessamento = 'DupPagar'))  then
+  begin
+    GroupBox2.visible := true;
+    GroupBoxClassificacao.Visible := true;
+    RadioButton3.Visible := false;    
+    RadioButton1.Checked := false;
+    RadioButton2.Checked := true;
+    RadioButton3.Visible := False;
+    FrmPesquisa.Caption := 'Pesquisa Fornecedor';
+    DtSrc.DataSet := DmModuleIII.CdsPesqFornecedor;
+    DmModuleIII.CdsPesqFornecedor.Close;
+    DmModuleIII.CdsPesqFornecedor.Open;
+    Edit1.SetFocus;
+  end;
+
+  if FrmMenuPrincipal.idprocessamento = 'Vendedor' then
+  begin
+    FrmPesquisa.Caption := 'Pesquisa Vendedor';
+    DtSrc.DataSet := DmModuleI.Cdspesqvend;
+    DmModuleI.Cdspesqvend.Close;
+    DmModuleI.Cdspesqvend.Open;
+    Edit1.SetFocus;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Vendasimples' then
+  begin
+    GroupBoxClassificacao.Visible := false;
+
+    datamaxima := datetostr(date);
+    dataminima := datetostr(date - 180);
+
+    FrmPesquisa.Caption := 'Pesquisa Venda Simples';
+    FrmPesquisa.GroupBox1.Caption := 'Digite N° da Venda:';
+    testesql := DmModuleI.Sqldspesqnfvendames.CommandText;
+    DmModuleI.Cdspesqnfvendames.Close;
+    DmModuleI.Cdspesqnfvendames.Params.ParamByName('dataini').Value := strtodate(dataminima);
+    DmModuleI.Cdspesqnfvendames.Params.ParamByName('datafin').Value := strtodate(datamaxima);
+    DmModuleI.Cdspesqnfvendames.Params.ParamByName('geroudup').value := 'N';
+    DmModuleI.Cdspesqnfvendames.Open;
+    DmModuleI.Cdspesqnfvendames.RecordCount;
+    DtSrc.DataSet := DmModuleI.Cdspesqnfvendames;
+    Edit1.SetFocus;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Entradanotafiscal' then
+  begin
+    FrmPesquisa.GroupBoxClassificacao.Visible := false;
+    FrmPesquisa.Caption := 'Pesquisa Entrada de Nota Fiscal';
+    FrmPesquisa.GroupBox1.Caption := 'Digite o N° da Entrada:';
+    DtSrc.DataSet := DmModuleI.cdspesqnfentradames;
+    DmModuleI.cdspesqnfentradames.Close;
+//    DmModuleI.cdspesqnfentradames.Params.ParamByName('geroudup').value := 'N';
+    DmModuleI.cdspesqnfentradames.Open;
+    Edit1.SetFocus;
+   end;
+  if FrmMenuPrincipal.idprocessamento = 'DupPagar' then
+  begin
+//    RadioButton1.Checked := True;
+//    RadioButton3.Visible := False;
+    FrmPesquisa.Caption := 'Pesquisa Fornecedor';
+    if frmDuplicatasaPagar.RadioButton1.Checked = true then
+    begin
+      GroupBox1.Caption := 'Digite o código do Fornecedor: ';
+    end;
+    if frmDuplicatasaPagar.RadioButton2.Checked = true then
+    begin
+      GroupBox1.Caption := 'Digite o nome do Fornecedor: ';
+    end;
+    DtSrc.DataSet := DmModuleIII.CdsPesqFornecedor;
+    DmModuleIII.CdsPesqFornecedor.Close;
+    DmModuleIII.CdsPesqFornecedor.Open;
+    Edit1.SetFocus;
+  end;
+
+  if FrmMenuPrincipal.idprocessamento = 'Vendaduplicata' then
+  begin
+    datamaxima := datetostr(date);
+    dataminima := '01/01/1900';
+
+    FrmPesquisa.Caption := 'Pesquisa Venda Duplicata';
+    DtSrc.DataSet := DmModuleI.Cdspesqnfvendames;
+    DmModuleI.Cdspesqnfvendames.Close;
+    DmModuleI.Cdspesqnfvendames.Params.ParamByName('dataini').Value := strtodate(dataminima);
+    DmModuleI.Cdspesqnfvendames.Params.ParamByName('datafin').Value := strtodate(datamaxima);
+    DmModuleI.Cdspesqnfvendames.Params.ParamByName('geroudup').value := 'S';
+    DmModuleI.Cdspesqnfvendames.Open;
+    Edit1.SetFocus;
+  end;
+
+  if FrmMenuPrincipal.idprocessamento = 'Orcamento' then
+  begin
+    FrmPesquisa.Caption := 'Pesquisa Orçamento';
+    DtSrc.DataSet := DmModuleI.Cdspesqorcamento;
+    DmModuleI.Cdspesqorcamento.Close;
+    DmModuleI.Cdspesqorcamento.Open;
+    Edit1.SetFocus;
+  end;
+end;
+
+procedure TFrmPesquisa.Edit2KeyPress(Sender: TObject; var Key: Char);
+begin
+{  if not (key in['0'..'9',chr(13)]) then
+  begin
+    key := #0;
+  end;  }
+
+  if key=#13 then
+  begin
+    localizarregnogrid;
+  end;
+
+end;
+
+procedure TFrmPesquisa.localizarregnogrid;
+begin
+//  GroupBoxClassificacao.Visible := false;
+  GroupBox1.Caption := 'Digite a descrição: ';
+  if FrmMenuPrincipal.idprocessamento = 'Item' then
+  begin
+    if (RadioButton1.Checked = true) then
+    begin
+      DmModuleI.Cdspesqitem.First;
+      DmModuleI.Cdspesqitem.Locate('cditem',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+      DBGrid1.SetFocus;
+    end;
+    if (RadioButton2.Checked = true) then
+    begin
+      DmModuleI.Cdspesqitem.First;
+      DmModuleI.Cdspesqitem.Locate('descitem',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+      DBGrid1.SetFocus;
+    end;
+    if (RadioButton3.Checked = true) then
+    begin
+      DmModuleI.Cdspesqitem.First;
+      DmModuleI.Cdspesqitem.Locate('descgrupo',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+      DBGrid1.SetFocus;
+    end
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'MovtoItem' then
+  begin
+    GroupBox1.Caption := 'Digite o código do movimento: ';
+    DmModuleI.Cdspesqmovtoitem.First;
+    DmModuleI.Cdspesqmovtoitem.Locate('codigo',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+    DBGrid1.SetFocus;
+  end;
+  if (FrmMenuPrincipal.idprocessamento = 'Cliente') then
+  begin
+    if (RadioButton1.Checked = true) then
+    begin
+      GroupBox1.Caption := 'Digite o codigo do cliente: ';
+      DmModuleI.Cdspesqcliente.First;
+      DmModuleI.Cdspesqcliente.Locate('codigo',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+      DBGrid1.SetFocus;
+    end;
+    if (RadioButton2.Checked = true) then
+    begin
+      GroupBox1.Caption := 'Digite o nome do cliente: ';
+      DmModuleI.Cdspesqcliente.First;
+      DmModuleI.Cdspesqcliente.Locate('nome',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+      DBGrid1.SetFocus;
+    end;
+  end;
+
+  if (FrmMenuPrincipal.idprocessamento = 'Recebimento Venda Simples') then
+  begin
+    if (RadioButton1.Checked = true) then
+    begin
+      if (FrmMenuPrincipal.idprocgeral = 'Nao') then
+      begin
+        DmModuleI.CdsPesqclivsimplesemaberto.First;
+        DmModuleI.Cdspesqclivsimplesemaberto.Locate('codigo',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+      end;
+      if (FrmMenuPrincipal.idprocgeral = 'Sim') then
+      begin
+        DmModuleI.Cdspesqcliente.First;
+        DmModuleI.Cdspesqcliente.Locate('codigo',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+      end;
+    end;
+    if (RadioButton2.Checked = true) then
+    begin
+      if (FrmMenuPrincipal.idprocgeral = 'Nao') then
+      begin
+        DmModuleI.CdsPesqclivsimplesemaberto.First;
+        DmModuleI.CdsPesqclivsimplesemaberto.Locate('nome',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+      end;
+      if (FrmMenuPrincipal.idprocgeral = 'Sim') then
+      begin
+        DmModuleI.Cdspesqcliente.First;
+        DmModuleI.Cdspesqcliente.Locate('nome',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+      end;
+    end;
+  end;
+  if (FrmMenuPrincipal.idprocessamento = 'Recebimento Duplicata') then
+  begin
+    if (RadioButton1.Checked = true) then
+    begin
+      if (FrmMenuPrincipal.idprocgeral = 'Nao') then
+      begin
+        DmModuleI.CdsPesqclivdupemaberto.First;
+        DmModuleI.CdsPesqclivdupemaberto.Locate('codigo',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+      end;
+      if (FrmMenuPrincipal.idprocgeral = 'Sim') then
+      begin
+        DmModuleI.CdsPesqclivdupgeral.First;
+        DmModuleI.CdsPesqclivdupgeral.Locate('codigo',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+      end;
+    end;
+    if (RadioButton2.Checked = true) then
+    begin
+      if (FrmMenuPrincipal.idprocgeral = 'Nao') then
+      begin
+        DmModuleI.CdsPesqclivdupemaberto.First;
+        DmModuleI.CdsPesqclivdupemaberto.Locate('nome',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+      end;
+      if (FrmMenuPrincipal.idprocgeral = 'Sim') then
+      begin
+        DmModuleI.CdsPesqclivdupgeral.First;
+        DmModuleI.CdsPesqclivdupgeral.Locate('nome',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+      end;
+    end;
+  end;
+
+  if ((FrmMenuPrincipal.idprocessamento = 'Fornecedor') or
+      (FrmMenuPrincipal.idprocessamento = 'DupPagar')) then
+  begin
+    GroupBoxClassificacao.Visible := true;
+    RadioButton3.Visible := false;
+    if RadioButton1.Checked = True then
+    begin
+      Edit1.SetFocus;
+      if Edit1.Text = '' then
+      begin
+        Application.MessageBox('Favor digitar o código do Fornecedor !!!','Atenção',+MB_OK+MB_ICONWARNING);
+        Abort;
+        Edit1.SetFocus;
+      end;
+      GroupBox1.Caption := 'Digite o código do Fornecedor: ';
+      DmModuleIII.CdsPesqFornecedor.First;
+      DmModuleIII.CdsPesqFornecedor.Locate('codforn',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+      DBGrid1.SetFocus;
+    end;
+    if RadioButton2.Checked = True then
+    begin
+      Edit1.SetFocus;
+      if Edit1.Text = '' then
+      begin
+        Application.MessageBox('Favor digitar o nome do Fornecedor !!!','Atenção',+MB_OK+MB_ICONWARNING);
+        Abort;
+        Edit1.SetFocus;
+      end;
+      GroupBox1.Caption := 'Digite o nome do Fornecedor: ';
+      DmModuleIII.CdsPesqFornecedor.First;
+      DmModuleIII.CdsPesqFornecedor.Locate('nome',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+      DBGrid1.SetFocus;
+    end;
+
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Vendedor' then
+  begin
+    GroupBox1.Caption := 'Digite o nome do vendedor: ';
+    DmModuleI.Cdspesqvend.First;
+    DmModuleI.Cdspesqvend.Locate('nome',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+    DBGrid1.SetFocus;
+  end;
+
+  if FrmMenuPrincipal.idprocessamento = 'Vendasimples' then
+  begin
+    datamaxima := datetostr(DmModuleI.CdspesqnfvendamesDATAEMISSAO.Value);
+    dataminima := datetostr(DmModuleI.CdspesqnfvendamesDATAEMISSAO.Value - 365);
+
+    FrmPesquisa.Caption := 'Pesquisa Venda Simples';
+    FrmPesquisa.GroupBox1.Caption := 'Digite N° da Venda:';
+    testesql := DmModuleI.Sqldspesqnfvendames.CommandText;
+    DmModuleI.Cdspesqnfvendames.Close;
+    DmModuleI.Cdspesqnfvendames.Params.ParamByName('dataini').Value := strtodate(dataminima);
+    DmModuleI.Cdspesqnfvendames.Params.ParamByName('datafin').Value := strtodate(datamaxima);
+    DmModuleI.Cdspesqnfvendames.Params.ParamByName('geroudup').value := 'N';
+    DmModuleI.Cdspesqnfvendames.Open;
+    DmModuleI.Cdspesqnfvendames.RecordCount;
+    DtSrc.DataSet := DmModuleI.Cdspesqnfvendames;
+    Edit1.SetFocus;
+
+    DtSrc.DataSet := DmModuleI.Cdspesqnfvendames;
+    GroupBox1.Caption := 'Digite o Nº Venda: ';
+    DmModuleI.Cdspesqnfvendames.First;
+    DmModuleI.Cdspesqnfvendames.Locate('codigo',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+    DBGrid1.SetFocus;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Vendaduplicata' then
+  begin
+    GroupBox1.Caption := 'Digite o Nº Venda: ';
+    DmModuleI.Cdspesqnfvendames.First;
+    DmModuleI.Cdspesqnfvendames.Locate('codigo',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+    DBGrid1.SetFocus;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Entradanotafiscal' then
+  begin
+    GroupBox1.Caption := 'Digite o N° da Entrada:';
+    DmModuleI.cdspesqnfentradames.First;
+    DmModuleI.cdspesqnfentradames.Locate('codigo',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+    DBGrid1.SetFocus;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'DupPagar' then
+  begin
+    if FrmPesquisa.RadioButton1.Checked = True then
+    begin
+      Edit1.SetFocus;
+      if Edit1.Text = '' then
+      begin
+        Application.MessageBox('Favor digitar o código do Fornecedor !!!','Atenção',+MB_OK+MB_ICONWARNING);
+        Abort;
+        Edit1.SetFocus;
+      end;
+      GroupBox1.Caption := 'Digite o código do Fornecedor: ';
+      DmModuleIII.CdsPesqFornecedor.First;
+      DmModuleIII.CdsPesqFornecedor.Locate('codforn',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+      DBGrid1.SetFocus;
+    end;
+    if FrmPesquisa.RadioButton2.Checked = True then
+    begin
+      Edit1.SetFocus;
+      if Edit1.Text = '' then
+      begin
+        Application.MessageBox('Favor digitar o nome do Fornecedor !!!','Atenção',+MB_OK+MB_ICONWARNING);
+        Abort;
+        Edit1.SetFocus;
+      end;
+      GroupBox1.Caption := 'Digite o nome do Fornecedor: ';
+      DmModuleIII.CdsPesqFornecedor.First;
+      DmModuleIII.CdsPesqFornecedor.Locate('nome',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+      DBGrid1.SetFocus;
+    end;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Orcamento' then
+  begin
+    GroupBox1.Caption := 'Digite o Nº Orcamento: ';
+    DmModuleI.Cdspesqorcamento.First;
+    DmModuleI.Cdspesqorcamento.Locate('codigo',Edit1.Text,[loPartialkey,loCaseInsensitive]);
+    DBGrid1.SetFocus;
+  end;
+end;
+
+procedure TFrmPesquisa.DBGrid1DblClick(Sender: TObject);
+begin
+  carregarregformulario;
+end;
+
+procedure TFrmPesquisa.carregarregformulario;
+begin
+  if ((FrmMenuPrincipal.idprocessamento = 'Item') or
+      (FrmMenuPrincipal.idprocessamento = 'Precoteclado'))
+  then
+  begin
+    DmModuleI.CdsItem.Close;
+    DmModuleI.CdsItem.Params.ParamByName('cditem').Value := DmModuleI.CdspesqitemCDITEM.Value;
+    DmModuleI.CdsItem.Open;
+    FrmPesquisa.Close;
+    if (FrmMenuPrincipal.idprocessamento = 'Precoteclado') then
+    begin
+      FrmItem.Caption := 'Alteração Preço pelo Teclado';
+      frmitem.btnIncluir.Enabled := false;
+      frmitem.btnExcluir.enabled := false;
+      frmitem.DBEdit3.Enabled := false;
+      frmitem.DBLookupComboBox1.Enabled := false;
+      frmitem.dbedit4.Enabled := false;
+      frmitem.DBEdit5.Enabled := false;
+      frmitem.DBEdit6.Enabled := false;
+      frmitem.dbedit10.Enabled := false;
+    end
+    else begin
+      FrmItem.Caption := 'Atualização do Item';
+      FrmItem.btnIncluir.Enabled := True;
+      frmitem.btnExcluir.Enabled := true;
+      frmitem.DBEdit3.Enabled := True;
+      frmitem.DBLookupComboBox1.Enabled := True;
+      frmitem.dbedit4.Enabled := True;
+      frmitem.DBEdit5.Enabled := True;
+      frmitem.DBEdit6.Enabled := True;
+      frmitem.dbedit10.Enabled := True;
+  end;
+    FrmItem.DBEdit2.SetFocus;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'MovtoItem' then
+  begin
+    DmModuleI.CdsMovtoItemmes.Close;
+    DmModuleI.CdsMovtoitemmes.Params.ParamByName('CODIGO').Value := DmModuleI.CdspesqmovtoitemCODIGO.Value;
+    DmModuleI.CdsMovtoitemmes.Open;
+    FrmMenuPrincipal.codmovtoitemwk := DmModuleI.CdspesqmovtoitemCODIGO.Value;
+    FrmPesquisa.Close;
+    FrmMovtoItem.DBEdit1.Visible := true;
+    FrmMovtoItem.DBEdit1.ReadOnly := true;
+    FrmMovtoItem.DBEdit2.SetFocus;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Cliente' then
+  begin
+    DmModuleI.CdsCliente.Close;
+    DmModuleI.CdsCliente.Params.ParamByName('CODIGO').Value := DmModuleI.CdspesqclienteCODIGO.Value;
+    DmModuleI.CdsCliente.Open;
+    FrmPesquisa.Close;
+    FrmCliente.DBEdit1.Visible := true;
+    FrmCliente.DBEdit1.ReadOnly := true;
+    FrmCliente.DBEdit2.SetFocus;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Fornecedor' then
+  begin
+    DmModuleIII.cdsfornecedor.Close;
+    DmModuleIII.cdsfornecedor.Params.ParamByName('CODIGO').Value := DmModuleIII.CdsPesqFornecedorCODFORN.Value;
+    DmModuleIII.cdsfornecedor.Open;
+    FrmPesquisa.Close;
+    FrmFornecedor.DBEdit1.Visible := true;
+    FrmFornecedor.DBEdit1.ReadOnly := true;
+    FrmFornecedor.DBEdit2.SetFocus;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Vendedor' then
+  begin
+    DmModuleI.CdsVendedor.Close;
+    DmModuleI.CdsVendedor.Params.ParamByName('CODVENDEDOR').Value := DmModuleI.CdspesqvendCODVENDEDOR.Value;
+    DmModuleI.CdsVendedor.Open;
+    FrmPesquisa.Close;
+    FrmVendedor.DBEdit1.Visible := true;
+    FrmVendedor.DBEdit1.ReadOnly := true;
+    FrmVendedor.DBEdit2.SetFocus;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Vendasimples' then
+  begin
+    DmModuleI.CdsNFvendames.Close;
+    DmModuleI.CdsNFvendames.Params.ParamByName('CODIGO').Value := DmModuleI.CdspesqnfvendamesCODIGO.Value;
+    DmModuleI.CdsNFvendames.Open;
+    FrmPesquisa.Close;
+    FrmNfVendaSimples.DBEdit1.Visible := true;
+    FrmNfVendaSimples.DBEdit1.ReadOnly := true;
+    FrmNfVendaSimples.DBEdit2.SetFocus;
+    FrmNfVendaSimples.abrirdependente;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Vendaduplicata' then
+  begin
+    DmModuleI.CdsNFvendames.Close;
+    DmModuleI.CdsNFvendames.Params.ParamByName('CODIGO').Value := DmModuleI.CdspesqnfvendamesCODIGO.Value;
+    DmModuleI.CdsNFvendames.Open;
+    FrmPesquisa.Close;
+    FrmNfVendaSimples.DBEdit1.Visible := true;
+    FrmNfVendaSimples.DBEdit1.ReadOnly := true;
+    FrmNfVendaSimples.DBEdit2.SetFocus;
+    FrmNfVendaSimples.abrirdependente;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Entradanotafiscal' then
+  begin
+    DmModuleIII.cdsNFiscalEntmes.Close;
+    DmModuleIII.cdsNFiscalEntmes.Params.ParamByName('CODIGO').Value := DmModuleI.cdspesqnfentradamesCODIGO.Value;
+    DmModuleIII.cdsNFiscalEntmes.Open;
+    FrmPesquisa.Close;
+    frmEntradaNotaFiscal.DBEdit2.SetFocus;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'DupPagar' then
+  begin
+    DmModuleIII.cdsfornecedor.Close;
+    DmModuleIII.cdsfornecedor.Params.ParamByName('CODIGO').Value := DmModuleIII.CdsPesqFornecedorCODFORN.Value;
+    DmModuleIII.cdsfornecedor.Open;
+    FrmPesquisa.Close;
+  end;
+
+  if FrmMenuPrincipal.idprocessamento = 'Recebimento Venda Simples' then
+  begin
+    if (FrmMenuPrincipal.idprocgeral = 'Nao') then
+    begin
+      DmModuleII.Cdsrecebvendasimples.Close;
+      DmModuleII.Cdsrecebvendasimples.Params.ParamByName('codcliente').Value := DmModuleI.CdsPesqclivsimplesemabertoCODIGO.Value;
+      DmModuleII.Cdsrecebvendasimples.Open;
+      FrmDbgridPadrao.Edit1.Text := DmModuleI.CdsPesqclivsimplesemabertoNOME.Text;
+      if DmModuleII.Cdsrecebvendasimples.RecordCount = 0 then
+      begin
+        ShowMessage('Atenção, para este cliente não existe recebimento venda simples em aberto!!!');
+        abort;
+      end;
+    end;
+    if (FrmMenuPrincipal.idprocgeral = 'Sim') then
+    begin
+      DmModuleII.Cdsrecebvendasimplesgeral.Close;
+      DmModuleII.Cdsrecebvendasimplesgeral.Params.ParamByName('codcliente').Value := DmModuleI.CdspesqclienteCODIGO.Value;
+      DmModuleII.Cdsrecebvendasimplesgeral.Open;
+      DmModuleII.Cdsrecebvendasimplesgeral.RecordCount;
+      FrmDbgridPadrao.Edit1.Text := DmModuleI.CdspesqclienteNOME.Text;
+    end;
+    FrmPesquisa.Close;
+  end;
+
+  if FrmMenuPrincipal.idprocessamento = 'Recebimento Duplicata' then
+  begin
+    if (FrmMenuPrincipal.idprocgeral = 'Nao') then
+    begin
+      DmModuleII.Cdsrecebvendadupl.Close;
+      DmModuleII.Cdsrecebvendadupl.Params.ParamByName('codcliente').Value :=
+          DmModuleI.CdsPesqclivdupemabertoCODIGO.Value;
+      DmModuleII.Cdsrecebvendadupl.Open;
+      FrmDbgridPadrao.Edit1.Text := DmModuleI.CdsPesqclivdupemabertoNOME.Text;
+      FrmMenuPrincipal.codclientesalvo := DmModuleI.CdsPesqclivdupemabertoCODIGO.Value;
+      if DmModuleII.Cdsrecebvendadupl.RecordCount = 0 then
+      begin
+        ShowMessage('Atenção, para este cliente não existe recebimento venda duplicata em aberto!!!');
+        abort;
+      end;
+    end;
+    if (FrmMenuPrincipal.idprocgeral = 'Sim') then
+    begin
+      DmModuleII.Cdsrecebvendaduplgeral.Close;
+      DmModuleII.Cdsrecebvendaduplgeral.Params.ParamByName('codcliente').Value :=
+            DmModuleI.CdsPesqclivdupgeralCODIGO.Value;
+      DmModuleII.Cdsrecebvendaduplgeral.Open;
+      FrmDbgridPadrao.Edit1.Text := DmModuleI.CdsPesqclivdupgeralNOME.Text;
+      FrmMenuPrincipal.codclientesalvo := DmModuleI.CdsPesqclivdupgeralCODIGO.AsInteger;
+      if DmModuleII.Cdsrecebvendaduplgeral.RecordCount = 0 then
+      begin
+        ShowMessage('Atenção, para este cliente não existe recebimento venda duplicata geral!!!');
+        abort;
+      end;
+    end;
+    FrmPesquisa.Close;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Orcamento' then
+  begin
+    DmModuleI.Cdsorcamentomes.Close;
+    DmModuleI.Cdsorcamentomes.Params.ParamByName('codigo').Value := DmModuleI.CdspesqorcamentoCODIGO.Value;
+    DmModuleI.Cdsorcamentomes.Open;
+    FrmOrcamento.DBEdit1.Visible := true;
+    FrmOrcamento.DBEdit1.ReadOnly := true;
+    FrmOrcamento.DBEdit2.SetFocus;
+    FrmPesquisa.Close;
+  end;
+end;
+
+procedure TFrmPesquisa.BitBtn1Click(Sender: TObject);
+begin
+  carregarregformulario;
+end;
+
+procedure TFrmPesquisa.BitBtn2Click(Sender: TObject);
+begin
+  close;
+end;
+
+procedure TFrmPesquisa.SpeedButton1Click(Sender: TObject);
+begin
+  localizarregnogrid;
+end;
+
+procedure TFrmPesquisa.Button2Click(Sender: TObject);
+begin
+  Edit1.Text := '';
+  edit1.SetFocus;
+end;
+
+procedure TFrmPesquisa.GroupBoxClassificacaoClick(Sender: TObject);
+begin
+  classificacaogrid;
+end;
+
+procedure TFrmPesquisa.classificacaogrid;
+var
+  campoclassificacao : string;
+begin
+  if FrmMenuPrincipal.idprocessamento = 'Item' then
+  begin
+    DmModuleI.Cdspesqitem.Close;
+    if RadioButton1.Checked = true then  //codigo item
+    begin
+      campoclassificacao := '1';
+    end;
+    if RadioButton2.Checked = true then  //descricao item
+    begin
+      campoclassificacao := '2';
+    end;
+    if RadioButton3.Checked = true then //descricao grupo item,descricao item
+    begin
+      campoclassificacao := '3,2'; //'gi.nome,i.nome';
+    end;
+    DmModuleI.Cdspesqitem.CommandText :=
+    'select i.cditem,i.nome as descitem,gi.nome as descgrupo,i.precovenda ' +
+    'from ITEM i ' +
+    'inner join grupoitem gi on i.cdgrupoitem = gi.cdgrupoitem ' +
+    'order by ' +
+    campoclassificacao;
+    DmModuleI.Cdspesqitem.Open;
+    Edit1.SetFocus;
+  end;
+  if ((FrmMenuPrincipal.idprocessamento = 'Fornecedor') or
+      (FrmMenuPrincipal.idprocessamento = 'DupPagar'))then
+  begin
+    DmModuleIII.CdsPesqFornecedor.Close;
+    if RadioButton1.Checked = true then  //codigo fornecedor
+    begin
+      campoclassificacao := '1';
+    end;
+    if RadioButton2.Checked = true then  //nome fornecedor
+    begin
+      campoclassificacao := '2';
+    end;
+    DmModuleIII.CdsPesqFornecedor.CommandText :=
+    'select f.codforn, f.nome ' +
+    'from FORNECEDOR f ' +
+    'order by ' +
+    campoclassificacao;
+    DmModuleIII.CdsPesqFornecedor.Open;
+    Edit1.SetFocus;
+  end;
+  if (FrmMenuPrincipal.idprocessamento = 'Cliente') then
+  begin
+    DmModuleI.Cdspesqcliente.Close;
+    if RadioButton1.Checked = true then  //codigo cliente
+    begin
+      campoclassificacao := '1';
+    end;
+    if RadioButton2.Checked = true then  //nome cliente
+    begin
+      campoclassificacao := '2';
+    end;
+    DmModuleI.Cdspesqcliente.CommandText :=
+    'select c.codigo,c.nome ' +
+    'from CLIENTE c ' +
+    'where c.codigo <> 1000' +
+    'order by ' +
+    campoclassificacao;
+    DmModuleI.Cdspesqcliente.Open;
+    Edit1.SetFocus;
+  end;
+  if (FrmMenuPrincipal.idprocessamento = 'Recebimento Venda Simples') then
+  begin
+    if (FrmMenuPrincipal.idprocgeral = 'Sim') then
+    begin
+      DmModuleI.Cdspesqcliente.Close;
+      if RadioButton1.Checked = true then  //codigo cliente
+      begin
+        campoclassificacao := '1';
+      end;
+      if RadioButton2.Checked = true then  //nome cliente
+      begin
+        campoclassificacao := '2';
+      end;
+      DmModuleI.Cdspesqcliente.CommandText :=
+      'select c.codigo,c.nome ' +
+      'from CLIENTE c ' +
+      'where c.codigo <> 1000' +
+      'order by ' +
+      campoclassificacao;
+      DmModuleI.Cdspesqcliente.Open;
+      Edit1.SetFocus;
+    end;
+    if (FrmMenuPrincipal.idprocgeral = 'Nao') then
+    begin
+      DmModuleI.CdsPesqclivsimplesemaberto.Close;
+      if RadioButton1.Checked = true then  //codigo cliente
+      begin
+        campoclassificacao := '1';
+      end;
+      if RadioButton2.Checked = true then  //nome cliente
+      begin
+        campoclassificacao := '2';
+      end;
+      DmModuleI.CdsPesqclivsimplesemaberto.CommandText :=
+      'select distinct c.codigo,c.nome ' +
+      'from notafiscalvendames nfvm ' +
+      'inner join notafiscalvendadet nfvd on nfvd.codigo = nfvm.codigo ' +
+      'inner join cliente c on nfvm.codcliente = c.codigo ' +
+      'where ((nfvm.geroudup <> :geroudup) and (nfvd.datapagto is null)) ' +
+      'order by ' +
+      campoclassificacao;
+      DmModuleI.CdsPesqclivsimplesemaberto.Params.ParamByName('geroudup').value := 'S';
+      DmModuleI.CdsPesqclivsimplesemaberto.Open;
+      Edit1.SetFocus;
+    end;
+  end;
+  if (FrmMenuPrincipal.idprocessamento = 'Recebimento Duplicata') then
+  begin
+    if (FrmMenuPrincipal.idprocgeral = 'Sim') then
+    begin
+      DmModuleI.CdsPesqclivdupgeral.Close;
+      if RadioButton1.Checked = true then  //codigo cliente
+      begin
+        campoclassificacao := '1';
+      end;
+      if RadioButton2.Checked = true then  //nome cliente
+      begin
+        campoclassificacao := '2';
+      end;
+      DmModuleI.CdsPesqclivdupgeral.CommandText :=
+      'select c.codigo,c.nome ' +
+      'from CLIENTE c ' +
+      'where c.codigo in ' +
+      '(select distinct nfvm.codcliente ' +
+      'from duplicatasreceber dr ' +
+      'inner join notafiscalvendames nfvm on dr.codigo = nfvm.codigo ' +
+      'where (nfvm.geroudup = :geroudup)) ' +
+      'order by ' +
+      campoclassificacao;
+      DmModuleI.CdsPesqclivdupgeral.Params.ParamByName('geroudup').value := 'S';
+      DmModuleI.CdsPesqclivdupgeral.Open;
+      Edit1.SetFocus;
+    end;
+    if (FrmMenuPrincipal.idprocgeral = 'Nao') then
+    begin
+      DmModuleI.CdsPesqclivdupemaberto.Close;
+      if RadioButton1.Checked = true then  //codigo cliente
+      begin
+        campoclassificacao := '1';
+      end;
+      if RadioButton2.Checked = true then  //nome cliente
+      begin
+        campoclassificacao := '2';
+      end;
+      DmModuleI.CdsPesqclivdupemaberto.CommandText :=
+      'select c.codigo,c.nome ' +
+      'from CLIENTE c ' +
+      'where c.codigo in ' +
+      '(select distinct nfvm.codcliente ' +
+      'from duplicatasreceber dr ' +
+      'inner join notafiscalvendames nfvm on dr.codigo = nfvm.codigo ' +
+      'where ((dr.databaixa is null) and (nfvm.geroudup = :geroudup))) ' +
+      'order by ' +
+      campoclassificacao;
+      DmModuleI.CdsPesqclivdupemaberto.Params.ParamByName('geroudup').value := 'S';
+      DmModuleI.CdsPesqclivdupemaberto.Open;
+      Edit1.SetFocus;
+    end;
+  end;
+end;
+
+procedure TFrmPesquisa.RadioButton1Click(Sender: TObject);
+begin
+  GroupBox1.Caption := 'Digite o código: ';
+  classificacaogrid;
+  Edit1.Clear;
+  Edit1.SetFocus;
+end;
+
+procedure TFrmPesquisa.RadioButton2Click(Sender: TObject);
+begin
+  GroupBox1.Caption := 'Digite o nome: ';
+  classificacaogrid;
+  Edit1.Clear;
+  Edit1.setfocus;
+end;
+
+procedure TFrmPesquisa.RadioButton3Click(Sender: TObject);
+begin
+  classificacaogrid;
+end;
+
+procedure TFrmPesquisa.DBGrid1KeyPress(Sender: TObject; var Key: Char);
+begin
+  if key = #13 then
+  begin
+    carregarregformulario;
+  end;
+end;
+
+procedure TFrmPesquisa.DBGrid1DrawColumnCell(Sender: TObject;
+  const Rect: TRect; DataCol: Integer; Column: TColumn;
+  State: TGridDrawState);
+begin
+  if FrmMenuPrincipal.idprocessamento = 'Entradanotafiscal' then
+  begin
+    if (Column.Field.FieldName = 'CODIGO') then
+    begin
+      //if condição then // coloque aqui sua condição
+      // begin
+      DBGrid1.Canvas.Brush.Color:= $00E0E0C2;
+      DBGrid1.Canvas.Font.Color:= clMaroon;
+      DBGrid1.Canvas.FillRect(Rect);
+      DBGrid1.DefaultDrawColumnCell(Rect, DataCol, Column, State);
+      //end;
+    end;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Vendasimples' then
+  begin
+    if (Column.Field.FieldName = 'CODIGO') then
+    begin
+      //if condição then // coloque aqui sua condição
+      // begin
+      DBGrid1.Canvas.Brush.Color:= $00E0E0C2;
+      DBGrid1.Canvas.Font.Color:= clMaroon;
+      DBGrid1.Canvas.FillRect(Rect);
+      DBGrid1.DefaultDrawColumnCell(Rect, DataCol, Column, State);
+      //end;
+    end;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'DupPagar' then
+  begin
+    if (Column.Field.FieldName = 'CODFORN') then
+    begin
+      //if condição then // coloque aqui sua condição
+      // begin
+      DBGrid1.Canvas.Brush.Color:= $00E0E0C2;
+      DBGrid1.Canvas.Font.Color:= clMaroon;
+      DBGrid1.Canvas.FillRect(Rect);
+      DBGrid1.DefaultDrawColumnCell(Rect, DataCol, Column, State);
+      //end;
+    end;
+  end;
+  if FrmMenuPrincipal.idprocessamento = 'Fornecedor' then
+  begin
+    if (Column.Field.FieldName = 'CODFORN') then
+    begin
+      //if condição then // coloque aqui sua condição
+      // begin
+      DBGrid1.Canvas.Brush.Color:= $00E0E0C2;
+      DBGrid1.Canvas.Font.Color:= clMaroon;
+      DBGrid1.Canvas.FillRect(Rect);
+      DBGrid1.DefaultDrawColumnCell(Rect, DataCol, Column, State);
+      //end;
+    end;
+  end;
+
+end;
+
+procedure TFrmPesquisa.geradupemaberto;
+var
+ codforn : Integer;
+begin
+//  DmModuleIII.Sqldsduppagar.Append;
+  DmModuleIII.Sqldsduppagar.Close;
+//  DmModuleIII.sqldsduppagar.CommandText := 'select * from DUPLICATASPAGAR dp where dp.CODFORN = :codforn' +
+//                                             'and dp.DATAPAGTO is null';
+  codforn := DmModuleIII.cdsfornecedor.Params.ParamByName('CODIGO').AsInteger;
+  DmModuleIII.Sqldsduppagar.Params.ParamByName('codforn').AsInteger := codforn;
+  DmModuleIII.Sqldsduppagar.Open;
+end;
+
+procedure TFrmPesquisa.geradupgeral;
+var
+ codforn : Integer;
+begin
+//  DmModuleIII.Sqldsduppagar.Append;
+  DmModuleIII.Sqldsduppagar.Close;
+  DmModuleIII.sqldsduppagar.CommandText := 'select * from DUPLICATASPAGAR dp where dp.CODFORN = :codforn';
+  codforn := DmModuleIII.cdsfornecedor.Params.ParamByName('CODIGO').AsInteger;
+  DmModuleIII.Sqldsduppagar.Params.ParamByName('codforn').AsInteger := codforn;
+  DmModuleIII.Sqldsduppagar.Open;
+
+end;
+
+procedure TFrmPesquisa.Edit1KeyPress(Sender: TObject; var Key: Char);
+begin
+{  if not (key in['0'..'9',chr(13)]) then
+  begin
+    key := #0;
+  end;  }
+
+  if key=#13 then
+  begin
+    localizarregnogrid;
+  end;
+
+end;
+
+end.

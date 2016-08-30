@@ -1,0 +1,302 @@
+inherited FrmEmpresa: TFrmEmpresa
+  Left = 149
+  Top = 99
+  Caption = 'Empresa'
+  OldCreateOrder = True
+  OnActivate = FormActivate
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Panel1: TPanel
+    inherited btnPesquisar: TBitBtn
+      Visible = False
+    end
+  end
+  object GroupBox1: TGroupBox [1]
+    Left = 32
+    Top = 21
+    Width = 769
+    Height = 457
+    Caption = ' Dados Empresa:  '
+    Color = clInfoBk
+    Ctl3D = True
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentColor = False
+    ParentCtl3D = False
+    ParentFont = False
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 40
+      Top = 20
+      Width = 44
+      Height = 16
+      Caption = 'C'#243'digo'
+      FocusControl = DBEdit1
+      Visible = False
+    end
+    object Label10: TLabel
+      Left = 40
+      Top = 58
+      Width = 27
+      Height = 16
+      Caption = 'Cnpj'
+      FocusControl = DBEdit10
+    end
+    object Label2: TLabel
+      Left = 40
+      Top = 106
+      Width = 81
+      Height = 16
+      Caption = 'Raz'#227'o Social'
+      FocusControl = DBEdit2
+    end
+    object Label4: TLabel
+      Left = 40
+      Top = 154
+      Width = 59
+      Height = 16
+      Caption = 'Endere'#231'o'
+      FocusControl = DBEdit4
+    end
+    object Label6: TLabel
+      Left = 40
+      Top = 202
+      Width = 36
+      Height = 16
+      Caption = 'Bairro'
+      FocusControl = DBEdit6
+    end
+    object Label7: TLabel
+      Left = 469
+      Top = 202
+      Width = 57
+      Height = 16
+      Caption = 'Municipio'
+      FocusControl = DBEdit7
+    end
+    object Label8: TLabel
+      Left = 715
+      Top = 201
+      Width = 18
+      Height = 16
+      Caption = 'UF'
+      FocusControl = DBEdit8
+    end
+    object Label9: TLabel
+      Left = 40
+      Top = 254
+      Width = 25
+      Height = 16
+      Caption = 'Cep'
+      FocusControl = DBEdit9
+    end
+    object Label13: TLabel
+      Left = 40
+      Top = 298
+      Width = 34
+      Height = 16
+      Caption = 'Email'
+      FocusControl = DBEdit13
+    end
+    object Label12: TLabel
+      Left = 184
+      Top = 254
+      Width = 54
+      Height = 16
+      Caption = 'Telefone'
+      FocusControl = DBEdit11
+    end
+    object DBEdit1: TDBEdit
+      Left = 40
+      Top = 36
+      Width = 73
+      Height = 24
+      Hint = 'C'#243'digo da Empresa'
+      Color = clInactiveCaptionText
+      Ctl3D = True
+      DataField = 'CODEMPRESA'
+      DataSource = DtSrc
+      ParentCtl3D = False
+      ParentShowHint = False
+      ShowHint = False
+      TabOrder = 0
+      Visible = False
+    end
+    object DBEdit10: TDBEdit
+      Left = 40
+      Top = 74
+      Width = 186
+      Height = 24
+      Hint = 'Cnpj da Empresa'
+      CharCase = ecUpperCase
+      DataField = 'CNPJ'
+      DataSource = DtSrc
+      TabOrder = 1
+      OnKeyPress = DBEdit10KeyPress
+    end
+    object DBEdit2: TDBEdit
+      Left = 40
+      Top = 122
+      Width = 654
+      Height = 24
+      Hint = 'Raz'#227'o Social da Empresa'
+      CharCase = ecUpperCase
+      DataField = 'NOME'
+      DataSource = DtSrc
+      ParentShowHint = False
+      ShowHint = False
+      TabOrder = 2
+      OnKeyPress = DBEdit2KeyPress
+    end
+    object DBEdit4: TDBEdit
+      Left = 40
+      Top = 170
+      Width = 422
+      Height = 24
+      Hint = 'Endere'#231'o da Empresa'
+      CharCase = ecUpperCase
+      DataField = 'ENDERECO'
+      DataSource = DtSrc
+      ParentShowHint = False
+      ShowHint = False
+      TabOrder = 3
+      OnKeyPress = DBEdit4KeyPress
+    end
+    object DBEdit6: TDBEdit
+      Left = 40
+      Top = 218
+      Width = 394
+      Height = 24
+      Hint = 'Bairro da Empresa'
+      CharCase = ecUpperCase
+      DataField = 'BAIRRO'
+      DataSource = DtSrc
+      ParentShowHint = False
+      ShowHint = False
+      TabOrder = 4
+      OnKeyPress = DBEdit6KeyPress
+    end
+    object DBEdit7: TDBEdit
+      Left = 472
+      Top = 218
+      Width = 233
+      Height = 24
+      Hint = 'Municipio da Empresa'
+      CharCase = ecUpperCase
+      DataField = 'CIDADE'
+      DataSource = DtSrc
+      ParentShowHint = False
+      ShowHint = False
+      TabOrder = 5
+      OnKeyPress = DBEdit7KeyPress
+    end
+    object DBEdit8: TDBEdit
+      Left = 715
+      Top = 217
+      Width = 30
+      Height = 24
+      Hint = 'Unidade Federe'#231'ao Empresa'
+      CharCase = ecUpperCase
+      DataField = 'UF'
+      DataSource = DtSrc
+      ParentShowHint = False
+      ShowHint = False
+      TabOrder = 6
+      OnKeyPress = DBEdit8KeyPress
+    end
+    object DBEdit9: TDBEdit
+      Left = 40
+      Top = 270
+      Width = 108
+      Height = 24
+      Hint = 'C'#243'digo Endere'#231'o Postal Empresa'
+      CharCase = ecUpperCase
+      DataField = 'CEP'
+      DataSource = DtSrc
+      ParentShowHint = False
+      ShowHint = False
+      TabOrder = 7
+      OnKeyPress = DBEdit9KeyPress
+    end
+    object DBEdit13: TDBEdit
+      Left = 40
+      Top = 314
+      Width = 654
+      Height = 24
+      Hint = 'Email da Empresa'
+      DataField = 'EMAIL'
+      DataSource = DtSrc
+      ParentShowHint = False
+      ShowHint = False
+      TabOrder = 9
+      OnKeyPress = DBEdit13KeyPress
+    end
+    object GroupBox2: TGroupBox
+      Left = 40
+      Top = 352
+      Width = 665
+      Height = 65
+      Caption = 'Fator Financeiro: '
+      TabOrder = 10
+      object Label3: TLabel
+        Left = 6
+        Top = 14
+        Width = 110
+        Height = 16
+        Caption = 'Juros Mora ao Dia'
+        FocusControl = DBEdit3
+      end
+      object Label5: TLabel
+        Left = 132
+        Top = 14
+        Width = 79
+        Height = 16
+        Caption = 'Dias Isen'#231#227'o'
+        FocusControl = DBEdit5
+      end
+      object DBEdit3: TDBEdit
+        Left = 6
+        Top = 31
+        Width = 107
+        Height = 24
+        DataField = 'JUROSMORAAODIA'
+        DataSource = DtSrc
+        TabOrder = 0
+      end
+      object DBEdit5: TDBEdit
+        Left = 132
+        Top = 31
+        Width = 77
+        Height = 24
+        DataField = 'DIASISENCAO'
+        DataSource = DtSrc
+        TabOrder = 1
+      end
+    end
+    object DBEdit11: TDBEdit
+      Left = 184
+      Top = 270
+      Width = 199
+      Height = 24
+      DataField = 'TELEFONE'
+      DataSource = DtSrc
+      TabOrder = 8
+    end
+  end
+  object DBNavigator1: TDBNavigator [2]
+    Left = 0
+    Top = 490
+    Width = 822
+    Height = 25
+    DataSource = DtSrc
+    VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast]
+    Align = alBottom
+    TabOrder = 2
+  end
+  inherited DtSrc: TDataSource
+    DataSet = DmModuleI.CdsEmpresa
+  end
+end

@@ -1,0 +1,295 @@
+inherited FrmVendedor: TFrmVendedor
+  Caption = 'Vendedor'
+  OnActivate = FormActivate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object GroupBox1: TGroupBox [1]
+    Left = 72
+    Top = 64
+    Width = 689
+    Height = 401
+    Color = clInfoBk
+    ParentColor = False
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 22
+      Top = 23
+      Width = 40
+      Height = 13
+      Caption = 'C'#243'digo'
+      FocusControl = DBEdit1
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 22
+      Top = 63
+      Width = 33
+      Height = 13
+      Caption = 'Nome'
+      FocusControl = DBEdit2
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 22
+      Top = 103
+      Width = 55
+      Height = 13
+      Caption = 'Endere'#231'o'
+      FocusControl = DBEdit3
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label4: TLabel
+      Left = 22
+      Top = 143
+      Width = 34
+      Height = 13
+      Caption = 'Bairro'
+      FocusControl = DBEdit4
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label5: TLabel
+      Left = 22
+      Top = 183
+      Width = 40
+      Height = 13
+      Caption = 'Cidade'
+      FocusControl = DBEdit5
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label6: TLabel
+      Left = 22
+      Top = 223
+      Width = 14
+      Height = 13
+      Caption = 'Uf'
+      FocusControl = DBEdit6
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label7: TLabel
+      Left = 22
+      Top = 263
+      Width = 23
+      Height = 13
+      Caption = 'Cep'
+      FocusControl = DBEdit7
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label8: TLabel
+      Left = 22
+      Top = 303
+      Width = 51
+      Height = 13
+      Caption = 'Telefone'
+      FocusControl = DBEdit8
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label9: TLabel
+      Left = 22
+      Top = 343
+      Width = 67
+      Height = 13
+      Caption = '% Comiss'#227'o'
+      FocusControl = DBEdit9
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object DBEdit1: TDBEdit
+      Left = 22
+      Top = 39
+      Width = 51
+      Height = 21
+      DataField = 'CODVENDEDOR'
+      DataSource = DtSrc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+    end
+    object DBEdit2: TDBEdit
+      Left = 22
+      Top = 79
+      Width = 654
+      Height = 21
+      CharCase = ecUpperCase
+      DataField = 'NOME'
+      DataSource = DtSrc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 1
+      OnKeyDown = DBEdit2KeyDown
+    end
+    object DBEdit3: TDBEdit
+      Left = 22
+      Top = 119
+      Width = 654
+      Height = 21
+      CharCase = ecUpperCase
+      DataField = 'ENDERECO'
+      DataSource = DtSrc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 2
+      OnKeyDown = DBEdit3KeyDown
+    end
+    object DBEdit4: TDBEdit
+      Left = 22
+      Top = 159
+      Width = 394
+      Height = 21
+      CharCase = ecUpperCase
+      DataField = 'BAIRRO'
+      DataSource = DtSrc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 3
+      OnKeyDown = DBEdit4KeyDown
+    end
+    object DBEdit5: TDBEdit
+      Left = 22
+      Top = 199
+      Width = 394
+      Height = 21
+      CharCase = ecUpperCase
+      DataField = 'CIDADE'
+      DataSource = DtSrc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 4
+      OnKeyDown = DBEdit5KeyDown
+    end
+    object DBEdit6: TDBEdit
+      Left = 22
+      Top = 239
+      Width = 30
+      Height = 21
+      CharCase = ecUpperCase
+      DataField = 'UF'
+      DataSource = DtSrc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 5
+      OnKeyDown = DBEdit6KeyDown
+    end
+    object DBEdit7: TDBEdit
+      Left = 22
+      Top = 279
+      Width = 160
+      Height = 21
+      CharCase = ecUpperCase
+      DataField = 'CEP'
+      DataSource = DtSrc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 6
+      OnKeyDown = DBEdit7KeyDown
+    end
+    object DBEdit8: TDBEdit
+      Left = 22
+      Top = 319
+      Width = 160
+      Height = 21
+      DataField = 'TELEFONE'
+      DataSource = DtSrc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 7
+      OnKeyDown = DBEdit8KeyDown
+    end
+    object DBEdit9: TDBEdit
+      Left = 22
+      Top = 359
+      Width = 67
+      Height = 21
+      DataField = 'PERCCOMISSAO'
+      DataSource = DtSrc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 8
+      OnKeyDown = DBEdit9KeyDown
+    end
+  end
+  inherited DtSrc: TDataSource
+    DataSet = DmModuleI.CdsVendedor
+    Left = 536
+    Top = 40
+  end
+end
