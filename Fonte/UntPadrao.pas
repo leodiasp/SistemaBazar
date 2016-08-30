@@ -25,11 +25,14 @@ type
       Shift: TShiftState);
     procedure btnSairClick(Sender: TObject);
     procedure btnPesquisarClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
     { Public declarations }
     descricaopadrao : string;
+    //-> Ajusta todos os forms
+    procedure ajustaPropriedades(Form: TForm);
   end;
 
 var
@@ -142,6 +145,29 @@ begin
   finally
     FrmPesquisa.Free;
   end;
+end;
+
+procedure TFrmPadrao.ajustaPropriedades(Form: TForm);
+var i: integer; 
+begin 
+  for i := 0 to Form.ComponentCount -1 do 
+    {
+      if (Form.Components[i] is TEdit) then
+          TEdit(Form.Components[i]).Text := 'Teste propriedade...';
+     }
+
+      if (form.Components[i] is TGroupBox) then
+
+         TGroupBox(form.Components[i]).Align := alTop;
+
+      Form.AutoSize := True;
+      Form.Position := poScreenCenter;
+
+end;
+
+procedure TFrmPadrao.FormCreate(Sender: TObject);
+begin
+ ajustaPropriedades(Self);
 end;
 
 end.

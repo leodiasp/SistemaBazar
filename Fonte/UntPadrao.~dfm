@@ -17,7 +17,7 @@ object FrmPadrao: TFrmPadrao
   TextHeight = 13
   object Panel1: TPanel
     Left = 0
-    Top = 515
+    Top = 518
     Width = 822
     Height = 48
     Align = alBottom

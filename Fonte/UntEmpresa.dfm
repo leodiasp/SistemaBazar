@@ -1,21 +1,26 @@
 inherited FrmEmpresa: TFrmEmpresa
   Left = 149
   Top = 99
+  Width = 740
+  Height = 540
   Caption = 'Empresa'
   OldCreateOrder = True
   OnActivate = FormActivate
   PixelsPerInch = 96
   TextHeight = 13
   inherited Panel1: TPanel
+    Top = 429
+    Width = 724
     inherited btnPesquisar: TBitBtn
       Visible = False
     end
   end
   object GroupBox1: TGroupBox [1]
-    Left = 32
-    Top = 21
-    Width = 769
-    Height = 457
+    Left = 0
+    Top = 0
+    Width = 724
+    Height = 425
+    Align = alTop
     Caption = ' Dados Empresa:  '
     Color = clInfoBk
     Ctl3D = True
@@ -29,7 +34,7 @@ inherited FrmEmpresa: TFrmEmpresa
     ParentFont = False
     TabOrder = 1
     object Label1: TLabel
-      Left = 40
+      Left = 10
       Top = 20
       Width = 44
       Height = 16
@@ -38,7 +43,7 @@ inherited FrmEmpresa: TFrmEmpresa
       Visible = False
     end
     object Label10: TLabel
-      Left = 40
+      Left = 10
       Top = 58
       Width = 27
       Height = 16
@@ -46,7 +51,7 @@ inherited FrmEmpresa: TFrmEmpresa
       FocusControl = DBEdit10
     end
     object Label2: TLabel
-      Left = 40
+      Left = 10
       Top = 106
       Width = 81
       Height = 16
@@ -54,7 +59,7 @@ inherited FrmEmpresa: TFrmEmpresa
       FocusControl = DBEdit2
     end
     object Label4: TLabel
-      Left = 40
+      Left = 10
       Top = 154
       Width = 59
       Height = 16
@@ -62,7 +67,7 @@ inherited FrmEmpresa: TFrmEmpresa
       FocusControl = DBEdit4
     end
     object Label6: TLabel
-      Left = 40
+      Left = 10
       Top = 202
       Width = 36
       Height = 16
@@ -70,7 +75,7 @@ inherited FrmEmpresa: TFrmEmpresa
       FocusControl = DBEdit6
     end
     object Label7: TLabel
-      Left = 469
+      Left = 439
       Top = 202
       Width = 57
       Height = 16
@@ -78,7 +83,7 @@ inherited FrmEmpresa: TFrmEmpresa
       FocusControl = DBEdit7
     end
     object Label8: TLabel
-      Left = 715
+      Left = 685
       Top = 201
       Width = 18
       Height = 16
@@ -86,23 +91,23 @@ inherited FrmEmpresa: TFrmEmpresa
       FocusControl = DBEdit8
     end
     object Label9: TLabel
-      Left = 40
-      Top = 254
+      Left = 10
+      Top = 250
       Width = 25
       Height = 16
       Caption = 'Cep'
       FocusControl = DBEdit9
     end
     object Label13: TLabel
-      Left = 40
-      Top = 298
+      Left = 10
+      Top = 302
       Width = 34
       Height = 16
       Caption = 'Email'
       FocusControl = DBEdit13
     end
     object Label12: TLabel
-      Left = 184
+      Left = 154
       Top = 254
       Width = 54
       Height = 16
@@ -110,7 +115,7 @@ inherited FrmEmpresa: TFrmEmpresa
       FocusControl = DBEdit11
     end
     object DBEdit1: TDBEdit
-      Left = 40
+      Left = 10
       Top = 36
       Width = 73
       Height = 24
@@ -126,7 +131,7 @@ inherited FrmEmpresa: TFrmEmpresa
       Visible = False
     end
     object DBEdit10: TDBEdit
-      Left = 40
+      Left = 10
       Top = 74
       Width = 186
       Height = 24
@@ -138,7 +143,7 @@ inherited FrmEmpresa: TFrmEmpresa
       OnKeyPress = DBEdit10KeyPress
     end
     object DBEdit2: TDBEdit
-      Left = 40
+      Left = 10
       Top = 122
       Width = 654
       Height = 24
@@ -152,7 +157,7 @@ inherited FrmEmpresa: TFrmEmpresa
       OnKeyPress = DBEdit2KeyPress
     end
     object DBEdit4: TDBEdit
-      Left = 40
+      Left = 10
       Top = 170
       Width = 422
       Height = 24
@@ -166,8 +171,8 @@ inherited FrmEmpresa: TFrmEmpresa
       OnKeyPress = DBEdit4KeyPress
     end
     object DBEdit6: TDBEdit
-      Left = 40
-      Top = 218
+      Left = 10
+      Top = 222
       Width = 394
       Height = 24
       Hint = 'Bairro da Empresa'
@@ -180,7 +185,7 @@ inherited FrmEmpresa: TFrmEmpresa
       OnKeyPress = DBEdit6KeyPress
     end
     object DBEdit7: TDBEdit
-      Left = 472
+      Left = 442
       Top = 218
       Width = 233
       Height = 24
@@ -194,7 +199,7 @@ inherited FrmEmpresa: TFrmEmpresa
       OnKeyPress = DBEdit7KeyPress
     end
     object DBEdit8: TDBEdit
-      Left = 715
+      Left = 685
       Top = 217
       Width = 30
       Height = 24
@@ -208,7 +213,7 @@ inherited FrmEmpresa: TFrmEmpresa
       OnKeyPress = DBEdit8KeyPress
     end
     object DBEdit9: TDBEdit
-      Left = 40
+      Left = 10
       Top = 270
       Width = 108
       Height = 24
@@ -222,8 +227,8 @@ inherited FrmEmpresa: TFrmEmpresa
       OnKeyPress = DBEdit9KeyPress
     end
     object DBEdit13: TDBEdit
-      Left = 40
-      Top = 314
+      Left = 10
+      Top = 322
       Width = 654
       Height = 24
       Hint = 'Email da Empresa'
@@ -235,7 +240,7 @@ inherited FrmEmpresa: TFrmEmpresa
       OnKeyPress = DBEdit13KeyPress
     end
     object GroupBox2: TGroupBox
-      Left = 40
+      Left = 10
       Top = 352
       Width = 665
       Height = 65
@@ -277,7 +282,7 @@ inherited FrmEmpresa: TFrmEmpresa
       end
     end
     object DBEdit11: TDBEdit
-      Left = 184
+      Left = 154
       Top = 270
       Width = 199
       Height = 24
@@ -288,8 +293,8 @@ inherited FrmEmpresa: TFrmEmpresa
   end
   object DBNavigator1: TDBNavigator [2]
     Left = 0
-    Top = 490
-    Width = 822
+    Top = 477
+    Width = 724
     Height = 25
     DataSource = DtSrc
     VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast]

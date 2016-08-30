@@ -1,29 +1,35 @@
 inherited FrmCliente: TFrmCliente
   Left = 49
   Top = 72
-  Width = 951
-  Height = 650
+  Width = 919
+  Height = 600
+  AutoSize = True
   Caption = 'Cadastro de Clientes'
   OldCreateOrder = True
   PixelsPerInch = 96
   TextHeight = 13
   inherited Panel1: TPanel
-    Top = 571
-    Width = 943
+    Top = 514
+    Width = 903
+    inherited btnSair: TBitBtn
+      Left = 797
+    end
   end
   object GroupBox1: TGroupBox [1]
-    Left = 17
-    Top = 24
-    Width = 904
-    Height = 409
+    Left = 0
+    Top = 0
+    Width = 903
+    Height = 385
+    Align = alTop
     Color = clCream
     ParentColor = False
     TabOrder = 1
     object GroupBox4: TGroupBox
-      Left = 8
-      Top = 198
-      Width = 881
+      Left = 2
+      Top = 184
+      Width = 899
       Height = 57
+      Align = alTop
       Color = clInfoBk
       ParentBackground = False
       ParentColor = False
@@ -123,10 +129,11 @@ inherited FrmCliente: TFrmCliente
       end
     end
     object GroupBox5: TGroupBox
-      Left = 9
-      Top = 259
-      Width = 880
+      Left = 2
+      Top = 241
+      Width = 899
       Height = 138
+      Align = alTop
       Color = clInfoBk
       ParentBackground = False
       ParentColor = False
@@ -409,10 +416,11 @@ inherited FrmCliente: TFrmCliente
       end
     end
     object GroupBox3: TGroupBox
-      Left = 12
-      Top = 24
-      Width = 876
+      Left = 2
+      Top = 15
+      Width = 899
       Height = 169
+      Align = alTop
       Color = clInfoBk
       ParentBackground = False
       ParentColor = False
@@ -737,10 +745,11 @@ inherited FrmCliente: TFrmCliente
     end
   end
   object GroupBox2: TGroupBox [2]
-    Left = 16
-    Top = 440
-    Width = 905
+    Left = 0
+    Top = 385
+    Width = 903
     Height = 127
+    Align = alTop
     Caption = 'Dependentes: '
     Color = clCream
     Font.Charset = DEFAULT_CHARSET
@@ -752,13 +761,14 @@ inherited FrmCliente: TFrmCliente
     ParentFont = False
     TabOrder = 2
     object DBGrid1: TDBGrid
-      Left = 13
-      Top = 19
-      Width = 852
-      Height = 95
+      Left = 2
+      Top = 15
+      Width = 899
+      Height = 110
       Hint = 
         '(EXCLUIR) Dependente <Posicione no Dependente e clicar mouse lad' +
         'o direito>.'
+      Align = alClient
       Color = clInfoBk
       DataSource = DsDependentes
       ParentShowHint = False
@@ -793,12 +803,14 @@ inherited FrmCliente: TFrmCliente
           Expanded = False
           FieldName = 'CODPARENTESCO'
           Title.Alignment = taCenter
+          Width = 64
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'descparentesco'
           Title.Alignment = taCenter
+          Width = 64
           Visible = True
         end>
     end

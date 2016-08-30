@@ -2,7 +2,7 @@ object FrmPadrao: TFrmPadrao
   Left = 143
   Top = 112
   Width = 830
-  Height = 597
+  Height = 233
   Caption = 'FrmPadrao'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -12,13 +12,14 @@ object FrmPadrao: TFrmPadrao
   Font.Style = []
   OldCreateOrder = False
   OnClose = FormClose
+  OnCreate = FormCreate
   OnKeyDown = FormKeyDown
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
     Left = 0
-    Top = 518
-    Width = 822
+    Top = 147
+    Width = 814
     Height = 48
     Align = alBottom
     TabOrder = 0

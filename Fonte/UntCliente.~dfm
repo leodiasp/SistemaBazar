@@ -3,12 +3,12 @@ inherited FrmCliente: TFrmCliente
   Top = 72
   Width = 951
   Height = 650
-  Caption = 'FrmCliente'
+  Caption = 'Cadastro de Clientes'
   OldCreateOrder = True
   PixelsPerInch = 96
   TextHeight = 13
   inherited Panel1: TPanel
-    Top = 568
+    Top = 571
     Width = 943
   end
   object GroupBox1: TGroupBox [1]
@@ -699,7 +699,7 @@ inherited FrmCliente: TFrmCliente
         Top = 69
         Width = 161
         Height = 81
-        Color = clInactiveCaptionText
+        Color = clSkyBlue
         ParentBackground = False
         ParentColor = False
         TabOrder = 9
